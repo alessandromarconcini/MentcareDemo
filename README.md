@@ -2,10 +2,13 @@
 
 # Indice
 
-
 # 1 - Introduzione
 
-Spiegazione generale delle funzionalità principali del progetto
+Mentcare è un sistema informativo utile per la gestione di cliniche che trattano pazienti con problemi di salute mentale.
+Esso dovrà fornire un insieme di metodi e strumenti necessari per la raccolta, conservazione e utilizzo dei dati
+correlati all'attività informativa di una o più cliniche responsabili di pazienti che non necessitano di ospedalizzazione.
+Sono dunque presi in cura da cliniche specializzare dove possono trovare un dottore che conosce attentamente il loro stato clinico.
+Il suo scopo è gestire lo scambio di informazioni fra le varie componenti interne attraverso una banca dati centrale.
 
 # 2 - Background
 

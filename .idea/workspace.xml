@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Inserimento di file README in formato Markdown con primissime indicazioni sul documento finale che verrà modificato">
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Aggiornamento di build.gradle (non influenza il progetto)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,8 @@
       <workItem from="1668003033149" duration="1023000" />
       <workItem from="1668005374597" duration="11000" />
       <workItem from="1668082334149" duration="1261000" />
-      <workItem from="1668089918314" duration="28000" />
+      <workItem from="1668089918314" duration="1162000" />
+      <workItem from="1668093829214" duration="1914000" />
     </task>
     <task id="LOCAL-00001" summary="MentcareDemo is born!">
       <created>1667495005722</created>
@@ -107,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668082522536</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Aggiornamento di build.gradle (non influenza il progetto)">
+      <created>1668089978031</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668089978031</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +137,7 @@
     <MESSAGE value="Aggiunta nuova stringa di stampa in output &quot;New String&quot; in main" />
     <MESSAGE value="Ripristino demo is born" />
     <MESSAGE value="Inserimento di file README in formato Markdown con primissime indicazioni sul documento finale che verrà modificato" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inserimento di file README in formato Markdown con primissime indicazioni sul documento finale che verrà modificato" />
+    <MESSAGE value="Aggiornamento di build.gradle (non influenza il progetto)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiornamento di build.gradle (non influenza il progetto)" />
   </component>
 </project>

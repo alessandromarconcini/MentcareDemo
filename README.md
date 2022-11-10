@@ -19,17 +19,66 @@ scelte o condizioni in cui ci siamo trovati
 
 # 3 - Analisi dei requisiti
 
-In questa sezione andiamo a indicare tutte le caratteristiche teoriche(i requisiti) che determinano come il sistema va realizzato
+## 3.1 - Stakeholder 
 
-## 3.1 - Specifica
+Gli attori partecipanti al sistema sono:
 
-Suddivisione dei requisiti in tipologia (utente,sistema,funzionali,non funz e di dominio)
+- Pazienti
+- Dottori
+- Infermieri
+- Visitatori a domicilio
+- Addetti alla reception
+- Staff di amministrazione
 
-## 3.2 - Storie e scenari
+## 3.2 - Specifica
 
-Elenco e spiegazione di storie e scenari possibili riguardanti il sistema
+### 3.2.1 - Requisiti funzionali per attori
 
-## 3.3 - Diagrammi di casi d'uso
+(a) Medici
+
+- (a.1) Un medico può registrare pazienti nel database
+- (a.2) Un medico può modificare i dati del paziente
+- (a.3) Un medico può prescrivere farmaci ad ogni paziente da lui in cura
+- (a.4) Un medico può visualizzare la cartella clinica del paziente
+- (a.5) Un medico può visualizzare la lista di farmaci somministrati da ogni paziente da lui in cura
+- (a.6) Un medico può visualizzare la lista dei propri appuntamenti
+- (a.7) Un medico può ricercare l'appuntamento con un determinato paziente inserendo il relativo codice fiscale
+- (a.8) Un medico può inserire i farmaci ad un paziente a lui associato
+
+(b) Infermieri
+
+- (b.1) Un infermiere può visualizzare la lista con le informazioni di tutti i suoi pazienti
+- (b.2) Un infermiere ha la possibilità di cercare i pazienti in base al codice fiscale
+- (b.3) Un infermiere può visualizzare la lista di farmaci assunti da ogni paziente
+
+(c) Pazienti
+- (c.1) Un paziente può visualizzare il proprio calendario farmacologico
+- (c.2) Un paziente può visualizzare la lista dei propri appuntamenti sul calendario
+- (c.3) Un paziene può visualizzare le dosi che deve assumere per ogni farmaco avendo la possibilità di filtrare ogni farmaco in base al nome
+- (c.4) Un paziente può visualizzare il report di resoconto di una certa visita
+
+(d) Addetto alla reception
+- (d.1) Un receptionist può registrare e modificare gli appuntamenti inserendo il codice fiscale del paziente e del personale medico
+- (d.2) Un receptionist può visualizzare la lista di tutti gli appuntamenti filtrando le ricerche inserendo l'id del paziente
+
+(e) Staff di amministrazione
+- (e.1) Un membro dello staff di amministrazione ha accesso ad un' area riservata dove può ricercare un utente e stamparne il report
+
+### 3.2.2 Requisiti funzionali di sicurezza
+
+### 3.2.3 Requisiti funzionali safety
+
+### 3.2.4 Requisiti funzionali riguardanti interfaccia grafica
+
+### 3.2.5 Requisiti funzionali di automazione
+
+### 3.2.6 Altri requisiti funzionali
+
+### 3.2.7 Requisiti non funzionali
+
+## 3.3 - Storie e scenari
+
+## 3.4 - Diagrammi di casi d'uso
 
 Utilizzo di diagrammi di casi d'uso per chiarificare come i vari utenti interagiscono con il sistema.
 (Quindi un caso d'uso per ogni utente e non per ogni scenario/requisito)
@@ -39,7 +88,7 @@ Utilizzo di diagrammi di casi d'uso per chiarificare come i vari utenti interagi
 Una volta definiti degli stati o delle operazioni chiave fatti dagli utenti,
 è possibile attribuire responsabilità ai vari utenti di queste ultime.
 
-## 3.5 - Creazione Test di accettazione
+## 3.6 - Creazione Test di accettazione
 
 Definiamo a priori i test di accettazione per poter consegnare ad un ipotetico stakeholder un progetto funzionante secondo accordi presettati.
 

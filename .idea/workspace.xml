@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Aggiunta nuova stringa di stampa in output &quot;New String&quot; in main">
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Ripristino demo is born">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/package1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/package1/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,8 @@
       <option name="presentableId" value="Default" />
       <updated>1667494902024</updated>
       <workItem from="1667494905160" duration="551000" />
-      <workItem from="1668003033149" duration="401000" />
+      <workItem from="1668003033149" duration="1023000" />
+      <workItem from="1668005374597" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="MentcareDemo is born!">
       <created>1667495005722</created>
@@ -84,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668003128420</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ripristino demo is born">
+      <created>1668003451281</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668003451282</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +111,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MentcareDemo is born!" />
     <MESSAGE value="Aggiunta nuova stringa di stampa in output &quot;New String&quot; in main" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta nuova stringa di stampa in output &quot;New String&quot; in main" />
+    <MESSAGE value="Ripristino demo is born" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ripristino demo is born" />
   </component>
 </project>

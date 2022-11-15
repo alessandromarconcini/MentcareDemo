@@ -66,15 +66,56 @@ Gli attori partecipanti al sistema sono:
 
 ### 3.2.2 Requisiti funzionali di sicurezza
 
+- Il sistema deve garantire la protezione dei dati coperti da 
+privacy in modo che solamente lo staff medico e il paziente
+possano avervi accesso
+- Gli utenti che possono accedere ai report devono essere riportati su una white list
+- Solo l'utente che apre il record può modificarlo
+- Ogni membro dello staff deve essere identificato da un codice univoco di 8 cifre
+
 ### 3.2.3 Requisiti funzionali safety
+
+- Il sistema deve avvertire lo staff medico circa la pericolosità di una particolare patologia del paziente se essa è presente
+- Il sistema effettua un controllo sulle dosi dei farmaci basandosi su un range di sicurezza. In caso di errore la dose deve essere reinserita
+- Se il paziente soffre di allergie particolari il sistema deve rispondere alla somministrazione di un farmaco scorretto con un messaggio di warning e se la figura che prescrive ignora il messaggio di warning deve essere obbligato a lasciare una ragione scritta del perchè
 
 ### 3.2.4 Requisiti funzionali riguardanti interfaccia grafica
 
+- Il sistema deve mostrare i record dei pazienti
+- Il sistema deve essere dotato di un medication field
+- Il sistema deve poter consentire la selezione delle voci 'current medication','new medication' e 'formulary'
+- Se si sceglie 'current medication' il sistema chiede un check della dose, la dose può anche essere cambiata
+- Se si sceglie 'new medication' il medico può effettuare una ricerca scrivendo anche solo parzialmente le lettere del farmaco
+- Se si sceglie 'formulary' il sistema mostra una search box in cui cercare il farmaco e viene effettuato un check circa la validità della medicazione, viene inserita la dose anche in questo caso
+- Dopo che il medico ha fatto tutta la procedura, il sistema notifica una schermata di check riassuntiva laddove sono presenti i bottoni 'Ok' e 'Modifica'
+- Durante il check di dose serve un pulsante 'Conferma'
+- un utente dovrebbe avere la possibilità di vedere gli appuntamenti relativi ed effettuare ricerche su di essi
+- Il sistema deve notificare i dottori online con un menù a cascata
+- Il sistema deve essere dotato di una chat fra i dottori online
+
 ### 3.2.5 Requisiti funzionali di automazione
+
+- Il sistema genera un report mensile mostrando il numero di pazienti per clinica, il numero dei pazienti inseriti o cancellati dal sistema,il numero di pazienti per tipologia, i farmaci loro prescritti ed i relativi costi, questo l'ultimo giorno *lavorativo* del mese, dopo le 17:30
+- Il report deve contenere anche le seguenti informazioni: nomi dei farmaci,numero di prescrizioni,numero di dosi prescritte e costi totali delle dosi prescritte
+- Se il report ha dosi di differenti unità(10mg,20mg), il sistema deve registrarle in report separati per ogni unità
+- il sistema deve generare una lista dei pazienti attesi quel giorno, per ogni clinica
 
 ### 3.2.6 Altri requisiti funzionali
 
+- Il sistema prevede sommari dei dati che possano essere facilmente interpretabili dai medici in velocità (problemi chiave e trattamenti iniziati)
+- Le informazioni vanno raccolte all'interno di un database centrale a cui differenti host hanno accesso copiandone le informazioni dalla fonte principale
+- Ogni farmaco deve possedere i campi 'Maximum dose' e 'Minimum dose'
+- Gli addetti alla reception devono poter trasferire i dati di un paziente da un database ad un altro(PSR), come informazioni di tipo anagrafico o sommari di diagnosi e trattamenti di pazienti, lo scambio in sè va regolato secondo il metodo
+  di handshacking (il sistema deve essere in grado di ricevere una risposta positiva dal PSR)
+
 ### 3.2.7 Requisiti non funzionali
+
+- Il sistema Mentcare dove essere disponibile a tutte le cliniche durante le normali ore lavorative
+  (LUN-VEN 8:30-17:30)
+- Il sistema non deve riavviarsi se non in 5 o meno secondi
+- Tutti gli utenti del sistema devono potersi autenticare con la tessera sanitaria
+- Il sistema deve rispettare le linee guida per la privacy in HStan-03-2006-priv
+- Gli errori utente (come ad esempio segnalazioni) devono essere comunicati in modo semplice e minimizzati
 
 ## 3.3 - Storie e scenari
 

@@ -61,7 +61,7 @@ L’infermiere effettua il login nel sistema inserendo il suo codice ID a 8 cifr
 
 Una volta effettuato il login, l’infermiere, scegliendo l’opzione “Registrazione utente”, dovrà inserire i seguenti campi richiesti:
 
--Codice fiscale
+- Codice fiscale
 - Nome
 - Cognome
 - Nome e cognome del medico curante

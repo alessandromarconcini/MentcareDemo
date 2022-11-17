@@ -55,24 +55,28 @@ L’infermiere effettua il login nel sistema inserendo il suo codice ID a 8 cifr
 - Non somministrare il farmaco: clicca sul bottone “annulla” e ritorna all’elenco dei   pazienti odierni.
 
 #### S3 - Un medico prova ad accedere ai dati di un paziente di cui non prende cura.
+(Chat oppure altri requisiti sotto)
 
-Il medico, effettuando il login all’interno del programma, potrà vedere solamente la lista dei pazienti da lui in cura e non potrà accedere alle informazioni di un qualunque altro paziente;
-- Se il medico, nell’apposita sezione di ricerca utente, andrà ad inserire l’id di un paziente di cui non prende cura, comparirà una lista vuota; per ritornare alla schermata principale, il medico dovrà cancellare l’id inserito.
-
-#### S4 - Un paziente viene registrato all’interno del sistema grazie all’infermiere che effettua la sua prima registrazione.
+#### S4 - L'infermiere registra un nuovo paziente
 
 Una volta effettuato il login, l’infermiere, scegliendo l’opzione “Registrazione utente”, dovrà inserire i seguenti campi richiesti:
--  Codice fiscale;
--  Nome;
--  Cognome;
--  Nome e cognome del medico curante;
--  Allergie.
+
+-Codice fiscale
+- Nome
+- Cognome
+- Nome e cognome del medico curante
+- Allergie
+
    Se qualcuno dei campi relativi non è valido, comparirà un messaggio di errore per ciascuno dei possibili casi:
-1) Il nome e il cognome del medico curante non risultano validi;
-2) Nel caso in cui il codice fiscale è già presente nel database, questo risulterà non valido;
-3) Nel caso in cui ci sia incongruenza tra il codice fiscale e l’anagrafica che lo compone, i campi inseriti non risulteranno validi.
-4) Nel caso in cui il codice fiscale sia troppo corto o troppo lungo, non è valido
-    Dopo il messaggio di errore, sarà possibile modificare i campi errati e riconfermare.
+1. Il nome e il cognome del medico curante non risultano validi;
+2. Nel caso in cui il codice fiscale è già presente nel database, questo risulterà non valido;
+3. Nel caso in cui ci sia incongruenza tra il codice fiscale e l’anagrafica che lo compone, i campi inseriti non risulteranno validi.
+4. Nel caso in cui il codice fiscale sia troppo corto o troppo lungo, non è valido. Dopo il messaggio di errore, sarà possibile modificare i campi errati e riconfermare.
+
+Una volta inseriti tutti i campi l'infermiere può confermare l'operazione premendo il pulsante "Conferma", allora una finestra pop-up comparirà a schermo con i due pulsanti "Conferma" e "Annulla".
+Se viene cliccato "Conferma" il paziente viene registrato, se clicca "Annulla" torna alla schermata precedente.
+Se prima del pop-up invece clicca "Annulla" torna alla schermata precedente.
+
 
 #### S5 - La segreteria deve registrare un nuovo appuntamento.
 

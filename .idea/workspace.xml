@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Spostata sezione Scenari e Stories e rinominata in Scenari e popolata con i 9 scenari maggiormente dettagliati">
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Rimpiazzo dello scenario numero 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -82,7 +82,7 @@
       <workItem from="1668443875569" duration="856000" />
       <workItem from="1668513745591" duration="1287000" />
       <workItem from="1668679222058" duration="1735000" />
-      <workItem from="1668686731807" duration="5373000" />
+      <workItem from="1668686731807" duration="7343000" />
     </task>
     <task id="LOCAL-00001" summary="MentcareDemo is born!">
       <created>1667495005722</created>
@@ -147,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668691487400</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Rimpiazzo dello scenario numero 2">
+      <created>1668700940840</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668700940840</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +181,7 @@
     <MESSAGE value="Elenco dei requisiti" />
     <MESSAGE value="Popolate sezioni dei requisiti di safety,security,automazione, altri funzionali e requisiti non funzionali" />
     <MESSAGE value="Spostata sezione Scenari e Stories e rinominata in Scenari e popolata con i 9 scenari maggiormente dettagliati" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spostata sezione Scenari e Stories e rinominata in Scenari e popolata con i 9 scenari maggiormente dettagliati" />
+    <MESSAGE value="Rimpiazzo dello scenario numero 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rimpiazzo dello scenario numero 2" />
   </component>
 </project>

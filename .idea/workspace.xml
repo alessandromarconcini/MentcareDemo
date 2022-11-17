@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Elenco dei requisiti">
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Popolate sezioni dei requisiti di safety,security,automazione, altri funzionali e requisiti non funzionali">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -80,7 +80,9 @@
       <workItem from="1668089918314" duration="1162000" />
       <workItem from="1668093829214" duration="6325000" />
       <workItem from="1668443875569" duration="856000" />
-      <workItem from="1668513745591" duration="940000" />
+      <workItem from="1668513745591" duration="1287000" />
+      <workItem from="1668679222058" duration="1735000" />
+      <workItem from="1668686731807" duration="2720000" />
     </task>
     <task id="LOCAL-00001" summary="MentcareDemo is born!">
       <created>1667495005722</created>
@@ -131,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668100106433</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Popolate sezioni dei requisiti di safety,security,automazione, altri funzionali e requisiti non funzionali">
+      <created>1668514980461</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668514980461</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +165,7 @@
     <MESSAGE value="Aggiornamento di build.gradle (non influenza il progetto)" />
     <MESSAGE value="Inserimento introduzione" />
     <MESSAGE value="Elenco dei requisiti" />
-    <option name="LAST_COMMIT_MESSAGE" value="Elenco dei requisiti" />
+    <MESSAGE value="Popolate sezioni dei requisiti di safety,security,automazione, altri funzionali e requisiti non funzionali" />
+    <option name="LAST_COMMIT_MESSAGE" value="Popolate sezioni dei requisiti di safety,security,automazione, altri funzionali e requisiti non funzionali" />
   </component>
 </project>

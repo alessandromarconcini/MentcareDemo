@@ -32,7 +32,74 @@ Gli attori partecipanti al sistema sono:
 
 ## 3.2 - Specifica
 
-### 3.2.1 - Requisiti funzionali per attori
+### 3.2.1 - Scenari
+
+#### S1 - Un medico accede al sistema attraverso la fase di login e decide di scrivere una nuova prescrizione per un paziente già registrato nel database.
+
+Durante la fase di login, la pagina presenta un’interfaccia con due campi in cui è possibile inserire “Nome utente” e “Password”, un bottone con scritto “Accedi” e un bottone con scritto “Registrati”.
+Il medico, una volta inseriti i dati, cliccherà sul buttone “Accedi” e una volta entrato correttamente avrà la possibilità di:
+-  Cercare il farmaco utilizzando un’apposita voce inserendo il rispettivo nome; inoltre una volta scelto il medico, dalla lista dei pazienti potrà prescriverlo.
+   Per fare ciò, clicca sul rispettivo bottone “Nuova prescrizione” e verrà avviata la procedura.
+   Il medico potrà scegliere la dose e la frequenza del farmaco che vuole prescrivere e dopo un opportuno controllo del sistema sulla dose, se sarà valida, potrà essere registrata nel sistema; in caso contrario, verrà notificato l’errore. Se l’errore si ripete, il medico dovrà inserire la motivazione circa il dosaggio errato;
+-  Se il nome del farmaco inserito non è corretto, apparirà una schermata di errore la quale informerà che tale farmaco non è presente.
+
+#### S2 - Un infermiere decide di cambiare il dosaggio e la frequenza di una prescrizione.
+
+L’infermiere, una volta effettuata la fase di login, partendo dalla lista degli utentie cliccando sul bottone “Prescrizione attuale”, potrà modificare la prescrizione dall’apposita finestra andando ad inserire la nuova dose e la rispettiva frequenza; fatto ciò, dopo aver cliccato il pulsante “Conferma” si ritornerà alla lista utenti:
+- Se l’infermiere, per sbaglio, cambia la dose o la frequenza oltre il limite consentito si avvierà la procedura di errore come nello scenario S1.
+
+#### S3 - Un medico prova ad accedere ai dati di un paziente di cui non prende cura.
+
+Il medico, effettuando il login all’interno del programma, potrà vedere solamente la lista dei pazienti da lui in cura e non potrà accedere alle informazioni di un qualunque altro paziente;
+- Se il medico, nell’apposita sezione di ricerca utente, andrà ad inserire l’id di un paziente di cui non prende cura, comparirà una lista vuota; per ritornare alla schermata principale, il medico dovrà cancellare l’id inserito.
+
+#### S4 - Un paziente viene registrato all’interno del sistema grazie all’infermiere che effettua la sua prima registrazione.
+
+Una volta effettuato il login, l’infermiere, scegliendo l’opzione “Registrazione utente”, dovrà inserire i seguenti campi richiesti:
+-  Codice fiscale;
+-  Nome;
+-  Cognome;
+-  Nome e cognome del medico curante;
+-  Allergie.
+   Se qualcuno dei campi relativi non è valido, comparirà un messaggio di errore per ciascuno dei possibili casi:
+1) Il nome e il cognome del medico curante non risultano validi;
+2) Nel caso in cui il codice fiscale è già presente nel database, questo risulterà non valido;
+3) Nel caso in cui ci sia incongruenza tra il codice fiscale e l’anagrafica che lo compone, i campi inseriti non risulteranno validi.
+4) Nel caso in cui il codice fiscale sia troppo corto o troppo lungo, non è valido
+    Dopo il messaggio di errore, sarà possibile modificare i campi errati e riconfermare.
+
+#### S5 - La segreteria deve registrare un nuovo appuntamento.
+
+Il receptionist, una volta effettuata la fase di login, può inserire nuovi appuntamenti cliccando il pulsante “Nuovo appuntamento”. Inserendo il codice fiscale del paziente e del medico per cui si vuole registrare l’appuntamento, sarà reindirizzato in una pagina in cui dovrà inserire i dettagli dell’appuntamento;
+- Se il receptionist inserisce in modo errato il codice fiscale, comparirà un messaggio di errore in cui sarà richiesto di inserire nuovamente il codice fiscale corretto;
+- Se i dati inseriti sono corretti, apparirà una schermata che confermerà che l’appuntamento è stato correttamente inserito nel database.
+
+#### S6 - Utente che vuole prendere visione degli appuntamenti.
+
+Un utente, una volta effettuato il login, può visualizzare gli appuntamenti tramite la sezione “visualizza appuntamenti”.
+Si possono verificare i seguenti casi:
+-  Se l’utente è un paziente / medico, può visionare solo i propri appuntamenti;
+-  Se l’utente è un receptionist, può visualizzare la lista di tutti gli appuntamenti della clinica;
+-  Se l’utente è un infermiere a domicilio, può visualizzare la propria lista di appuntamenti.
+
+#### S7 - Caso report mensile da generare.
+
+Il sistema, alla fine di ogni mese, dopo le 17:30, genera un report sottoforma di raccolta dati che enuncia le seguenti informazioni:
+- Numero di pazienti per clinica;
+- Numero dei pazienti inseriti e cancellati nel sistema;
+- Numero di pazienti per sintomatologia con annessi farmaci prescritti;
+- I farmaci prescritti vengono arricchiti con i dati relativi alle dosi fornite e i costi ad essi associati.
+
+#### S8 - Caso ispezione giudiziaria o indagine di polizia.
+
+È possibile, durante un’ispezione giudiziaria o un’indagine di polizia che venga richiesto l’accesso ai dati sensibili degli utenti. In particolare, il richiedente ottiene un file con i dati del singolo paziente oppure con un sommario di tutti i pazienti della clinica. Lo staff di amministrazione troverà di fronte a sé un registro dei pazienti con annessi i due bottoni che svolgono rispettivamente queste funzionalità. Una volta selezionata la modalità, viene mostrata a schermo una finestra di conferma.
+Se lo staff di amministrazione sbaglia ad inserire il nome dell’utente ricercato, il registro mostrerà una schermata vuota.
+
+#### S9 - Logout di un utente.
+
+Un utente qualsiasi, una volta entrato nel sistema attraverso la metodologia d’accesso, ha la possibilità di poter effettuare il logout in qualsiasi momento andando nell’apposita sezione in alto a destra e selezionando la voce “Logout” specificato su un bottone. Un volta che il bottone viene premuto, viene effettuata l’operazione e l’utente sarà disconnesso dal sistema.
+
+### 3.2.2 - Requisiti funzionali per attori
 
 (a) Medici
 
@@ -64,7 +131,7 @@ Gli attori partecipanti al sistema sono:
 (e) Staff di amministrazione
 - (e.1) Un membro dello staff di amministrazione ha accesso ad un' area riservata dove può ricercare un utente e stamparne il report
 
-### 3.2.2 Requisiti funzionali di sicurezza
+### 3.2.3 Requisiti funzionali di sicurezza
 
 - Il sistema deve garantire la protezione dei dati coperti da 
 privacy in modo che solamente lo staff medico e il paziente
@@ -73,13 +140,13 @@ possano avervi accesso
 - Solo l'utente che apre il record può modificarlo
 - Ogni membro dello staff deve essere identificato da un codice univoco di 8 cifre
 
-### 3.2.3 Requisiti funzionali safety
+### 3.2.4 Requisiti funzionali safety
 
 - Il sistema deve avvertire lo staff medico circa la pericolosità di una particolare patologia del paziente se essa è presente
 - Il sistema effettua un controllo sulle dosi dei farmaci basandosi su un range di sicurezza. In caso di errore la dose deve essere reinserita
 - Se il paziente soffre di allergie particolari il sistema deve rispondere alla somministrazione di un farmaco scorretto con un messaggio di warning e se la figura che prescrive ignora il messaggio di warning deve essere obbligato a lasciare una ragione scritta del perchè
 
-### 3.2.4 Requisiti funzionali riguardanti interfaccia grafica
+### 3.2.5 Requisiti funzionali riguardanti interfaccia grafica
 
 - Il sistema deve mostrare i record dei pazienti
 - Il sistema deve essere dotato di un medication field
@@ -116,8 +183,6 @@ possano avervi accesso
 - Tutti gli utenti del sistema devono potersi autenticare con la tessera sanitaria
 - Il sistema deve rispettare le linee guida per la privacy in HStan-03-2006-priv
 - Gli errori utente (come ad esempio segnalazioni) devono essere comunicati in modo semplice e minimizzati
-
-## 3.3 - Storie e scenari
 
 ## 3.4 - Diagrammi di casi d'uso
 

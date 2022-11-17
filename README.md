@@ -43,10 +43,16 @@ Il medico, una volta inseriti i dati, cliccherà sul buttone “Accedi” e una 
    Il medico potrà scegliere la dose e la frequenza del farmaco che vuole prescrivere e dopo un opportuno controllo del sistema sulla dose, se sarà valida, potrà essere registrata nel sistema; in caso contrario, verrà notificato l’errore. Se l’errore si ripete, il medico dovrà inserire la motivazione circa il dosaggio errato;
 -  Se il nome del farmaco inserito non è corretto, apparirà una schermata di errore la quale informerà che tale farmaco non è presente.
 
-#### S2 - Un infermiere decide di cambiare il dosaggio e la frequenza di una prescrizione.
+#### S2 - Un infermiere deve somministrare un farmaco al paziente
 
-L’infermiere, una volta effettuata la fase di login, partendo dalla lista degli utentie cliccando sul bottone “Prescrizione attuale”, potrà modificare la prescrizione dall’apposita finestra andando ad inserire la nuova dose e la rispettiva frequenza; fatto ciò, dopo aver cliccato il pulsante “Conferma” si ritornerà alla lista utenti:
-- Se l’infermiere, per sbaglio, cambia la dose o la frequenza oltre il limite consentito si avvierà la procedura di errore come nello scenario S1.
+L’infermiere effettua il login nel sistema inserendo il suo codice ID a 8 cifre e la password di sicurezza, cliccando sulla sezione “pazienti odierni” visualizza l’elenco dei pazienti oggi in visita in struttura, seleziona il paziente con un click. Dopo il click visualizza il farmaco da somministrare, se disponibile, la dose da somministrare al paziente e la frequenza di dosaggio. L’infermiere può:
+
+- Somministrare il farmaco: l’infermiere clicca sul bottone “somministrazione effettuata”. Allora un pop up chiede all’infermiere si confermare o meno l’operazione:
+
+1. Se l’operazione viene confermata  il campo “somministrazione odierna” viene visualizzato con un pallino verde e il sistema ritorna all’elenco dei pazienti odierni.
+2. Se l’operazione non viene confermata lo stato della “somministrazione odierna” non viene modificato e il sistema ritorna all’elenco dei pazienti odierni.
+
+- Non somministrare il farmaco: clicca sul bottone “annulla” e ritorna all’elenco dei   pazienti odierni.
 
 #### S3 - Un medico prova ad accedere ai dati di un paziente di cui non prende cura.
 

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Rimpiazzo dello scenario numero 2">
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Ho dato un pò di italiano">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +16,9 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,6 +85,7 @@
       <workItem from="1668513745591" duration="1287000" />
       <workItem from="1668679222058" duration="1735000" />
       <workItem from="1668686731807" duration="7343000" />
+      <workItem from="1669118174942" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="MentcareDemo is born!">
       <created>1667495005722</created>
@@ -154,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668700940840</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Ho dato un pò di italiano">
+      <created>1669118121223</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669118121223</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +192,7 @@
     <MESSAGE value="Popolate sezioni dei requisiti di safety,security,automazione, altri funzionali e requisiti non funzionali" />
     <MESSAGE value="Spostata sezione Scenari e Stories e rinominata in Scenari e popolata con i 9 scenari maggiormente dettagliati" />
     <MESSAGE value="Rimpiazzo dello scenario numero 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rimpiazzo dello scenario numero 2" />
+    <MESSAGE value="Ho dato un pò di italiano" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ho dato un pò di italiano" />
   </component>
 </project>

@@ -6,8 +6,8 @@
 
 Mentcare è un sistema informativo utile per la gestione di cliniche che trattano pazienti con problemi di salute mentale.
 Esso dovrà fornire un insieme di metodi e strumenti necessari per la raccolta, conservazione e utilizzo dei dati
-correlati all'attività informativa di una o più cliniche responsabili di pazienti che non necessitano di ospedalizzazione.
-Sono dunque presi in cura da cliniche specializzare dove possono trovare un dottore che conosce attentamente il loro stato clinico.
+correlati all'attività informativa di una o più cliniche responsabili di pazienti mentalmente instabili che non necessitano di ospedalizzazione.
+Sono dunque presi in cura da cliniche specializzate dove possono trovare un dottore che conosce attentamente il loro stato clinico.
 Il suo scopo è gestire lo scambio di informazioni fra le varie componenti interne attraverso una banca dati centrale.
 
 # 2 - Background
@@ -18,7 +18,7 @@ In questa sezione riportiamo le fasi di sviluppo del sw e eventualmente particol
 scelte o condizioni in cui ci siamo trovati
 
 # 3 - Analisi dei requisiti
-
+(In teoria dagli scenari tiriamo fuori gli stakeholder (?))
 ## 3.1 - Stakeholder 
 
 Gli attori partecipanti al sistema sono:
@@ -34,30 +34,73 @@ Gli attori partecipanti al sistema sono:
 
 ### 3.2.1 - Scenari
 
-#### S1 - Un medico accede al sistema attraverso la fase di login e decide di scrivere una nuova prescrizione per un paziente già registrato nel database.
+#### S1 - IL MEDICO EFFETTUA UNA PRESCRIZIONE
 
-Durante la fase di login, la pagina presenta un’interfaccia con due campi in cui è possibile inserire “Nome utente” e “Password”, un bottone con scritto “Accedi” e un bottone con scritto “Registrati”.
-Il medico, una volta inseriti i dati, cliccherà sul buttone “Accedi” e una volta entrato correttamente avrà la possibilità di:
--  Cercare il farmaco utilizzando un’apposita voce inserendo il rispettivo nome; inoltre una volta scelto il medico, dalla lista dei pazienti potrà prescriverlo.
-   Per fare ciò, clicca sul rispettivo bottone “Nuova prescrizione” e verrà avviata la procedura.
-   Il medico potrà scegliere la dose e la frequenza del farmaco che vuole prescrivere e dopo un opportuno controllo del sistema sulla dose, se sarà valida, potrà essere registrata nel sistema; in caso contrario, verrà notificato l’errore. Se l’errore si ripete, il medico dovrà inserire la motivazione circa il dosaggio errato;
--  Se il nome del farmaco inserito non è corretto, apparirà una schermata di errore la quale informerà che tale farmaco non è presente.
+Assunzione iniziale: Il medico effettua una prescrizione per uno o più pazienti da lui in cura; in particolare, tramite il login nel 
+sistema, inserendo il codice ID a 8 cifre e la password di sicurezza, sarà visualizzata la schermata principale.
 
-#### S2 - Un infermiere deve somministrare un farmaco al paziente
+Normale: il medico, una volta effettuato il login, clicca sul bottone "Visualizza Pazienti" in cui visuaizza l'elenco dei pazienti da lui in cura dove sono presenti nome e cognome.
+Il medico decide di visualizzare la cartella clinica del paziente a cui effettuare la prescrizione medica, così clicca sull'icona a forma di foglia in corrispondenza del nome.
+Una volta visualizzata, il medico clicca sul bottone "Nuova Prescrizione Medica" e viene reindirizzato a una schermata per l'inserimento della nuova prescrizione medica unica relativa a quel paziente. 
+Allora, su un campo di testo scrive le proprie indicazioni e tramite una schermata interna di ricerca digita il nome del farmaco che sta prescrivendo, 
+seleziona il farmaco che sarà inserito nella prescrizione e in un campo di testo inserisce il dosaggio.
+Una volta completata la prescrizione medica conferma l'operazione cliccando sul bottone "Conferma" ed un pop up gli chiede ulteriore conferma. 
 
-L’infermiere effettua il login nel sistema inserendo il suo codice ID a 8 cifre e la password di sicurezza, cliccando sulla sezione “pazienti odierni” visualizza l’elenco dei pazienti oggi in visita in struttura, seleziona il paziente con un click. Dopo il click visualizza il farmaco da somministrare, se disponibile, la dose da somministrare al paziente e la frequenza di dosaggio. L’infermiere può:
+Cosa può andare storto: 
+- Il farmaco non è presente e cliccando su di esso appare una notifica di errore. 
+- Il medico decide di non effettuare più la prescrizione, così cliccando sul pulsante "Annulla" l'operazione di 
+  prescrizione viene annullata e viene reindirizzato alla schermata principale.
+- Il medico vuole effettuare una nuova prescrizione ad un paziente che già ne possiede una e viene allora visualizzata una schermata con la relativa notifica di errore.
+- Il dosaggio non rientra nel range di sicurezza e il sistema genera una notifica di errore chiedendo di inserire il valore atteso. 
 
-- Somministrare il farmaco: l’infermiere clicca sul bottone “somministrazione effettuata”. Allora un pop up chiede all’infermiere si confermare o meno l’operazione:
+Altre attività: il medico visualizza la lista dei farmaci appena prescritti al paziente e i relativi dosaggi e dopo aver visualizzato l'elenco dei 
+pazienti e selezionato il paziente, clicca sul bottone "Visualizza Farmaci".
 
-1. Se l’operazione viene confermata  il campo “somministrazione odierna” viene visualizzato con un pallino verde e il sistema ritorna all’elenco dei pazienti odierni.
-2. Se l’operazione non viene confermata lo stato della “somministrazione odierna” non viene modificato e il sistema ritorna all’elenco dei pazienti odierni.
+Stato di completamento: La nuova prescrizione è stata completata ed è visibile all'interno della cartella clinica.
 
-- Non somministrare il farmaco: clicca sul bottone “annulla” e ritorna all’elenco dei   pazienti odierni.
+#### S2 - IL MEDICO AGGIORNA UNA PRESCRIZIONE 
 
-#### S3 - Un medico prova ad accedere ai dati di un paziente di cui non prende cura.
-(Chat oppure altri requisiti sotto)
+Assunzione iniziale: Il medico effettua un aggiornamento della prescrizione medica per uno o più pazienti da lui in cura;
+effettua il login nel sistema inserendo il codice ID a 8 cifre e la password di sicurezza e gli viene visualizzata la schermata principale.
 
-#### S4 - L'infermiere registra un nuovo paziente
+Normale: Il medico clicca sul bottone "Modifica Prescrizione" e viene visualizzato l'elenco dei pazienti da lui in cura 
+con il rispettivo nome e cognome acconto al quale è presente un'icona a forma di martello. Il medico decide di effettuare l'aggiornamento
+della prescrizione e clicca sull'icona. Viene così reindirizzato a una schermata per l'inserimento della modifica della prescrizione 
+unica relativa al paziente. Il medico visualizza il campo di testo in cui sono presenti le indicazioni sulla prescrizione con i relativi 
+farmaci prescritti e il loro dosaggio. Allora modifica il campo di testo e il dosaggio cliccando su di essi e per eliminare
+i farmaci prescritti clicca sul bottone "X" di fianco; il medico inoltre inserisce un nuovo farmaco interagendo con una
+schermata interna di ricerca in cui digita il nome del farmaco in un'apposita barra e cliccando sul nome del nuovo farmaco 
+sarà selezionato e inserito nella prescrizione. Una volta completato l'aggiornamento della prescrizione medica conferma l'operazione cliccando
+sul bottone "Conferma" e un pop up gli chiede ulteriore conferma.
+
+Cosa può andare storto:
+- Il farmaco non è presente e cliccando su di esso appare una notifica di errore.
+- Il medico decide di non effettuare più l'aggiornamento della prescrizione così clicca sul pulsante "Annulla" e l'operazione di
+aggiornamento viene annullata e viene reindirizzato alla schermata principale.
+- Il dosaggio non rientra nel range di sicurezza e il sistema genera una notifica di errore chiedendo di inserire il valore atteso.
+
+Altre attività: il medico visualizza la lista dei farmaci assunti dal paziente e i relativi dosaggi e, dopo 
+aver visualizzato l'elenco dei pazienti e averlo selezionato, clicca sul bottone "Visualizza Farmaci".
+
+Stato di completamento: L'aggiornamento della prescrizione è stato completato ed è visibile all'interno
+della cartella clinica. 
+
+#### S3 - Un infermiere deve somministrare un farmaco ad un paziente
+
+L’infermiere effettua il login nel sistema inserendo il suo codice ID a 8 cifre e la password di sicurezza, cliccando sulla sezione “pazienti odierni” visualizza l’elenco dei pazienti oggi in visita in struttura, 
+seleziona il paziente con un click. Dopo il click visualizza il farmaco da somministrare, se disponibile, la dose da somministrare al paziente e la frequenza di dosaggio. L’infermiere può:
+
+- Somministrare il farmaco: l’infermiere clicca sul bottone “somministrazione effettuata”. Allora un pop up chiede all’infermiere di confermare o meno l’operazione:
+
+1. Se l'infermiere clicca sul pulsante "Conferma" l’operazione viene confermata e il campo “somministrazione odierna” viene visualizzato 
+con un pallino verde accanto all voce e il sistema ritorna all’elenco dei pazienti odierni.
+2. Se l'infermiere clicca sul pulsante "Annulla" l’operazione non viene confermata lo stato della “somministrazione odierna” 
+non viene modificato, quindi sarà visualizzato un pallino rosso accanto alla voce "Somministrazione Odierna" e il sistema 
+ritorna all’elenco dei pazienti odierni.
+
+- Non somministrare il farmaco: clicca sul bottone “Annulla” e ritorna all’elenco dei pazienti odierni.
+
+#### S4 - L'infermiere registra un nuovo paziente non pericoloso 
 
 Una volta effettuato il login, l’infermiere, scegliendo l’opzione “Registrazione utente”, dovrà inserire i seguenti campi richiesti:
 
@@ -75,16 +118,27 @@ Una volta effettuato il login, l’infermiere, scegliendo l’opzione “Registr
 
 Una volta inseriti tutti i campi l'infermiere può confermare l'operazione premendo il pulsante "Conferma", allora una finestra pop-up comparirà a schermo con i due pulsanti "Conferma" e "Annulla".
 Se viene cliccato "Conferma" il paziente viene registrato, se clicca "Annulla" torna alla schermata precedente.
-Se prima del pop-up invece clicca "Annulla" torna alla schermata precedente.
+Altrimenti l'infermiere può annullare l'operazione di registrazione nuovo paziente cliccando "Annulla" e tornando alla schermata precedente.
+
+#### S5 - L'infermiere registra un nuovo paziente pericoloso
 
 
-#### S5 - La segreteria deve registrare un nuovo appuntamento.
+#### S6 - Il receptionist registra un nuovo appuntamento.
 
-Il receptionist, una volta effettuata la fase di login, può inserire nuovi appuntamenti cliccando il pulsante “Nuovo appuntamento”. Inserendo il codice fiscale del paziente e del medico per cui si vuole registrare l’appuntamento, sarà reindirizzato in una pagina in cui dovrà inserire i dettagli dell’appuntamento;
-- Se il receptionist inserisce in modo errato il codice fiscale, comparirà un messaggio di errore in cui sarà richiesto di inserire nuovamente il codice fiscale corretto;
-- Se i dati inseriti sono corretti, apparirà una schermata che confermerà che l’appuntamento è stato correttamente inserito nel database.
+Il receptionist una volta effettuata la fase di login, è reindirizzato alla schermata principale, per inserire un nuovo appuntamento cliccherà sul pulsante "Nuovo Appuntamento". 
+Una volta effettuato il click comparirà una schermata all'interno della quale sarà chiesto d'inserire il codice fiscale del paziente e poi tramite un menù a tendina selezionerà il 
+medico che effettuerà la vista.
+- Se il receptionist inserisce in modo errato il codice fiscale, comparirà un messaggio di errore in cui sarà richiesto d'inserire nuovamente il codice fiscale corretto;
+- ->Se il receptionist inserisce correttamente il codice fiscale ma non seleziona il medico che effettuerà la visita il sistema genera un pop up
+con un messaggio di errore in cui viene segnalato d'inserire il medico.
+- ->Se il receptionist inserisce correttamente e seleziona correttamente il medico, cliccando sul pulsate "Continua" sarà reindirizzato in una 
+pagina in cui dovrà inserire i dettagli dell’appuntamento; invece cliccando sul pulsante "Indietro" ritorna alla schermata principale.
 
-#### S6 - Utente che vuole prendere visione degli appuntamenti.
+Quando il receptionist avrà inserito correttamente tutti i dati e il cliccato sul pulsante "Conferma" apparirà una schermata di riepilogo appuntamento.
+
+#### S7 - Il receptionist cancella un appuntamento 
+
+#### S6 - Un utente visualizza i propri appuntamenti.
 
 Un utente, una volta effettuato il login, può visualizzare gli appuntamenti tramite la sezione “visualizza appuntamenti”.
 Si possono verificare i seguenti casi:
@@ -92,7 +146,7 @@ Si possono verificare i seguenti casi:
 -  Se l’utente è un receptionist, può visualizzare la lista di tutti gli appuntamenti della clinica;
 -  Se l’utente è un infermiere a domicilio, può visualizzare la propria lista di appuntamenti.
 
-#### S7 - Caso report mensile da generare.
+#### S8 - Caso report mensile da generare.
 
 Il sistema, alla fine di ogni mese, dopo le 17:30, genera un report sottoforma di raccolta dati che enuncia le seguenti informazioni:
 - Numero di pazienti per clinica;
@@ -100,27 +154,26 @@ Il sistema, alla fine di ogni mese, dopo le 17:30, genera un report sottoforma d
 - Numero di pazienti per sintomatologia con annessi farmaci prescritti;
 - I farmaci prescritti vengono arricchiti con i dati relativi alle dosi fornite e i costi ad essi associati.
 
-#### S8 - Caso ispezione giudiziaria o indagine di polizia.
+#### S9 - Caso ispezione giudiziaria o indagine di polizia.
 
 È possibile, durante un’ispezione giudiziaria o un’indagine di polizia che venga richiesto l’accesso ai dati sensibili degli utenti. In particolare, il richiedente ottiene un file con i dati del singolo paziente oppure con un sommario di tutti i pazienti della clinica. Lo staff di amministrazione troverà di fronte a sé un registro dei pazienti con annessi i due bottoni che svolgono rispettivamente queste funzionalità. Una volta selezionata la modalità, viene mostrata a schermo una finestra di conferma.
 Se lo staff di amministrazione sbaglia ad inserire il nome dell’utente ricercato, il registro mostrerà una schermata vuota.
 
-#### S9 - Logout di un utente.
-
+#### S9 - Logout di un utente. ******** 
+(EMANUEL - SECONDO ME DA LEVARE, E' UNA SINGOLA AZIONE)
 Un utente qualsiasi, una volta entrato nel sistema attraverso la metodologia d’accesso, ha la possibilità di poter effettuare il logout in qualsiasi momento andando nell’apposita sezione in alto a destra e selezionando la voce “Logout” specificato su un bottone. Un volta che il bottone viene premuto, viene effettuata l’operazione e l’utente sarà disconnesso dal sistema.
 
 ### 3.2.2 - Requisiti funzionali per attori
 
 (a) Medici
 
-- (a.1) Un medico può registrare pazienti nel database
-- (a.2) Un medico può modificare i dati del paziente
-- (a.3) Un medico può prescrivere farmaci ad ogni paziente da lui in cura
-- (a.4) Un medico può visualizzare la cartella clinica del paziente
-- (a.5) Un medico può visualizzare la lista di farmaci somministrati da ogni paziente da lui in cura
-- (a.6) Un medico può visualizzare la lista dei propri appuntamenti
-- (a.7) Un medico può ricercare l'appuntamento con un determinato paziente inserendo il relativo codice fiscale
-- (a.8) Un medico può inserire i farmaci ad un paziente a lui associato
+- (a.1) Un medico può aggiornare la prescrizione dei farmaci di ogni paziente da lui in cura (S2)
+- (a.2) Un medico può prescrivere farmaci a ogni paziente da lui in cura (S1)
+- (a.3) Un medico può visualizzare la cartella clinica del paziente (S1)
+- (a.4) Un medico può visualizzare la lista di farmaci somministrati da ogni paziente da lui in cura (S1)
+- (a.5) Un medico può visualizzare la lista dei propri appuntamenti (S6)
+- (a.6) Un medico può ricercare l'appuntamento con un determinato paziente inserendo il relativo codice fiscale (S6)
+- (a.7) Un medico può inserire i farmaci a un paziente a lui associato (S1)
 
 (b) Infermieri
 
@@ -171,7 +224,7 @@ possano avervi accesso
 - Il sistema deve essere dotato di una chat fra i dottori online
 
 ### 3.2.5 Requisiti funzionali di automazione
-
+- Per ogni nuova prescrizione medica, o aggiornamento, il sistema aggiorna la data della prescrizione in cartella clinica. 
 - Il sistema genera un report mensile mostrando il numero di pazienti per clinica, il numero dei pazienti inseriti o cancellati dal sistema,il numero di pazienti per tipologia, i farmaci loro prescritti ed i relativi costi, questo l'ultimo giorno *lavorativo* del mese, dopo le 17:30
 - Il report deve contenere anche le seguenti informazioni: nomi dei farmaci,numero di prescrizioni,numero di dosi prescritte e costi totali delle dosi prescritte
 - Se il report ha dosi di differenti unità(10mg,20mg), il sistema deve registrarle in report separati per ogni unità

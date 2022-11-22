@@ -253,10 +253,30 @@ possano avervi accesso
 
 ![](images/UseCaseMedico.jpg)
 
+### 3.4.2 - Casi d'uso dell'infermiere
+
+### 3.4.3 - Casi d'uso del paziente
+
+### 3.4.4 - Casi d'uso dell' addetto alla reception
+
+### 3.4.5 - Casi d'uso dello staff di amministrazione
+
+### 3.4.6 - Casi d'uso degli infermieri a domicilio
+
 ## 3.5 - Definizione degli stati del sistema
 
 Una volta definiti degli stati o delle operazioni chiave fatti dagli utenti,
 è possibile attribuire responsabilità ai vari utenti di queste ultime.
+
+IPOTESI DI ALE CIRCA GLI STATI DEL SISTEMA CHE POTREBBERO IN FASE DI IMPLEMENTAZIONE E TEST AIUTARCI 
+A CAPIRE COME EVOLVE IL SISTEMA:
+
+Il sistema ruota tutto attorno alle prescrizioni, per cui potrebbero essere alcuni stati possibili
+- CREATED (Settato al momento della creazione)
+- MODIFIED (Modificata in corso d'opera)
+- ISPECTIONED (Se subisce ispezioni di polizia)
+- DELETED (Cancellata in corso d'opera)
+- CLOSED (Chiusa perchè conclusa)
 
 ## 3.6 - Creazione Test di accettazione
 
@@ -282,6 +302,26 @@ Consiglio mio, attuare forme di sicurezza nel backend.
 
 Questo diagramma enuncia tutte le possibili strade percorribili dall'esecuzione
 (Da decidere quali tipi di errore possibili specificare).
+
+### 4.2.1 - Fase di Login
+
+Di seguito vengono rappresentate le attività svolte durante la fase di login.
+
+![](images/ActivityDiagramLogin.jpg)
+
+### 4.2.2 - Fase di registrazione di un nuovo utente
+
+### 4.2.3 - Operazioni del medico
+
+### 4.2.4 - Operazioni dell'infermiere
+
+### 4.2.5 - Operazioni del paziente
+
+### 4.2.6 - Operazioni dello staff di amministrazione
+
+### 4.2.7 - Operazioni dell'infermiere a domicilio
+
+### 4.2.8 - Operazioni dell' addetto alla reception 
 
 ## 4.3 - Class Diagram
 

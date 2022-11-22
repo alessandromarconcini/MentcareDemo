@@ -249,10 +249,11 @@ possano avervi accesso
 
 ## 3.4 - Diagrammi di casi d'uso
 
-Utilizzo di diagrammi di casi d'uso per chiarificare come i vari utenti interagiscono con il sistema.
-(Quindi un caso d'uso per ogni utente e non per ogni scenario/requisito)
+### 3.4.1 - Casi d'uso del Medico
 
-## 3.4 - Definizione degli stati del sistema
+![](images/UseCaseMedico.jpg)
+
+## 3.5 - Definizione degli stati del sistema
 
 Una volta definiti degli stati o delle operazioni chiave fatti dagli utenti,
 è possibile attribuire responsabilità ai vari utenti di queste ultime.

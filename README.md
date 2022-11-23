@@ -39,7 +39,7 @@ Gli attori partecipanti al sistema sono:
 Assunzione iniziale: Il medico effettua una prescrizione per uno o più pazienti da lui in cura; in particolare, tramite il login nel 
 sistema, inserendo il codice ID a 8 cifre e la password di sicurezza, sarà visualizzata la schermata principale.
 
-Normale: il medico, una volta effettuato il login, clicca sul bottone "Visualizza Pazienti" in cui visuaizza l'elenco dei pazienti da lui in cura dove sono presenti nome e cognome.
+Normale: il medico, una volta effettuato il login, clicca sul bottone "Visualizza Pazienti" in cui visualizza l'elenco dei pazienti da lui in cura dove sono presenti nome e cognome.
 Il medico decide di visualizzare la cartella clinica del paziente a cui effettuare la prescrizione medica, così clicca sull'icona a forma di foglia in corrispondenza del nome.
 Una volta visualizzata, il medico clicca sul bottone "Nuova Prescrizione Medica" e viene reindirizzato a una schermata per l'inserimento della nuova prescrizione medica unica relativa a quel paziente. 
 Allora, su un campo di testo scrive le proprie indicazioni e tramite una schermata interna di ricerca digita il nome del farmaco che sta prescrivendo, 
@@ -61,10 +61,10 @@ Stato di completamento: La nuova prescrizione è stata completata ed è visibile
 #### S2 - IL MEDICO AGGIORNA UNA PRESCRIZIONE 
 
 Assunzione iniziale: Il medico effettua un aggiornamento della prescrizione medica per uno o più pazienti da lui in cura;
-effettua il login nel sistema inserendo il codice ID a 8 cifre e la password di sicurezza e gli viene visualizzata la schermata principale.
+effettua il login nel sistema inserendo il codice ID a 8 cifre e la password di sicurezza e viene visualizzata la schermata principale.
 
 Normale: Il medico clicca sul bottone "Modifica Prescrizione" e viene visualizzato l'elenco dei pazienti da lui in cura 
-con il rispettivo nome e cognome acconto al quale è presente un'icona a forma di martello. Il medico decide di effettuare l'aggiornamento
+con il rispettivo nome e cognome accanto al quale è presente un'icona a forma di martello. Il medico decide di effettuare l'aggiornamento
 della prescrizione e clicca sull'icona. Viene così reindirizzato a una schermata per l'inserimento della modifica della prescrizione 
 unica relativa al paziente. Il medico visualizza il campo di testo in cui sono presenti le indicazioni sulla prescrizione con i relativi 
 farmaci prescritti e il loro dosaggio. Allora modifica il campo di testo e il dosaggio cliccando su di essi e per eliminare
@@ -75,9 +75,9 @@ sul bottone "Conferma" e un pop up gli chiede ulteriore conferma.
 
 Cosa può andare storto:
 - Il farmaco non è presente e cliccando su di esso appare una notifica di errore.
-- Il medico decide di non effettuare più l'aggiornamento della prescrizione così clicca sul pulsante "Annulla" e l'operazione di
+- Il medico decide di non effettuare più l'aggiornamento della prescrizione così clicca sul pulsante "Annulla", l'operazione di
 aggiornamento viene annullata e viene reindirizzato alla schermata principale.
-- Il dosaggio non rientra nel range di sicurezza e il sistema genera una notifica di errore chiedendo di inserire il valore atteso.
+- Il dosaggio non rientra nel range di sicurezza allora il sistema genera una notifica di errore chiedendo d'inserire il valore atteso.
 
 Altre attività: il medico visualizza la lista dei farmaci assunti dal paziente e i relativi dosaggi e, dopo 
 aver visualizzato l'elenco dei pazienti e averlo selezionato, clicca sul bottone "Visualizza Farmaci".
@@ -85,7 +85,62 @@ aver visualizzato l'elenco dei pazienti e averlo selezionato, clicca sul bottone
 Stato di completamento: L'aggiornamento della prescrizione è stato completato ed è visibile all'interno
 della cartella clinica. 
 
-#### S3 - Un infermiere deve somministrare un farmaco ad un paziente
+#### S3 - Ingresso di un nuovo paziente in clinica
+
+Assunzione iniziale: L'infermiere incaricato effettua il login inserendo il codice identificativo otto cifre
+e la password e viene visualizzata la schermata principale.
+
+Normale: L’infermiere clicca sul bottone “Nuovo Ricovero” e viene visualizzata una schermata in cui inserisce gli 
+estremi del paziente e lo stato di pericolosità spuntando o meno la casella “paziente pericoloso". Il paziente non 
+pericoloso viene informato dei propri diritti inerenti il ricovero e le proprie azioni, successivamente l’infermiere 
+inserisce i dati anagrafici, seleziona il medico che lo riceverà in cura e clicca sul bottone “avanti”, allora un pop 
+up chiede conferma di detenzione, l’infermiere clicca sul bottone “Conferma Detenzione” registrando così la decisione 
+di detenzione. Il paziente viene allora ricoverato nella clinica e un messaggio di notifica di detenzione con le 
+informazioni del paziente e del medico curante viene inviata ai servizi sociali e al medico che lo avrà in cura.
+
+Cosa può andare storto:
+-L’infermiere decide di annullare l’operazione di ricovero forzato paziente, clicca allora sul tasto “Annulla” e 
+viene reindirizzato alla schermata principale
+-L’infermiere non inserisce un campo dei dati anagrafici, una notifica di errore viene generata e cliccando su “Ok” 
+viene reindirizzato alla schermata d'inserimento dati anagrafici
+
+Altre attività:
+- L’infermiere deve ricoverare un paziente pericoloso, allora spunta la casella “Paziente Pericoloso”. L’infermiere 
+clicca allora sul bottone “Avanti”, allora una schermata mostrerà gli ospedali sicuri in cui poter effettuare le cure 
+- al paziente, spunta l’ospedale e dopodiché clicca su “Conferma Detenzione”, una notifica di trasferimento sarà inviata un ospedale sicuro.
+- L’infermiere deve ricoverare un paziente pericoloso, allora spunta la casella “Paziente Pericoloso”. L’infermiere 
+- clicca allora sul bottone “Avanti”, allora una schermata non mostrerà nessun ospedale sicuro in cui poter effettuare 
+- il trasferimento del paziente, un pop up notificherà l’assenza ospedali sicuri disponibili e che nel caso l’utente 
+- confermi la detenzione cliccando su “Conferma Detenzione” una notifica di trasferimento sarà inviata alla stazione di polizia.
+
+Stato di completamento: La procedura di ricovero forzato è stata completata e il nuovo paziente e suoi dati 
+sono visibili e reperibili negli elenchi a disposizione del personale medico, inoltre viene aggiornato lo storico 
+“notifiche inviate” visibile dal personale amministrativo e lo storico “notifiche ricevute" visibile dal medico che 
+riceve in cura il paziente.
+
+
+
+"NOTA-> LASCIO LE RIGHE A SEGUIRE PER INFORMAZIONI CHE POTRANNO ESSERE UTILIZZATE A SEGUITO"
+Una volta effettuato il login, l’infermiere, scegliendo l’opzione “Registrazione utente”, dovrà inserire i seguenti campi richiesti:
+
+- Codice fiscale
+- Nome
+- Cognome
+- Nome e cognome del medico curante
+- Allergie
+
+  Se qualcuno dei campi relativi non è valido, comparirà un messaggio di errore per ciascuno dei possibili casi:
+1. Il nome e il cognome del medico curante non risultano validi;
+2. Nel caso in cui il codice fiscale è già presente nel database, questo risulterà non valido;
+3. Nel caso in cui ci sia incongruenza tra il codice fiscale e l’anagrafica che lo compone, i campi inseriti non risulteranno validi.
+4. Nel caso in cui il codice fiscale sia troppo corto o troppo lungo, non è valido. Dopo il messaggio di errore, sarà possibile modificare i campi errati e riconfermare.
+
+Una volta inseriti tutti i campi l'infermiere può confermare l'operazione premendo il pulsante "Conferma", allora una finestra pop-up comparirà a schermo con i due pulsanti "Conferma" e "Annulla".
+Se viene cliccato "Conferma" il paziente viene registrato, se clicca "Annulla" torna alla schermata precedente.
+Altrimenti l'infermiere può annullare l'operazione di registrazione nuovo paziente cliccando "Annulla" e tornando alla schermata precedente.
+
+
+#### S4 - Un infermiere deve somministrare un farmaco ad un paziente
 
 L’infermiere effettua il login nel sistema inserendo il suo codice ID a 8 cifre e la password di sicurezza, cliccando sulla sezione “pazienti odierni” visualizza l’elenco dei pazienti oggi in visita in struttura, 
 seleziona il paziente con un click. Dopo il click visualizza il farmaco da somministrare, se disponibile, la dose da somministrare al paziente e la frequenza di dosaggio. L’infermiere può:
@@ -100,25 +155,6 @@ ritorna all’elenco dei pazienti odierni.
 
 - Non somministrare il farmaco: clicca sul bottone “Annulla” e ritorna all’elenco dei pazienti odierni.
 
-#### S4 - L'infermiere registra un nuovo paziente non pericoloso 
-
-Una volta effettuato il login, l’infermiere, scegliendo l’opzione “Registrazione utente”, dovrà inserire i seguenti campi richiesti:
-
-- Codice fiscale
-- Nome
-- Cognome
-- Nome e cognome del medico curante
-- Allergie
-
-   Se qualcuno dei campi relativi non è valido, comparirà un messaggio di errore per ciascuno dei possibili casi:
-1. Il nome e il cognome del medico curante non risultano validi;
-2. Nel caso in cui il codice fiscale è già presente nel database, questo risulterà non valido;
-3. Nel caso in cui ci sia incongruenza tra il codice fiscale e l’anagrafica che lo compone, i campi inseriti non risulteranno validi.
-4. Nel caso in cui il codice fiscale sia troppo corto o troppo lungo, non è valido. Dopo il messaggio di errore, sarà possibile modificare i campi errati e riconfermare.
-
-Una volta inseriti tutti i campi l'infermiere può confermare l'operazione premendo il pulsante "Conferma", allora una finestra pop-up comparirà a schermo con i due pulsanti "Conferma" e "Annulla".
-Se viene cliccato "Conferma" il paziente viene registrato, se clicca "Annulla" torna alla schermata precedente.
-Altrimenti l'infermiere può annullare l'operazione di registrazione nuovo paziente cliccando "Annulla" e tornando alla schermata precedente.
 
 #### S5 - L'infermiere registra un nuovo paziente pericoloso
 

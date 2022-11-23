@@ -99,19 +99,19 @@ di detenzione. Il paziente viene allora ricoverato nella clinica e un messaggio 
 informazioni del paziente e del medico curante viene inviata ai servizi sociali e al medico che lo avrà in cura.
 
 Cosa può andare storto:
--L’infermiere decide di annullare l’operazione di ricovero forzato paziente, clicca allora sul tasto “Annulla” e 
+- L’infermiere decide di annullare l’operazione di ricovero forzato paziente, clicca allora sul tasto “Annulla” e 
 viene reindirizzato alla schermata principale
--L’infermiere non inserisce un campo dei dati anagrafici, una notifica di errore viene generata e cliccando su “Ok” 
+- L’infermiere non inserisce un campo dei dati anagrafici, una notifica di errore viene generata e cliccando su “Ok” 
 viene reindirizzato alla schermata d'inserimento dati anagrafici
 
 Altre attività:
 - L’infermiere deve ricoverare un paziente pericoloso, allora spunta la casella “Paziente Pericoloso”. L’infermiere 
 clicca allora sul bottone “Avanti”, allora una schermata mostrerà gli ospedali sicuri in cui poter effettuare le cure 
-- al paziente, spunta l’ospedale e dopodiché clicca su “Conferma Detenzione”, una notifica di trasferimento sarà inviata un ospedale sicuro.
+al paziente, spunta l’ospedale e dopodiché clicca su “Conferma Detenzione”, una notifica di trasferimento sarà inviata un ospedale sicuro.
 - L’infermiere deve ricoverare un paziente pericoloso, allora spunta la casella “Paziente Pericoloso”. L’infermiere 
-- clicca allora sul bottone “Avanti”, allora una schermata non mostrerà nessun ospedale sicuro in cui poter effettuare 
-- il trasferimento del paziente, un pop up notificherà l’assenza ospedali sicuri disponibili e che nel caso l’utente 
-- confermi la detenzione cliccando su “Conferma Detenzione” una notifica di trasferimento sarà inviata alla stazione di polizia.
+clicca allora sul bottone “Avanti”, allora una schermata non mostrerà nessun ospedale sicuro in cui poter effettuare 
+il trasferimento del paziente, un pop up notificherà l’assenza ospedali sicuri disponibili e che nel caso l’utente 
+confermi la detenzione cliccando su “Conferma Detenzione” una notifica di trasferimento sarà inviata alla stazione di polizia.
 
 Stato di completamento: La procedura di ricovero forzato è stata completata e il nuovo paziente e suoi dati 
 sono visibili e reperibili negli elenchi a disposizione del personale medico, inoltre viene aggiornato lo storico 

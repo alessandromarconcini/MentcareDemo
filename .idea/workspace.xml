@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Rimpiazzo dello scenario numero 2">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Scenario 3; Completamento di quanto fatto nel pomeriggio del 23-11 con aggiunta &quot;cosa potrebbe andare storto&quot; e &quot;stato di completamento&quot;. Nota: non ho cancellato lo scenario S3 precedente per alcune info che potrebbero essere utili successivamente." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669122906312</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Scenario 3; Completamento di quanto fatto nel pomeriggio del 23-11 con aggiunta &quot;cosa potrebbe andare storto&quot; e &quot;stato di completamento&quot;. Nota: non ho cancellato lo scenario S3 precedente per alcune info che potrebbero essere utili successivamente.">
+      <created>1669228109638</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669228109638</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +202,7 @@
     <MESSAGE value="Spostata sezione Scenari e Stories e rinominata in Scenari e popolata con i 9 scenari maggiormente dettagliati" />
     <MESSAGE value="Rimpiazzo dello scenario numero 2" />
     <MESSAGE value="Creazione sezione 3.4.1 - Casi d'uso del Medico con relativa prima bozza di Use Case Diagram" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creazione sezione 3.4.1 - Casi d'uso del Medico con relativa prima bozza di Use Case Diagram" />
+    <MESSAGE value="Scenario 3; Completamento di quanto fatto nel pomeriggio del 23-11 con aggiunta &quot;cosa potrebbe andare storto&quot; e &quot;stato di completamento&quot;. Nota: non ho cancellato lo scenario S3 precedente per alcune info che potrebbero essere utili successivamente." />
+    <option name="LAST_COMMIT_MESSAGE" value="Scenario 3; Completamento di quanto fatto nel pomeriggio del 23-11 con aggiunta &quot;cosa potrebbe andare storto&quot; e &quot;stato di completamento&quot;. Nota: non ho cancellato lo scenario S3 precedente per alcune info che potrebbero essere utili successivamente." />
   </component>
 </project>

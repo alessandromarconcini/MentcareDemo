@@ -88,33 +88,33 @@ della cartella clinica.
 #### S3 - Ingresso di un nuovo paziente in clinica
 
 Assunzione iniziale: L'infermiere incaricato effettua il login inserendo il codice identificativo otto cifre
-e la password e viene visualizzata la schermata principale.
+e la propria password e viene visualizzata la schermata principale.
 
-Normale: L’infermiere clicca sul bottone “Nuovo Ricovero” e viene visualizzata una schermata in cui inserisce gli 
-estremi del paziente e lo stato di pericolosità spuntando o meno la casella “paziente pericoloso". Il paziente non 
-pericoloso viene informato dei propri diritti inerenti il ricovero e le proprie azioni, successivamente l’infermiere 
-inserisce i dati anagrafici, seleziona il medico che lo riceverà in cura e clicca sul bottone “avanti”, allora un pop 
-up chiede conferma di detenzione, l’infermiere clicca sul bottone “Conferma Detenzione” registrando così la decisione 
+Normale: L’infermiere clicca sul bottone “Nuovo ricovero” e viene visualizzata una schermata in cui inserisce gli 
+estremi del paziente e lo stato di pericolosità spuntando o meno la casella “Paziente pericoloso". Il paziente non 
+pericoloso viene informato dei propri diritti inerenti il ricovero e le proprie azioni; successivamente l’infermiere 
+inserisce i dati anagrafici, seleziona il medico che lo riceverà in cura e clicca sul bottone “avanti” e un pop 
+up chiede conferma di detenzione. L’infermiere, fatto ciò, clicca sul bottone “Conferma detenzione” registrando così la decisione 
 di detenzione. Il paziente viene allora ricoverato nella clinica e un messaggio di notifica di detenzione con le 
-informazioni del paziente e del medico curante viene inviata ai servizi sociali e al medico che lo avrà in cura.
+informazioni rispettivamente del paziente e del medico curante viene inviata ai servizi sociali e al medico che lo avrà in cura.
 
 Cosa può andare storto:
-- L’infermiere decide di annullare l’operazione di ricovero forzato paziente, clicca allora sul tasto “Annulla” e 
-viene reindirizzato alla schermata principale
+- L’infermiere decide di annullare l’operazione di ricovero forzato, clicca sul tasto “Annulla” e 
+viene reindirizzato alla schermata principale;
 - L’infermiere non inserisce un campo dei dati anagrafici, una notifica di errore viene generata e cliccando su “Ok” 
-viene reindirizzato alla schermata d'inserimento dati anagrafici
+viene reindirizzato alla schermata per il nuovo inserimento dei dati anagrafici.
 
 Altre attività:
-- L’infermiere deve ricoverare un paziente pericoloso, allora spunta la casella “Paziente Pericoloso”. L’infermiere 
-clicca allora sul bottone “Avanti”, allora una schermata mostrerà gli ospedali sicuri in cui poter effettuare le cure 
-al paziente, spunta l’ospedale e dopodiché clicca su “Conferma Detenzione”, una notifica di trasferimento sarà inviata un ospedale sicuro.
-- L’infermiere deve ricoverare un paziente pericoloso, allora spunta la casella “Paziente Pericoloso”. L’infermiere 
-clicca allora sul bottone “Avanti”, allora una schermata non mostrerà nessun ospedale sicuro in cui poter effettuare 
-il trasferimento del paziente, un pop up notificherà l’assenza ospedali sicuri disponibili e che nel caso l’utente 
-confermi la detenzione cliccando su “Conferma Detenzione” una notifica di trasferimento sarà inviata alla stazione di polizia.
+- L’infermiere deve ricoverare un paziente pericoloso, allora spunta la casella “Paziente pericoloso”. L’infermiere 
+clicca sul bottone “Avanti” e una schermata gli mostra gli ospedali disponibili per la cura del paziente. 
+In questa schermata, spunta l’ospedale, clicca su “Conferma detenzione” e una notifica di trasferimento viene inviata all'ospedale selezionato.
+- L’infermiere deve ricoverare un paziente pericoloso e spunta la casella “Paziente pericoloso”. L’infermiere 
+clicca sul bottone “Avanti” e una schermata mostra che non c'è alcun ospedale disponibile in cui poter effettuare 
+il trasferimento del paziente. Così, un pop up notifica la mancata disponibilità degli ospedali. Nel caso in cui l'infermiere 
+conferma la detenzione, cliccando su “Conferma Detenzione” una notifica di trasferimento viene inviata alla stazione di polizia.
 
 Stato di completamento: La procedura di ricovero forzato è stata completata e il nuovo paziente e suoi dati 
-sono visibili e reperibili negli elenchi a disposizione del personale medico, inoltre viene aggiornato lo storico 
+sono visibili e reperibili negli elenchi a disposizione del personale medico; inoltre, viene aggiornato lo storico 
 “notifiche inviate” visibile dal personale amministrativo e lo storico “notifiche ricevute" visibile dal medico che 
 riceve in cura il paziente.
 

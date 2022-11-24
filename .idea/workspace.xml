@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Scenario 3; Completamento di quanto fatto nel pomeriggio del 23-11 con aggiunta &quot;cosa potrebbe andare storto&quot; e &quot;stato di completamento&quot;. Nota: non ho cancellato lo scenario S3 precedente per alcune info che potrebbero essere utili successivamente." />
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Scenario 3; Completamento di quanto fatto nel pomeriggio del 23-11 con aggiunta &quot;cosa potrebbe andare storto&quot; e &quot;stato di completamento&quot;. Nota: non ho cancellato lo scenario S3 precedente per alcune info che potrebbero essere utili successivamente.">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_11_22__13_01__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_11_22__13_01__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

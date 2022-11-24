@@ -26,7 +26,7 @@ Gli attori partecipanti al sistema sono:
 - Pazienti
 - Dottori
 - Infermieri
-- Visitatori a domicilio
+- Infermiere a domicilio
 - Addetti alla reception
 - Staff di amministrazione
 
@@ -34,7 +34,7 @@ Gli attori partecipanti al sistema sono:
 
 ### 3.2.1 - Scenari
 
-#### S1 - IL MEDICO EFFETTUA UNA PRESCRIZIONE
+#### S1 - IL MEDICO EFFETTUA UNA NUOVA PRESCRIZIONE
 
 Assunzione iniziale: Il medico effettua una prescrizione per uno o più pazienti da lui in cura; in particolare, tramite il login nel 
 sistema, inserendo il codice ID a 8 cifre e la password di sicurezza, sarà visualizzata la schermata principale.
@@ -43,15 +43,15 @@ Normale: il medico, una volta effettuato il login, clicca sul bottone "Visualizz
 Il medico decide di visualizzare la cartella clinica del paziente a cui effettuare la prescrizione medica, così clicca sull'icona a forma di foglia in corrispondenza del nome.
 Una volta visualizzata, il medico clicca sul bottone "Nuova Prescrizione Medica" e viene reindirizzato a una schermata per l'inserimento della nuova prescrizione medica unica relativa a quel paziente. 
 Allora, su un campo di testo scrive le proprie indicazioni e tramite una schermata interna di ricerca digita il nome del farmaco che sta prescrivendo, 
-seleziona il farmaco che sarà inserito nella prescrizione e in un campo di testo inserisce il dosaggio.
-Una volta completata la prescrizione medica conferma l'operazione cliccando sul bottone "Conferma" ed un pop up gli chiede ulteriore conferma. 
+seleziona il farmaco che sarà inserito nella prescrizione e in un campo di testo inserisce il dosaggio e frequenza.
+Una volta completata la prescrizione medica conferma l'operazione cliccando sul bottone "Conferma" e un pop up gli chiede ulteriore conferma. 
 
 Cosa può andare storto: 
 - Il farmaco non è presente e cliccando su di esso appare una notifica di errore. 
 - Il medico decide di non effettuare più la prescrizione, così cliccando sul pulsante "Annulla" l'operazione di 
   prescrizione viene annullata e viene reindirizzato alla schermata principale.
-- Il medico vuole effettuare una nuova prescrizione ad un paziente che già ne possiede una e viene allora visualizzata una schermata con la relativa notifica di errore.
-- Il dosaggio non rientra nel range di sicurezza e il sistema genera una notifica di errore chiedendo di inserire il valore atteso. 
+- Il medico vuole effettuare una nuova prescrizione a un paziente che già ne possiede una e viene allora visualizzata una schermata con la relativa notifica di errore.
+- Il dosaggio non rientra nel range di sicurezza e il sistema genera una notifica di errore chiedendo d'inserire il valore atteso. 
 
 Altre attività: il medico visualizza la lista dei farmaci appena prescritti al paziente e i relativi dosaggi e dopo aver visualizzato l'elenco dei 
 pazienti e selezionato il paziente, clicca sul bottone "Visualizza Farmaci".
@@ -67,7 +67,7 @@ Normale: Il medico clicca sul bottone "Modifica Prescrizione" e viene visualizza
 con il rispettivo nome e cognome accanto al quale è presente un'icona a forma di martello. Il medico decide di effettuare l'aggiornamento
 della prescrizione e clicca sull'icona. Viene così reindirizzato a una schermata per l'inserimento della modifica della prescrizione 
 unica relativa al paziente. Il medico visualizza il campo di testo in cui sono presenti le indicazioni sulla prescrizione con i relativi 
-farmaci prescritti e il loro dosaggio. Allora modifica il campo di testo e il dosaggio cliccando su di essi e per eliminare
+farmaci prescritti, il loro dosaggio e frequenza. Allora modifica il campo di testo e il dosaggio cliccando su di essi e per eliminare
 i farmaci prescritti clicca sul bottone "X" di fianco; il medico inoltre inserisce un nuovo farmaco interagendo con una
 schermata interna di ricerca in cui digita il nome del farmaco in un'apposita barra e cliccando sul nome del nuovo farmaco 
 sarà selezionato e inserito nella prescrizione. Una volta completato l'aggiornamento della prescrizione medica conferma l'operazione cliccando
@@ -111,93 +111,134 @@ In questa schermata, spunta l’ospedale, clicca su “Conferma detenzione” e 
 - L’infermiere deve ricoverare un paziente pericoloso e spunta la casella “Paziente pericoloso”. L’infermiere 
 clicca sul bottone “Avanti” e una schermata mostra che non c'è alcun ospedale disponibile in cui poter effettuare 
 il trasferimento del paziente. Così, un pop up notifica la mancata disponibilità degli ospedali. Nel caso in cui l'infermiere 
-conferma la detenzione, cliccando su “Conferma Detenzione” una notifica di trasferimento viene inviata alla stazione di polizia.
+conferma la detenzione, cliccando su “Conferma Detenzione” una notifica di trasferimento viene inviata alla stazione di polizia
+che preleva il paziente.
 
 Stato di completamento: La procedura di ricovero forzato è stata completata e il nuovo paziente e suoi dati 
 sono visibili e reperibili negli elenchi a disposizione del personale medico; inoltre, viene aggiornato lo storico 
-“notifiche inviate” visibile dal personale amministrativo e lo storico “notifiche ricevute" visibile dal medico che 
+“notifiche inviate” visibile dal personale amministrativo e lo storico “Notifiche ricevute" visibile dal medico che 
 riceve in cura il paziente.
 
 
+#### S4 - Un infermiere deve somministrare un farmaco a un paziente
 
-"NOTA-> LASCIO LE RIGHE A SEGUIRE PER INFORMAZIONI CHE POTRANNO ESSERE UTILIZZATE A SEGUITO"
-Una volta effettuato il login, l’infermiere, scegliendo l’opzione “Registrazione utente”, dovrà inserire i seguenti campi richiesti:
+Assunzione iniziale: L'infermiere incaricato effettua il login inserendo il codice identificativo otto cifre
+e la propria password e viene visualizzata la schermata principale.
 
-- Codice fiscale
-- Nome
-- Cognome
-- Nome e cognome del medico curante
-- Allergie
+Normale: L'infermiere clicca sul bottone “Pazienti odierni” visualizza l’elenco dei pazienti oggi in visita in struttura, 
+seleziona il paziente con un click. Dopo il click visualizza il farmaco da somministrare, se disponibile, 
+la dose da somministrare al paziente e la frequenza di dosaggio. L’infermiere somministra il farmaco e clicca sul bottone 
+“Somministrazione effettuata”. Allora un pop up chiede all’infermiere conferma dell’operazione.  
 
-  Se qualcuno dei campi relativi non è valido, comparirà un messaggio di errore per ciascuno dei possibili casi:
-1. Il nome e il cognome del medico curante non risultano validi;
-2. Nel caso in cui il codice fiscale è già presente nel database, questo risulterà non valido;
-3. Nel caso in cui ci sia incongruenza tra il codice fiscale e l’anagrafica che lo compone, i campi inseriti non risulteranno validi.
-4. Nel caso in cui il codice fiscale sia troppo corto o troppo lungo, non è valido. Dopo il messaggio di errore, sarà possibile modificare i campi errati e riconfermare.
+Cosa può andare storto:
+- Il paziente non è il elenco, allora deve essere effettuata la registrazione.
+- Il paziente non possiede nessuna prescrizione clinica, allora deve essere sottoposto a visita medica e prescrizione.
 
-Una volta inseriti tutti i campi l'infermiere può confermare l'operazione premendo il pulsante "Conferma", allora una finestra pop-up comparirà a schermo con i due pulsanti "Conferma" e "Annulla".
-Se viene cliccato "Conferma" il paziente viene registrato, se clicca "Annulla" torna alla schermata precedente.
-Altrimenti l'infermiere può annullare l'operazione di registrazione nuovo paziente cliccando "Annulla" e tornando alla schermata precedente.
+Altre attività: 
+- L'infermiere non effettua l'attività di somministrazione. Clicca sul pulsante "Annulla" l’operazione non viene confermata lo stato della 
+“Somministrazione odierna” non viene modificato, quindi sarà visualizzato un pallino rosso accanto alla voce 
+"Somministrazione odierna" e il sistema ritorna all’elenco dei pazienti odierni.
+
+Stato di completamento: Se l'infermiere clicca sul pulsante "Conferma" l’operazione viene confermata e il campo 
+“somministrazione odierna” viene settato con un pallino verde accanto alla voce e il sistema ritorna all’elenco dei pazienti odierni.
+
+#### S5 - Il personale della clinica ricerca un paziente nel sistema 
+
+Assunzione iniziale: L'utente del personale della clinica effettua il login inserendo il codice identificativo otto cifre
+e la propria password e viene visualizzata la schermata principale.
+
+Normale: L'utente clicca sulla barra di ricerca e digita il nome del paziente che intende ricercare, automaticamente
+una lista con tutti i pazienti aventi quel nome e/o cognome sarà visualizzata nella schermata. L'utente seleziona il paziente
+ricercato e potrà visualizzare le sue generalità in una nuova finestra. 
+
+Cosa può andare storto: 
+- La ricerca paziente non produce nessun risultato allora l'utente ha digitato non correttamente nome e/o cognome oppure
+il paziente non e registrato nel sistema della clinica.
+
+Altre attività: 
+- L'infermiere effettua la ricerca di un paziente appartenente alla clinica, selezionando il paziente ricercato visualizzerà 
+le sue generalità, i farmaci assunti e la cartella clinica.  
+- Il medico effettua la ricerca di un paziente da lui in cura, selezionando il paziente ricercato visualizzerà le sue generalità, i farmaci
+  assunti, la cartella clinica e gli appuntamenti.
+- Il receptionist effettua la ricerca di un paziente appartenente alla clinica, selezionando il paziente ricercato visualizzerà
+  le sue generalità e gli appuntamenti. 
+
+Stato di completamento: l'utente ha effettuato la ricerca e chiude la finestra con le informazioni del paziente, sarà 
+reindirizzato alla schermata principale.
+
+#### S6 - Il paziente visualizza il suo status clinico 
+
+Assunzione iniziale: Un paziente effettua il login inserendo il suo usurname e la propria password e viene visualizzata 
+la schermata principale.
+
+Normale: Il paziente tramite la schermata principale clicca su bottone "Visualizza appuntamenti", una finestra allora si
+aprirà e sarà visualizzato l'elenco di tutti gli appuntamenti.
+
+Altre attività:
+- Il paziente visualizza la lista di farmaci, con relativi dosaggi, a lui somministrati, allora clicca sul bottone "Visualizza
+Farmaci". 
+- Il paziente visualizza il nome del medico che lo ha in cura, allora clicca sul bottone "Visualizza medico".
+
+Stato di completamento: Il paziente ha visualizzato i suoi appuntamenti e chiude la finestra con le informazioni cliccando sul 
+bottone "Chiudi", sarà reindirizzato alla schermata principale.
+
+#### S7 - Il receptionist registra un nuovo appuntamento.
+
+Assunzione iniziale: Il receptionist effettua il login inserendo il codice identificativo otto cifre e la propria password 
+e viene visualizzata la schermata principale.
+
+Normale: Il receptionist inserisce un nuovo appuntamento e clicca sul pulsante "Nuovo Appuntamento". 
+Una volta effettuato il click comparirà una schermata all'interno della quale sarà chiesto d'inserire il codice fiscale del 
+paziente e poi tramite un menù a tendina selezionerà il medico che effettuerà la vista; cliccando sul pulsate "Continua" sarà reindirizzato in una
+pagina in cui dovrà inserire i dettagli dell’appuntamento (giorno, mese, anno, ora). Il receptionist conferma l'operazione
+di registrazione appuntamento cliccando sul bottone "Conferma".
+
+Cosa può andare storto: 
+-  Il receptionist inserisce in modo errato il codice fiscale, comparirà un messaggio di errore in cui sarà richiesto
+d'inserire nuovamente il codice fiscale corretto;
+- Il receptionist inserisce correttamente il codice fiscale ma non seleziona il medico che effettuerà la visita il 
+sistema genera un pop up con un messaggio di errore in cui viene segnalato d'inserire il medico.
+- Il receptionist inserisce l'appuntamento per un paziente non registrato nel sistema della clinica, allora al momento
+della conferma dell'appuntamento un pop up notificherà l'errore.
+- Il receptionist inserisce l'appuntamento per un paziente in una fascia oraria occupata, allora al momento
+della conferma dell'appuntamento un pop up notificherà l'errore.
+
+!!!(NOTA-> INSERIRE IN REQUISITI DI SISTEMA CHE GLI APPUNTAMENTI DEVONO DIFFERENZIARSI PER FASCIA ORARIA DI MINIMO 20 MINUTI
+L'UNO DALL'ALTRO-> IN RIFERIMENTO A PUNTO 4 DI "Cosa può andare storto)!!!
+
+Altre attività: 
+- Il receptionist cancella un appuntamento, allora clicca sul bottone "Cancella appuntamento", si aprirà una schermata
+in cui saranno visualizzati tutti gli appuntamenti con nome, cognome e codice fiscale del paziente, cliccando sulla riga
+un pop up chiederà conferma della cancellazione appuntamento.
+- Il receptionist modifica un appuntamento, allora clicca sul bottone "Modifica appuntamento", si aprirà una schermata
+in cui saranno visualizzati tutti gli appuntamenti con nome, cognome e codice fiscale del paziente, cliccando sulla riga
+una schermata mostrerà l'appuntamento e i campi di giorno, mese, anno, ora, medico modificabili. Dopo le modifiche
+clicca sul pulsante "Salva modifiche"
+
+Stato di completamento:
+Il receptionist ha effettuato l'operazione di registrazione appuntamento, allora apparirà una schermata di riepilogo appuntamento,
+cliccando su "Ok" sarà reindirizzato alla schermata principale e l'appuntamento sarà visibile nel sistema.
 
 
-#### S4 - Un infermiere deve somministrare un farmaco ad un paziente
 
-L’infermiere effettua il login nel sistema inserendo il suo codice ID a 8 cifre e la password di sicurezza, cliccando sulla sezione “pazienti odierni” visualizza l’elenco dei pazienti oggi in visita in struttura, 
-seleziona il paziente con un click. Dopo il click visualizza il farmaco da somministrare, se disponibile, la dose da somministrare al paziente e la frequenza di dosaggio. L’infermiere può:
+#### S8: lo staff di amministrazione inserisce un nuovo utente nel sistema (medico, paziente, infermiere)
+//
 
-- Somministrare il farmaco: l’infermiere clicca sul bottone “somministrazione effettuata”. Allora un pop up chiede all’infermiere di confermare o meno l’operazione:
+#### S9 - Caso report mensile da generare.-> collegamento con lo staff di amministrazione 
 
-1. Se l'infermiere clicca sul pulsante "Conferma" l’operazione viene confermata e il campo “somministrazione odierna” viene visualizzato 
-con un pallino verde accanto all voce e il sistema ritorna all’elenco dei pazienti odierni.
-2. Se l'infermiere clicca sul pulsante "Annulla" l’operazione non viene confermata lo stato della “somministrazione odierna” 
-non viene modificato, quindi sarà visualizzato un pallino rosso accanto alla voce "Somministrazione Odierna" e il sistema 
-ritorna all’elenco dei pazienti odierni.
-
-- Non somministrare il farmaco: clicca sul bottone “Annulla” e ritorna all’elenco dei pazienti odierni.
-
-
-#### S5 - L'infermiere registra un nuovo paziente pericoloso
-
-
-#### S6 - Il receptionist registra un nuovo appuntamento.
-
-Il receptionist una volta effettuata la fase di login, è reindirizzato alla schermata principale, per inserire un nuovo appuntamento cliccherà sul pulsante "Nuovo Appuntamento". 
-Una volta effettuato il click comparirà una schermata all'interno della quale sarà chiesto d'inserire il codice fiscale del paziente e poi tramite un menù a tendina selezionerà il 
-medico che effettuerà la vista.
-- Se il receptionist inserisce in modo errato il codice fiscale, comparirà un messaggio di errore in cui sarà richiesto d'inserire nuovamente il codice fiscale corretto;
-- ->Se il receptionist inserisce correttamente il codice fiscale ma non seleziona il medico che effettuerà la visita il sistema genera un pop up
-con un messaggio di errore in cui viene segnalato d'inserire il medico.
-- ->Se il receptionist inserisce correttamente e seleziona correttamente il medico, cliccando sul pulsate "Continua" sarà reindirizzato in una 
-pagina in cui dovrà inserire i dettagli dell’appuntamento; invece cliccando sul pulsante "Indietro" ritorna alla schermata principale.
-
-Quando il receptionist avrà inserito correttamente tutti i dati e il cliccato sul pulsante "Conferma" apparirà una schermata di riepilogo appuntamento.
-
-#### S7 - Il receptionist cancella un appuntamento 
-
-#### S6 - Un utente visualizza i propri appuntamenti.
-
-Un utente, una volta effettuato il login, può visualizzare gli appuntamenti tramite la sezione “visualizza appuntamenti”.
-Si possono verificare i seguenti casi:
--  Se l’utente è un paziente / medico, può visionare solo i propri appuntamenti;
--  Se l’utente è un receptionist, può visualizzare la lista di tutti gli appuntamenti della clinica;
--  Se l’utente è un infermiere a domicilio, può visualizzare la propria lista di appuntamenti.
-
-#### S8 - Caso report mensile da generare.
-
-Il sistema, alla fine di ogni mese, dopo le 17:30, genera un report sottoforma di raccolta dati che enuncia le seguenti informazioni:
+Il sistema, alla fine di ogni mese, dopo le 17:30, genera un report sotto forma di raccolta dati che enuncia le seguenti informazioni:
 - Numero di pazienti per clinica;
 - Numero dei pazienti inseriti e cancellati nel sistema;
 - Numero di pazienti per sintomatologia con annessi farmaci prescritti;
 - I farmaci prescritti vengono arricchiti con i dati relativi alle dosi fornite e i costi ad essi associati.
 
-#### S9 - Caso ispezione giudiziaria o indagine di polizia.
+#### S10 - Caso ispezione giudiziaria o indagine di polizia.
 
 È possibile, durante un’ispezione giudiziaria o un’indagine di polizia che venga richiesto l’accesso ai dati sensibili degli utenti. In particolare, il richiedente ottiene un file con i dati del singolo paziente oppure con un sommario di tutti i pazienti della clinica. Lo staff di amministrazione troverà di fronte a sé un registro dei pazienti con annessi i due bottoni che svolgono rispettivamente queste funzionalità. Una volta selezionata la modalità, viene mostrata a schermo una finestra di conferma.
 Se lo staff di amministrazione sbaglia ad inserire il nome dell’utente ricercato, il registro mostrerà una schermata vuota.
 
-#### S9 - Logout di un utente. ******** 
-(EMANUEL - SECONDO ME DA LEVARE, E' UNA SINGOLA AZIONE)
-Un utente qualsiasi, una volta entrato nel sistema attraverso la metodologia d’accesso, ha la possibilità di poter effettuare il logout in qualsiasi momento andando nell’apposita sezione in alto a destra e selezionando la voce “Logout” specificato su un bottone. Un volta che il bottone viene premuto, viene effettuata l’operazione e l’utente sarà disconnesso dal sistema.
+(SCENARIO CANCELLATO E STAKEHOLDER ELIMINATO)
+#### S CANCELLATO: L'infermiere a domicilio effettua una visita domiciliare.
 
 ### 3.2.2 - Requisiti funzionali per attori
 
@@ -210,25 +251,34 @@ Un utente qualsiasi, una volta entrato nel sistema attraverso la metodologia d�
 - (a.5) Un medico può visualizzare la lista dei propri appuntamenti (S6)
 - (a.6) Un medico può ricercare l'appuntamento con un determinato paziente inserendo il relativo codice fiscale (S6)
 - (a.7) Un medico può inserire i farmaci a un paziente a lui associato (S1)
+- (a.8) Un medico può effettuare una ricerca solo dei propri pazienti visualizzando le loro generalità, farmaci assunti e
+cartella clinica 
 
 (b) Infermieri
 
-- (b.1) Un infermiere può visualizzare la lista con le informazioni di tutti i suoi pazienti
-- (b.2) Un infermiere ha la possibilità di cercare i pazienti in base al codice fiscale
-- (b.3) Un infermiere può visualizzare la lista di farmaci assunti da ogni paziente
+- (b.1) Un infermiere può visualizzare la lista con le informazioni di tutti i suoi pazienti (S4)
+- (b.2) Un infermiere ha la possibilità di cercare i pazienti in base al codice fiscale (S4)
+- (b.3) Un infermiere può visualizzare la lista di farmaci assunti da ogni paziente (S4)
+- (b.4) Un infermiere può registrare la detenzione di un nuovo paziente (S3)
+- (b.5) Un infermiere può effettuare una ricerca solo dei propri pazienti visualizzando le loro generalità, farmaci assunti e
+  cartella clinica
 
 (c) Pazienti
 - (c.1) Un paziente può visualizzare il proprio calendario farmacologico
 - (c.2) Un paziente può visualizzare la lista dei propri appuntamenti sul calendario
-- (c.3) Un paziene può visualizzare le dosi che deve assumere per ogni farmaco avendo la possibilità di filtrare ogni farmaco in base al nome
-- (c.4) Un paziente può visualizzare il report di resoconto di una certa visita
+- (c.3) Un paziente può visualizzare le dosi che deve assumere per ogni farmaco avendo la possibilità di filtrare ogni farmaco in base al nome
 
 (d) Addetto alla reception
-- (d.1) Un receptionist può registrare e modificare gli appuntamenti inserendo il codice fiscale del paziente e del personale medico
-- (d.2) Un receptionist può visualizzare la lista di tutti gli appuntamenti filtrando le ricerche inserendo l'id del paziente
+- (d.1) Un receptionist può registrare gli appuntamenti dei pazienti 
+- (d.2) Un receptionist può modificare gli appuntamenti di un paziente
+- (d.3) Un receptionist può cancellare gli appuntamenti di un paziente
+- (d.4) Un receptionist può visualizzare la lista di tutti gli appuntamenti filtrando le ricerche inserendo l'id del paziente
+- (d.5) Un receptionist può effettuare una ricerca di tutti i pazienti all'interno della clinica visualizzando solamente 
+le loro generalità. 
 
 (e) Staff di amministrazione
-- (e.1) Un membro dello staff di amministrazione ha accesso ad un' area riservata dove può ricercare un utente e stamparne il report
+- (e.1) Un membro dello staff di amministrazione ha accesso a un'area riservata dove può ricercare un utente 
+-  (e.2) Un membro dello staff di amministrazione può stamparne un report del paziente 
 
 ### 3.2.3 Requisiti funzionali di sicurezza
 

@@ -376,6 +376,8 @@ Di seguito vengono rappresentate le attività svolte durante la fase di login.
 
 ### 4.2.3 - Operazioni del medico
 
+![](images/ActivityDiagramMedico.jpg)
+
 ### 4.2.4 - Operazioni dell'infermiere
 
 ### 4.2.5 - Operazioni del paziente

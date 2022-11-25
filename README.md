@@ -26,7 +26,6 @@ Gli attori partecipanti al sistema sono:
 - Pazienti
 - Dottori
 - Infermieri
-- Infermiere a domicilio
 - Addetti alla reception
 - Staff di amministrazione
 
@@ -122,76 +121,76 @@ riceve in cura il paziente.
 
 #### S4 - Un infermiere deve somministrare un farmaco a un paziente
 
-Assunzione iniziale: L'infermiere incaricato effettua il login inserendo il codice identificativo otto cifre
+Assunzione iniziale: L'infermiere incaricato effettua il login inserendo il codice identificativo a otto cifre
 e la propria password e viene visualizzata la schermata principale.
 
-Normale: L'infermiere clicca sul bottone “Pazienti odierni” visualizza l’elenco dei pazienti oggi in visita in struttura, 
-seleziona il paziente con un click. Dopo il click visualizza il farmaco da somministrare, se disponibile, 
-la dose da somministrare al paziente e la frequenza di dosaggio. L’infermiere somministra il farmaco e clicca sul bottone 
+Normale: L'infermiere clicca sul bottone “Pazienti odierni”, visualizza l’elenco dei pazienti oggi in visita in struttura e 
+seleziona il paziente con un click. Dopo visualizza il farmaco da somministrare e ne vede la disponibilità, in tal caso inserisce 
+la dose da somministrare e la frequenza di dosaggio. L’infermiere somministra il farmaco e clicca sul bottone 
 “Somministrazione effettuata”. Allora un pop up chiede all’infermiere conferma dell’operazione.  
 
 Cosa può andare storto:
-- Il paziente non è il elenco, allora deve essere effettuata la registrazione.
-- Il paziente non possiede nessuna prescrizione clinica, allora deve essere sottoposto a visita medica e prescrizione.
+- Il paziente non è il elenco e deve essere effettuata la registrazione.
+- Il paziente non possiede nessuna prescrizione clinica e deve essere sottoposto ad una visita medica con relativa prescrizione.
 
 Altre attività: 
-- L'infermiere non effettua l'attività di somministrazione. Clicca sul pulsante "Annulla" l’operazione non viene confermata lo stato della 
-“Somministrazione odierna” non viene modificato, quindi sarà visualizzato un pallino rosso accanto alla voce 
+- L'infermiere non effettua l'attività di somministrazione. Clicca sul pulsante "Annulla", l’operazione non viene confermata 
+e lo stato della “Somministrazione odierna” non viene modificato. Viene visualizzato un pallino rosso vicino la voce 
 "Somministrazione odierna" e il sistema ritorna all’elenco dei pazienti odierni.
 
-Stato di completamento: Se l'infermiere clicca sul pulsante "Conferma" l’operazione viene confermata e il campo 
-“somministrazione odierna” viene settato con un pallino verde accanto alla voce e il sistema ritorna all’elenco dei pazienti odierni.
+Stato di completamento: Se l'infermiere clicca sul pulsante "Conferma" l’operazione viene confermata, il campo 
+“somministrazione odierna” viene settato con un pallino verde vicino la voce e il sistema ritorna all’elenco dei pazienti odierni.
 
 #### S5 - Il personale della clinica ricerca un paziente nel sistema 
 
-Assunzione iniziale: L'utente del personale della clinica effettua il login inserendo il codice identificativo otto cifre
+Assunzione iniziale: L'utente del personale della clinica effettua il login inserendo il codice identificativo ad otto cifre
 e la propria password e viene visualizzata la schermata principale.
 
-Normale: L'utente clicca sulla barra di ricerca e digita il nome del paziente che intende ricercare, automaticamente
-una lista con tutti i pazienti aventi quel nome e/o cognome sarà visualizzata nella schermata. L'utente seleziona il paziente
-ricercato e potrà visualizzare le sue generalità in una nuova finestra. 
+Normale: L'utente clicca sulla barra di ricerca e digita il nome del paziente che intende ricercare; automaticamente
+una lista con tutti i pazienti aventi quel nome e/o cognome viene visualizzata nella schermata. L'utente seleziona il paziente
+ricercato e visualizza le sue generalità in una nuova finestra. 
 
 Cosa può andare storto: 
-- La ricerca paziente non produce nessun risultato allora l'utente ha digitato non correttamente nome e/o cognome oppure
-il paziente non e registrato nel sistema della clinica.
+- La ricerca del paziente non produce alcun risultato poichè l'utente ha digitato non correttamente nome e/o cognome oppure
+il paziente non è stato registrato nel sistema della clinica.
 
 Altre attività: 
-- L'infermiere effettua la ricerca di un paziente appartenente alla clinica, selezionando il paziente ricercato visualizzerà 
+- L'infermiere effettua la ricerca di un paziente appartenente alla clinica, così selezionando il paziente ricercato visualizza 
 le sue generalità, i farmaci assunti e la cartella clinica.  
-- Il medico effettua la ricerca di un paziente da lui in cura, selezionando il paziente ricercato visualizzerà le sue generalità, i farmaci
+- Il medico effettua la ricerca di un paziente da lui in cura, seleziona il paziente ricercato in modo da visualizzare le sue generalità, i farmaci
   assunti, la cartella clinica e gli appuntamenti.
-- Il receptionist effettua la ricerca di un paziente appartenente alla clinica, selezionando il paziente ricercato visualizzerà
+- Il receptionist effettua la ricerca di un paziente appartenente alla clinica e selezionando il paziente ricercato visualizza
   le sue generalità e gli appuntamenti. 
 
-Stato di completamento: l'utente ha effettuato la ricerca e chiude la finestra con le informazioni del paziente, sarà 
+Stato di completamento: l'utente ha effettuato la ricerca, chiude la finestra con le informazioni del paziente e viene 
 reindirizzato alla schermata principale.
 
-#### S6 - Il paziente visualizza il suo status clinico 
+#### S6 - Il paziente visualizza il proprio status clinico 
 
-Assunzione iniziale: Un paziente effettua il login inserendo il suo usurname e la propria password e viene visualizzata 
+Assunzione iniziale: Un paziente effettua il login inserendo il proprio usurname e la propria password e viene visualizzata 
 la schermata principale.
 
-Normale: Il paziente tramite la schermata principale clicca su bottone "Visualizza appuntamenti", una finestra allora si
-aprirà e sarà visualizzato l'elenco di tutti gli appuntamenti.
+Normale: Il paziente tramite la schermata principale clicca su bottone "Visualizza appuntamenti", compare una finestra
+e viene visualizzato l'elenco di tutti gli appuntamenti.
 
 Altre attività:
-- Il paziente visualizza la lista di farmaci, con relativi dosaggi, a lui somministrati, allora clicca sul bottone "Visualizza
-Farmaci". 
-- Il paziente visualizza il nome del medico che lo ha in cura, allora clicca sul bottone "Visualizza medico".
+- Il paziente visualizza la lista dei propri farmaci da assumere, con i relativi dosaggi, andando a cliccare sul bottone 
+"Visualizza Farmaci". 
+- Il paziente visualizza il nome del medico che lo ha in cura andando a cliccare sul bottone "Visualizza medico".
 
-Stato di completamento: Il paziente ha visualizzato i suoi appuntamenti e chiude la finestra con le informazioni cliccando sul 
-bottone "Chiudi", sarà reindirizzato alla schermata principale.
+Stato di completamento: Il paziente ha visualizzato i propri appuntamenti, chiude la finestra cliccando sul bottone "Chiudi"
+e viene reindirizzato alla schermata principale.
 
 #### S7 - Il receptionist registra un nuovo appuntamento.
 
-Assunzione iniziale: Il receptionist effettua il login inserendo il codice identificativo otto cifre e la propria password 
+Assunzione iniziale: Il receptionist effettua il login inserendo il codice identificativo ad otto cifre e la propria password 
 e viene visualizzata la schermata principale.
 
 Normale: Il receptionist inserisce un nuovo appuntamento e clicca sul pulsante "Nuovo Appuntamento". 
-Una volta effettuato il click comparirà una schermata all'interno della quale sarà chiesto d'inserire il codice fiscale del 
-paziente e poi tramite un menù a tendina selezionerà il medico che effettuerà la vista; cliccando sul pulsate "Continua" sarà reindirizzato in una
-pagina in cui dovrà inserire i dettagli dell’appuntamento (giorno, mese, anno, ora). Il receptionist conferma l'operazione
-di registrazione appuntamento cliccando sul bottone "Conferma".
+Una volta effettuato il click compare una schermata all'interno della quale è chiesto d'inserire il codice fiscale del 
+paziente e tramite un menù a tendina seleziona il medico che effettuerà la vista; cliccando sul pulsate "Continua", viene reindirizzato in una
+pagina in cui inserisce i dettagli dell’appuntamento (giorno, mese, anno, ora). Il receptionist conferma l'operazione 
+cliccando sul bottone "Conferma".
 
 Cosa può andare storto: 
 -  Il receptionist inserisce in modo errato il codice fiscale, comparirà un messaggio di errore in cui sarà richiesto
@@ -232,14 +231,6 @@ Il sistema, alla fine di ogni mese, dopo le 17:30, genera un report sotto forma 
 - Numero di pazienti per sintomatologia con annessi farmaci prescritti;
 - I farmaci prescritti vengono arricchiti con i dati relativi alle dosi fornite e i costi ad essi associati.
 
-#### S10 - Caso ispezione giudiziaria o indagine di polizia.
-
-È possibile, durante un’ispezione giudiziaria o un’indagine di polizia che venga richiesto l’accesso ai dati sensibili degli utenti. In particolare, il richiedente ottiene un file con i dati del singolo paziente oppure con un sommario di tutti i pazienti della clinica. Lo staff di amministrazione troverà di fronte a sé un registro dei pazienti con annessi i due bottoni che svolgono rispettivamente queste funzionalità. Una volta selezionata la modalità, viene mostrata a schermo una finestra di conferma.
-Se lo staff di amministrazione sbaglia ad inserire il nome dell’utente ricercato, il registro mostrerà una schermata vuota.
-
-(SCENARIO CANCELLATO E STAKEHOLDER ELIMINATO)
-#### S CANCELLATO: L'infermiere a domicilio effettua una visita domiciliare.
-
 ### 3.2.2 - Requisiti funzionali per attori
 
 (a) Medici
@@ -277,25 +268,21 @@ cartella clinica
 le loro generalità. 
 
 (e) Staff di amministrazione
-- (e.1) Un membro dello staff di amministrazione ha accesso a un'area riservata dove può ricercare un utente 
--  (e.2) Un membro dello staff di amministrazione può stamparne un report del paziente 
+- (e.1) Un membro dello staff di amministrazione ha accesso a un'area riservata dove può ricercare un utente
+- (e.2) Un membro dello staff di amministrazione può stamparne un report del paziente 
+- (e.3) Un membro dello staff di amministrazione può aprire e modificare un report da lui creato e non quello degli altri
 
-### 3.2.3 Requisiti funzionali di sicurezza
+### 3.2.3 Requisiti funzionali di sicurezza e safety
 
-- Il sistema deve garantire la protezione dei dati coperti da 
-privacy in modo che solamente lo staff medico e il paziente
-possano avervi accesso
-- Gli utenti che possono accedere ai report devono essere riportati su una white list
-- Solo l'utente che apre il record può modificarlo
+- Il sistema deve garantire la protezione dei dati coperti da privacy in modo che solamente lo staff medico e il paziente
+possano avervi accesso;
 - Ogni membro dello staff deve essere identificato da un codice univoco di 8 cifre
-
-### 3.2.4 Requisiti funzionali safety
-
-- Il sistema deve avvertire lo staff medico circa la pericolosità di una particolare patologia del paziente se essa è presente
 - Il sistema effettua un controllo sulle dosi dei farmaci basandosi su un range di sicurezza. In caso di errore la dose deve essere reinserita
-- Se il paziente soffre di allergie particolari il sistema deve rispondere alla somministrazione di un farmaco scorretto con un messaggio di warning e se la figura che prescrive ignora il messaggio di warning deve essere obbligato a lasciare una ragione scritta del perchè
+- Se il paziente soffre di allergie particolari il sistema deve rispondere alla somministrazione di un farmaco scorretto con un messaggio di warning
+e se la figura che prescrive ignora il messaggio di warning.
 
 ### 3.2.5 Requisiti funzionali riguardanti interfaccia grafica
+***** DA RISCRIVERE GUARDANDO GLI SCENARI ****
 
 - Il sistema deve mostrare i record dei pazienti
 - Il sistema deve essere dotato di un medication field
@@ -309,29 +296,19 @@ possano avervi accesso
 - Il sistema deve notificare i dottori online con un menù a cascata
 - Il sistema deve essere dotato di una chat fra i dottori online
 
-### 3.2.5 Requisiti funzionali di automazione
-- Per ogni nuova prescrizione medica, o aggiornamento, il sistema aggiorna la data della prescrizione in cartella clinica. 
-- Il sistema genera un report mensile mostrando il numero di pazienti per clinica, il numero dei pazienti inseriti o cancellati dal sistema,il numero di pazienti per tipologia, i farmaci loro prescritti ed i relativi costi, questo l'ultimo giorno *lavorativo* del mese, dopo le 17:30
-- Il report deve contenere anche le seguenti informazioni: nomi dei farmaci,numero di prescrizioni,numero di dosi prescritte e costi totali delle dosi prescritte
-- Se il report ha dosi di differenti unità(10mg,20mg), il sistema deve registrarle in report separati per ogni unità
-- il sistema deve generare una lista dei pazienti attesi quel giorno, per ogni clinica
-
 ### 3.2.6 Altri requisiti funzionali
 
-- Il sistema prevede sommari dei dati che possano essere facilmente interpretabili dai medici in velocità (problemi chiave e trattamenti iniziati)
-- Le informazioni vanno raccolte all'interno di un database centrale a cui differenti host hanno accesso copiandone le informazioni dalla fonte principale
-- Ogni farmaco deve possedere i campi 'Maximum dose' e 'Minimum dose'
-- Gli addetti alla reception devono poter trasferire i dati di un paziente da un database ad un altro(PSR), come informazioni di tipo anagrafico o sommari di diagnosi e trattamenti di pazienti, lo scambio in sè va regolato secondo il metodo
-  di handshacking (il sistema deve essere in grado di ricevere una risposta positiva dal PSR)
+- Ogni farmaco deve possedere i campi 'Maximum dose' e 'Minimum dose';
+- Il sistema genera un report mensile mostrando il numero di pazienti per clinica, il numero dei pazienti inseriti o cancellati dal sistema,il numero di pazienti per tipologia, i farmaci loro prescritti ed i relativi costi, questo l'ultimo giorno *lavorativo* del mese, dopo le 17:30
+- Il report deve contenere anche le seguenti informazioni: nomi dei farmaci,numero di prescrizioni,numero di dosi prescritte e costi totali delle dosi prescritte
+- Se il report ha dosi di differenti unità, il sistema deve registrarle in report separati per ogni unità
 
 ### 3.2.7 Requisiti non funzionali
 
 - Il sistema Mentcare dove essere disponibile a tutte le cliniche durante le normali ore lavorative
-  (LUN-VEN 8:30-17:30)
-- Il sistema non deve riavviarsi se non in 5 o meno secondi
-- Tutti gli utenti del sistema devono potersi autenticare con la tessera sanitaria
-- Il sistema deve rispettare le linee guida per la privacy in HStan-03-2006-priv
-- Gli errori utente (come ad esempio segnalazioni) devono essere comunicati in modo semplice e minimizzati
+  (LUN-VEN 8:30-17:30);
+- Lo staff medico deve potersi autenticare con il proprio codice identificativo a 8 cifre e la rispettiva password;
+- Il sistema deve rispettare le linee guida per la privacy in HStan-03-2006-priv;
 
 ## 3.4 - Diagrammi di casi d'uso
 

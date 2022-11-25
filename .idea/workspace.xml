@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Scenario 3; Completamento di quanto fatto nel pomeriggio del 23-11 con aggiunta &quot;cosa potrebbe andare storto&quot; e &quot;stato di completamento&quot;. Nota: non ho cancellato lo scenario S3 precedente per alcune info che potrebbero essere utili successivamente.">
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Scenario 3: ho messo quanche virgola e punto in più">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -84,6 +84,7 @@
       <workItem from="1668513745591" duration="1287000" />
       <workItem from="1668679222058" duration="1735000" />
       <workItem from="1668686731807" duration="7343000" />
+      <workItem from="1669384335727" duration="1124000" />
     </task>
     <task id="LOCAL-00001" summary="MentcareDemo is born!">
       <created>1667495005722</created>

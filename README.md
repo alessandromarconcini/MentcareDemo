@@ -83,7 +83,7 @@ e la propria password e viene visualizzata la schermata principale.
 Normale: L’infermiere clicca sul bottone “Nuovo ricovero” e viene visualizzata una schermata in cui inserisce gli 
 estremi del paziente e lo stato di pericolosità spuntando o meno la casella “Paziente pericoloso". Il paziente non 
 pericoloso viene informato dei propri diritti inerenti il ricovero e le proprie azioni; successivamente l’infermiere 
-inserisce i dati anagrafici, seleziona il medico che lo riceverà in cura e clicca sul bottone “avanti” e un pop 
+inserisce i dati anagrafici, seleziona il medico che lo riceverà in cura e clicca sul bottone “Avanti” e un pop 
 up chiede conferma di detenzione. L’infermiere, fatto ciò, clicca sul bottone “Conferma detenzione” registrando così la decisione 
 di detenzione. Il paziente viene allora ricoverato nella clinica e un messaggio di notifica di detenzione con le 
 informazioni rispettivamente del paziente e del medico curante viene inviata ai servizi sociali e al medico che lo avrà in cura.
@@ -122,7 +122,7 @@ la dose da somministrare e la frequenza di dosaggio. L’infermiere somministra 
 
 Cosa può andare storto:
 - Il paziente non è il elenco e deve essere effettuata la registrazione.
-- Il paziente non possiede nessuna prescrizione clinica e deve essere sottoposto ad una visita medica con relativa prescrizione.
+- Il paziente non possiede nessuna prescrizione clinica e deve essere sottoposto a una visita medica con relativa prescrizione.
 
 Altre attività: 
 - L'infermiere non effettua l'attività di somministrazione. Clicca sul pulsante "Annulla", l’operazione non viene confermata 
@@ -142,7 +142,7 @@ una lista con tutti i pazienti aventi quel nome e/o cognome viene visualizzata n
 ricercato e visualizza le sue generalità in una nuova finestra. 
 
 Cosa può andare storto: 
-- La ricerca del paziente non produce alcun risultato poichè l'utente ha digitato non correttamente nome e/o cognome oppure
+- La ricerca del paziente non produce alcun risultato poiché l'utente ha digitato non correttamente nome e/o cognome oppure
 il paziente non è stato registrato nel sistema della clinica.
 
 Altre attività: 
@@ -174,7 +174,7 @@ e viene reindirizzato alla schermata principale.
 
 #### S7 - Il receptionist registra un nuovo appuntamento.
 
-Assunzione iniziale: Il receptionist effettua il login inserendo il codice identificativo ad otto cifre e la propria password 
+Assunzione iniziale: Il receptionist effettua il login inserendo il codice identificativo a otto cifre e la propria password 
 e viene visualizzata la schermata principale.
 
 Normale: Il receptionist inserisce un nuovo appuntamento e clicca sul pulsante "Nuovo Appuntamento". 
@@ -206,8 +206,36 @@ Stato di completamento:
 Il receptionist ha effettuato l'operazione di registrazione dell'appuntamento e appare una schermata di riepilogo in cui
 cliccando su "Ok" viene reindirizzato alla schermata principale e l'appuntamento viene reso visibile nel sistema.
 
-#### S8: lo staff di amministrazione inserisce un nuovo utente nel sistema (medico, paziente, infermiere)
-//
+#### S8: Lo staff di amministrazione inserisce un nuovo utente nel sistema (medico, paziente, infermiere)
+
+Assunzione iniziale: Un membro dello staff di amministrazione effettua il login inserendo il codice identificativo a otto cifre e la propria password
+e viene visualizzata la schermata principale.
+
+Normale: Un membro dello staff di amministrazione registra un nuovo utente del personale medico nel sistema e clicca sul pulsante 
+"Nuova utente". Una volta effettuato il click compare una schermata in cui il membro dello staff inserisce
+negli appositi campi di testo le generalità del nuovo utente come nome, cognome, data di nascita, luogo di nascita e 
+codice fiscale. 
+Inoltre nella schermata sono presenti i tre campi "paziente, medico, infermiere", l'infermiere spunta il campo che identifica
+la tipologia del nuovo utente da registrare e clicca sul pulsante "Avanti". 
+
+Cosa può andare storto:
+- Il membro dello staff deve annullare la registrazione utente perché ha inserito dei dati errati
+o per altri motivi, clicca allora sul pulsante "Annulla".
+- Il membro dello staff inserisce un codice fiscale già presente nel sistema, un pop up notificherà l'errore.
+
+Altre attività:
+- Il membro dello staff registra un paziente, ha allora inserito la spunta nel campo "paziente" e cliccato sul pulsante "Avanti",
+un pop up con una notifica di riepilogo appare nella schermata e il membro del personale medico clicca su "Conferma".
+- Il membro dello staff registra un medico, ha allora inserito la spunta nel campo "paziente" e cliccato sul pulsante "Avanti",
+una volta effettuato il click una nuova finestra apparirà sullo schermo, in essa il membro dello staff inserisce
+la professione medica, clicca su "Avanti" e un pop up con una notifica di riepilogo appare nella schermata e il membro del personale medico 
+clicca su "Conferma". 
+- Il membro dello staff registra un infermiere, ha allora inserito la spunta nel campo "paziente" e cliccato sul pulsante "Avanti",
+un pop up con una notifica di riepilogo appare nella schermata e il membro del personale medico clicca su "Conferma".
+
+Stato di completamento: 
+Il membro dello staff di amministrazione ha effettuato la registrazione del nuovo utente e il codice ID a otto cifre
+associati all'utente e la password generate automaticamente dal sistema sono salvate sul sistema. 
 
 #### S9 - Caso report mensile da generare.-> collegamento con lo staff di amministrazione 
 
@@ -276,6 +304,8 @@ possano avervi accesso;
 - Il sistema effettua un controllo sulle dosi dei farmaci basandosi su un range di sicurezza. In caso di errore la dose deve essere reinserita;
 - Se il paziente soffre di allergie particolari il sistema deve rispondere alla somministrazione di un farmaco scorretto con un messaggio di warning
 e se la figura che prescrive ignora il messaggio di warning.
+- Il sistema per ogni nuovo utente generato crea un codice ID univo e caratterizzato dalle prime tre cifre "000" per i medici,
+"111" per gli infermieri e "222" per i pazienti.
 
 ### 3.1.5 Altri requisiti funzionali
 
@@ -380,7 +410,7 @@ Questo diagramma presenta la struttura del progetto suddivisa in classi.
 
 Questo diagramma a vari livelli di dettaglio (logica astratta e/o metodi interni) spiega come avviene lo scambio di messaggi tra gli interlocutori (attori e sistema o attori e componenti di sistema).
 
-## 4.5 - Mock up di interfaccia grafica
+## 4.5 - Mock up d'interfaccia grafica
 
 In questa sezione presentiamo come vorremmo mostrare l'interfaccia grafica.
 Poi l'esito è deciso dall'implementazione del frontend e quindi si potrebbe distaccare non poco.

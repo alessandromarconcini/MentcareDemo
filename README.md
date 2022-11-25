@@ -13,12 +13,12 @@ Il suo scopo è gestire lo scambio di informazioni fra le varie componenti inter
 # 2 - Background
 
 ## 2.1 - Processo di sviluppo software
+*** QUESTA FASE LA SCRIVIAMO ALLA FINE DEL PROGETTO ***
 
 In questa sezione riportiamo le fasi di sviluppo del sw e eventualmente particolari
-scelte o condizioni in cui ci siamo trovati
+scelte o condizioni in cui ci siamo trovati.
 
 # 3 - Analisi dei requisiti
-(In teoria dagli scenari tiriamo fuori gli stakeholder (?))
 
 ## 3.1 - Specifica
 
@@ -27,10 +27,10 @@ scelte o condizioni in cui ci siamo trovati
 #### S1 - IL MEDICO EFFETTUA UNA NUOVA PRESCRIZIONE
 
 Assunzione iniziale: Il medico effettua una prescrizione per uno o più pazienti da lui in cura; in particolare, tramite il login nel 
-sistema, inserendo il codice ID a 8 cifre e la password di sicurezza, sarà visualizzata la schermata principale.
+sistema, inserendo il codice ID a 8 cifre e la password di sicurezza, viene visualizzata la schermata principale.
 
 Normale: il medico, una volta effettuato il login, clicca sul bottone "Visualizza Pazienti" in cui visualizza l'elenco dei pazienti da lui in cura dove sono presenti nome e cognome.
-Il medico decide di visualizzare la cartella clinica del paziente a cui effettuare la prescrizione medica, così clicca sull'icona a forma di foglia in corrispondenza del nome.
+Il medico decide di visualizzare la cartella clinica del paziente a cui effettuare la prescrizione medica, così clicca sull'icona a forma di foglio in corrispondenza del nome.
 Una volta visualizzata, il medico clicca sul bottone "Nuova Prescrizione Medica" e viene reindirizzato a una schermata per l'inserimento della nuova prescrizione medica unica relativa a quel paziente. 
 Allora, su un campo di testo scrive le proprie indicazioni e tramite una schermata interna di ricerca digita il nome del farmaco che sta prescrivendo, 
 seleziona il farmaco che sarà inserito nella prescrizione e in un campo di testo inserisce il dosaggio e frequenza.
@@ -282,29 +282,14 @@ possano avervi accesso;
 - Se il paziente soffre di allergie particolari il sistema deve rispondere alla somministrazione di un farmaco scorretto con un messaggio di warning
 e se la figura che prescrive ignora il messaggio di warning.
 
-### 3.1.5 Requisiti funzionali riguardanti interfaccia grafica
-***** DA RISCRIVERE GUARDANDO GLI SCENARI ****
-
-- Il sistema deve mostrare i record dei pazienti
-- Il sistema deve essere dotato di un medication field
-- Il sistema deve poter consentire la selezione delle voci 'current medication','new medication' e 'formulary'
-- Se si sceglie 'current medication' il sistema chiede un check della dose, la dose può anche essere cambiata
-- Se si sceglie 'new medication' il medico può effettuare una ricerca scrivendo anche solo parzialmente le lettere del farmaco
-- Se si sceglie 'formulary' il sistema mostra una search box in cui cercare il farmaco e viene effettuato un check circa la validità della medicazione, viene inserita la dose anche in questo caso
-- Dopo che il medico ha fatto tutta la procedura, il sistema notifica una schermata di check riassuntiva laddove sono presenti i bottoni 'Ok' e 'Modifica'
-- Durante il check di dose serve un pulsante 'Conferma'
-- un utente dovrebbe avere la possibilità di vedere gli appuntamenti relativi ed effettuare ricerche su di essi
-- Il sistema deve notificare i dottori online con un menù a cascata
-- Il sistema deve essere dotato di una chat fra i dottori online
-
-### 3.1.6 Altri requisiti funzionali
+### 3.1.5 Altri requisiti funzionali
 
 - Ogni farmaco deve possedere i campi 'Maximum dose' e 'Minimum dose';
 - Il sistema genera un report mensile mostrando il numero di pazienti per clinica, il numero dei pazienti inseriti o cancellati dal sistema,il numero di pazienti per tipologia, i farmaci loro prescritti ed i relativi costi, questo l'ultimo giorno *lavorativo* del mese, dopo le 17:30
 - Il report deve contenere anche le seguenti informazioni: nomi dei farmaci,numero di prescrizioni,numero di dosi prescritte e costi totali delle dosi prescritte
 - Se il report ha dosi di differenti unità, il sistema deve registrarle in report separati per ogni unità
 
-### 3.1.7 Requisiti non funzionali
+### 3.1.6 Requisiti non funzionali
 
 - Il sistema Mentcare dove essere disponibile a tutte le cliniche durante le normali ore lavorative
   (LUN-VEN 8:30-17:30);

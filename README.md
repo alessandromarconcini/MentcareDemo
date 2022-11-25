@@ -19,19 +19,10 @@ scelte o condizioni in cui ci siamo trovati
 
 # 3 - Analisi dei requisiti
 (In teoria dagli scenari tiriamo fuori gli stakeholder (?))
-## 3.1 - Stakeholder 
 
-Gli attori partecipanti al sistema sono:
+## 3.1 - Specifica
 
-- Pazienti
-- Dottori
-- Infermieri
-- Addetti alla reception
-- Staff di amministrazione
-
-## 3.2 - Specifica
-
-### 3.2.1 - Scenari
+### 3.1.1 - Scenari
 
 #### S1 - IL MEDICO EFFETTUA UNA NUOVA PRESCRIZIONE
 
@@ -231,7 +222,17 @@ Il sistema, alla fine di ogni mese, dopo le 17:30, genera un report sotto forma 
 - Numero di pazienti per sintomatologia con annessi farmaci prescritti;
 - I farmaci prescritti vengono arricchiti con i dati relativi alle dosi fornite e i costi ad essi associati.
 
-### 3.2.2 - Requisiti funzionali per attori
+## 3.1.2 - Stakeholder
+
+Gli attori partecipanti al sistema sono:
+
+- Pazienti
+- Dottori
+- Infermieri
+- Addetti alla reception
+- Staff di amministrazione
+
+### 3.1.3 - Requisiti funzionali per attori
 
 (a) Medici
 
@@ -272,7 +273,7 @@ le loro generalità.
 - (e.2) Un membro dello staff di amministrazione può stamparne un report del paziente 
 - (e.3) Un membro dello staff di amministrazione può aprire e modificare un report da lui creato e non quello degli altri
 
-### 3.2.3 Requisiti funzionali di sicurezza e safety
+### 3.1.4 Requisiti funzionali di sicurezza e safety
 
 - Il sistema deve garantire la protezione dei dati coperti da privacy in modo che solamente lo staff medico e il paziente
 possano avervi accesso;
@@ -281,7 +282,7 @@ possano avervi accesso;
 - Se il paziente soffre di allergie particolari il sistema deve rispondere alla somministrazione di un farmaco scorretto con un messaggio di warning
 e se la figura che prescrive ignora il messaggio di warning.
 
-### 3.2.5 Requisiti funzionali riguardanti interfaccia grafica
+### 3.1.5 Requisiti funzionali riguardanti interfaccia grafica
 ***** DA RISCRIVERE GUARDANDO GLI SCENARI ****
 
 - Il sistema deve mostrare i record dei pazienti
@@ -296,37 +297,37 @@ e se la figura che prescrive ignora il messaggio di warning.
 - Il sistema deve notificare i dottori online con un menù a cascata
 - Il sistema deve essere dotato di una chat fra i dottori online
 
-### 3.2.6 Altri requisiti funzionali
+### 3.1.6 Altri requisiti funzionali
 
 - Ogni farmaco deve possedere i campi 'Maximum dose' e 'Minimum dose';
 - Il sistema genera un report mensile mostrando il numero di pazienti per clinica, il numero dei pazienti inseriti o cancellati dal sistema,il numero di pazienti per tipologia, i farmaci loro prescritti ed i relativi costi, questo l'ultimo giorno *lavorativo* del mese, dopo le 17:30
 - Il report deve contenere anche le seguenti informazioni: nomi dei farmaci,numero di prescrizioni,numero di dosi prescritte e costi totali delle dosi prescritte
 - Se il report ha dosi di differenti unità, il sistema deve registrarle in report separati per ogni unità
 
-### 3.2.7 Requisiti non funzionali
+### 3.1.7 Requisiti non funzionali
 
 - Il sistema Mentcare dove essere disponibile a tutte le cliniche durante le normali ore lavorative
   (LUN-VEN 8:30-17:30);
 - Lo staff medico deve potersi autenticare con il proprio codice identificativo a 8 cifre e la rispettiva password;
 - Il sistema deve rispettare le linee guida per la privacy in HStan-03-2006-priv;
 
-## 3.4 - Diagrammi di casi d'uso
+## 3.2 - Diagrammi di casi d'uso
 
-### 3.4.1 - Casi d'uso del Medico
+### 3.2.1 - Casi d'uso del Medico
 
 ![](images/UseCaseMedico.jpg)
 
-### 3.4.2 - Casi d'uso dell'infermiere
+### 3.2.2 - Casi d'uso dell'infermiere
 
-### 3.4.3 - Casi d'uso del paziente
+### 3.2.3 - Casi d'uso del paziente
 
-### 3.4.4 - Casi d'uso dell' addetto alla reception
+### 3.2.4 - Casi d'uso dell' addetto alla reception
 
-### 3.4.5 - Casi d'uso dello staff di amministrazione
+### 3.2.5 - Casi d'uso dello staff di amministrazione
 
-### 3.4.6 - Casi d'uso degli infermieri a domicilio
+### 3.2.6 - Casi d'uso degli infermieri a domicilio
 
-## 3.5 - Definizione degli stati del sistema
+## 3.3 - Definizione degli stati del sistema
 
 Una volta definiti degli stati o delle operazioni chiave fatti dagli utenti,
 è possibile attribuire responsabilità ai vari utenti di queste ultime.
@@ -341,7 +342,7 @@ Il sistema ruota tutto attorno alle prescrizioni, per cui potrebbero essere alcu
 - DELETED (Cancellata in corso d'opera)
 - CLOSED (Chiusa perchè conclusa)
 
-## 3.6 - Creazione Test di accettazione
+## 3.4 - Creazione Test di accettazione
 
 Definiamo a priori i test di accettazione per poter consegnare ad un ipotetico stakeholder un progetto funzionante secondo accordi presettati.
 

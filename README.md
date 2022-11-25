@@ -178,38 +178,33 @@ Assunzione iniziale: Il receptionist effettua il login inserendo il codice ident
 e viene visualizzata la schermata principale.
 
 Normale: Il receptionist inserisce un nuovo appuntamento e clicca sul pulsante "Nuovo Appuntamento". 
-Una volta effettuato il click compare una schermata all'interno della quale è chiesto d'inserire il codice fiscale del 
+Una volta effettuato il click compare una schermata all'interno della quale viene chiesto d'inserire il codice fiscale del 
 paziente e tramite un menù a tendina seleziona il medico che effettuerà la vista; cliccando sul pulsate "Continua", viene reindirizzato in una
 pagina in cui inserisce i dettagli dell’appuntamento (giorno, mese, anno, ora). Il receptionist conferma l'operazione 
 cliccando sul bottone "Conferma".
 
 Cosa può andare storto: 
--  Il receptionist inserisce in modo errato il codice fiscale, comparirà un messaggio di errore in cui sarà richiesto
+-  Il receptionist inserisce in modo errato il codice fiscale e compare un messaggio di errore in cui viene richiesto
 d'inserire nuovamente il codice fiscale corretto;
-- Il receptionist inserisce correttamente il codice fiscale ma non seleziona il medico che effettuerà la visita il 
-sistema genera un pop up con un messaggio di errore in cui viene segnalato d'inserire il medico.
-- Il receptionist inserisce l'appuntamento per un paziente non registrato nel sistema della clinica, allora al momento
+- Il receptionist inserisce correttamente il codice fiscale ma non seleziona il medico che effettua la visita; il 
+sistema genera un pop up con un messaggio di errore in cui viene segnalata la selezione del medico.
+- Il receptionist inserisce l'appuntamento per un paziente non registrato nel sistema della clinica e al momento
+della conferma un pop up notifica l'errore.
+- Il receptionist inserisce l'appuntamento per un paziente in una fascia oraria occupata e al momento
 della conferma dell'appuntamento un pop up notificherà l'errore.
-- Il receptionist inserisce l'appuntamento per un paziente in una fascia oraria occupata, allora al momento
-della conferma dell'appuntamento un pop up notificherà l'errore.
-
-!!!(NOTA-> INSERIRE IN REQUISITI DI SISTEMA CHE GLI APPUNTAMENTI DEVONO DIFFERENZIARSI PER FASCIA ORARIA DI MINIMO 20 MINUTI
-L'UNO DALL'ALTRO-> IN RIFERIMENTO A PUNTO 4 DI "Cosa può andare storto)!!!
 
 Altre attività: 
-- Il receptionist cancella un appuntamento, allora clicca sul bottone "Cancella appuntamento", si aprirà una schermata
-in cui saranno visualizzati tutti gli appuntamenti con nome, cognome e codice fiscale del paziente, cliccando sulla riga
-un pop up chiederà conferma della cancellazione appuntamento.
-- Il receptionist modifica un appuntamento, allora clicca sul bottone "Modifica appuntamento", si aprirà una schermata
-in cui saranno visualizzati tutti gli appuntamenti con nome, cognome e codice fiscale del paziente, cliccando sulla riga
-una schermata mostrerà l'appuntamento e i campi di giorno, mese, anno, ora, medico modificabili. Dopo le modifiche
-clicca sul pulsante "Salva modifiche"
+- Il receptionist cancella un appuntamento, clicca sul bottone "Cancella appuntamento" e si apre una schermata
+in cui vengono visualizzati tutti gli appuntamenti con il relativo nome, cognome e codice fiscale del paziente. Cliccando su un 
+determinato appuntamento, un pop up chiede la conferma della cancellazione.
+- Il receptionist modifica un appuntamento e cliccando sul bottone "Modifica appuntamento", si apre una schermata
+in cui vengono visualizzati tutti gli appuntamenti con il relativo nome, cognome e codice fiscale del paziente. Cliccando
+ su un determinato appuntamento, una schermata mostra quell'appuntamento con i campi "giorno", "mese", "anno", "ora", "medico" modificabili.
+Dopo le modifiche, clicca sul pulsante "Salva modifiche".
 
 Stato di completamento:
-Il receptionist ha effettuato l'operazione di registrazione appuntamento, allora apparirà una schermata di riepilogo appuntamento,
-cliccando su "Ok" sarà reindirizzato alla schermata principale e l'appuntamento sarà visibile nel sistema.
-
-
+Il receptionist ha effettuato l'operazione di registrazione dell'appuntamento e appare una schermata di riepilogo in cui
+cliccando su "Ok" viene reindirizzato alla schermata principale e l'appuntamento viene reso visibile nel sistema.
 
 #### S8: lo staff di amministrazione inserisce un nuovo utente nel sistema (medico, paziente, infermiere)
 //
@@ -277,24 +272,26 @@ le loro generalità.
 
 - Il sistema deve garantire la protezione dei dati coperti da privacy in modo che solamente lo staff medico e il paziente
 possano avervi accesso;
-- Ogni membro dello staff deve essere identificato da un codice univoco di 8 cifre
-- Il sistema effettua un controllo sulle dosi dei farmaci basandosi su un range di sicurezza. In caso di errore la dose deve essere reinserita
+- Ogni membro dello staff deve essere identificato da un codice univoco di 8 cifre;
+- Il sistema effettua un controllo sulle dosi dei farmaci basandosi su un range di sicurezza. In caso di errore la dose deve essere reinserita;
 - Se il paziente soffre di allergie particolari il sistema deve rispondere alla somministrazione di un farmaco scorretto con un messaggio di warning
 e se la figura che prescrive ignora il messaggio di warning.
 
 ### 3.1.5 Altri requisiti funzionali
 
 - Ogni farmaco deve possedere i campi 'Maximum dose' e 'Minimum dose';
-- Il sistema genera un report mensile mostrando il numero di pazienti per clinica, il numero dei pazienti inseriti o cancellati dal sistema,il numero di pazienti per tipologia, i farmaci loro prescritti ed i relativi costi, questo l'ultimo giorno *lavorativo* del mese, dopo le 17:30
-- Il report deve contenere anche le seguenti informazioni: nomi dei farmaci,numero di prescrizioni,numero di dosi prescritte e costi totali delle dosi prescritte
-- Se il report ha dosi di differenti unità, il sistema deve registrarle in report separati per ogni unità
+- Il sistema genera un report mensile mostrando il numero di pazienti per clinica, il numero dei pazienti inseriti o cancellati 
+dal sistema,il numero di pazienti per tipologia, i farmaci loro prescritti ed i relativi costi, questo l'ultimo giorno *lavorativo* del mese, dopo le 17:30;
+- Il report deve contenere anche le seguenti informazioni: nomi dei farmaci,numero di prescrizioni,numero di dosi prescritte e costi totali delle dosi prescritte;
+- Se il report ha dosi di differenti unità, il sistema deve registrarle in report separati per ogni unità.
 
 ### 3.1.6 Requisiti non funzionali
 
-- Il sistema Mentcare dove essere disponibile a tutte le cliniche durante le normali ore lavorative
-  (LUN-VEN 8:30-17:30);
+- Il sistema Mentcare dove essere disponibile a tutte le cliniche durante le normali ore lavorative (LUN-VEN 8:30-17:30);
 - Lo staff medico deve potersi autenticare con il proprio codice identificativo a 8 cifre e la rispettiva password;
 - Il sistema deve rispettare le linee guida per la privacy in HStan-03-2006-priv;
+- Gli appuntamenti devono differenziarsi per fascia oraria di minimo 20 minuti l'uno dall'altro (S7).
+
 
 ## 3.2 - Diagrammi di casi d'uso
 

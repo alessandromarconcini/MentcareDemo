@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="messo gli stakeholder dopo gli scenari e sistemato gli indici">
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="ho levato i requisiti di interfaccia (concordato con Ale)">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -84,7 +85,7 @@
       <workItem from="1668513745591" duration="1287000" />
       <workItem from="1668679222058" duration="1735000" />
       <workItem from="1668686731807" duration="7343000" />
-      <workItem from="1669384335727" duration="2739000" />
+      <workItem from="1669384335727" duration="4471000" />
     </task>
     <task id="LOCAL-00001" summary="MentcareDemo is born!">
       <created>1667495005722</created>
@@ -191,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669386401274</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="ho levato i requisiti di interfaccia (concordato con Ale)">
+      <created>1669387131168</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669387131168</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +231,7 @@
     <MESSAGE value="Scenario 3; Completamento di quanto fatto nel pomeriggio del 23-11 con aggiunta &quot;cosa potrebbe andare storto&quot; e &quot;stato di completamento&quot;. Nota: non ho cancellato lo scenario S3 precedente per alcune info che potrebbero essere utili successivamente." />
     <MESSAGE value="- Sono stati scartati gli infermieri a domicilio;&#10;- E' stato scartato S10: indagine polizia&#10;- Sono stati ridotti i requisiti cercando di mantenere quelli essenziali;&#10;- Sono state effettuate piccole correzioni sugli scenari" />
     <MESSAGE value="messo gli stakeholder dopo gli scenari e sistemato gli indici" />
-    <option name="LAST_COMMIT_MESSAGE" value="messo gli stakeholder dopo gli scenari e sistemato gli indici" />
+    <MESSAGE value="ho levato i requisiti di interfaccia (concordato con Ale)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ho levato i requisiti di interfaccia (concordato con Ale)" />
   </component>
 </project>

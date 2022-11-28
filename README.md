@@ -397,9 +397,11 @@ Di seguito vengono rappresentate le attività svolte durante la fase di login.
 
 ### 4.2.6 - Operazioni dello staff di amministrazione
 
-### 4.2.7 - Operazioni dell'infermiere a domicilio
+### 4.2.7 - Operazioni dell' addetto alla reception 
 
-### 4.2.8 - Operazioni dell' addetto alla reception 
+### 4.2.8 - Diagramma delle sotto-attività di controllo
+
+![](images/ActivityDiagramControlli.jpg)
 
 ## 4.3 - Class Diagram
 

@@ -211,39 +211,47 @@ cliccando su "Ok" viene reindirizzato alla schermata principale e l'appuntamento
 Assunzione iniziale: Un membro dello staff di amministrazione effettua il login inserendo il codice identificativo a otto cifre e la propria password
 e viene visualizzata la schermata principale.
 
-Normale: Un membro dello staff di amministrazione registra un nuovo utente del personale medico nel sistema e clicca sul pulsante 
+Normale: Un membro dello staff di amministrazione registra un nuovo utente nel sistema e clicca sul pulsante 
 "Nuova utente". Una volta effettuato il click compare una schermata in cui il membro dello staff inserisce
 negli appositi campi di testo le generalità del nuovo utente come nome, cognome, data di nascita, luogo di nascita e 
 codice fiscale. 
-Inoltre nella schermata sono presenti i tre campi "paziente, medico, infermiere", l'infermiere spunta il campo che identifica
-la tipologia del nuovo utente da registrare e clicca sul pulsante "Avanti". 
+Inoltre nella schermata sono presenti i tre campi "paziente, medico, infermiere", il membro dello staff spunta il campo 
+che identifica la tipologia del nuovo utente da registrare e clicca sul pulsante "Avanti", allora apparirà una notifica 
+di conferma registrazione utente e il membro dello staff clicca su "Conferma". 
 
 Cosa può andare storto:
 - Il membro dello staff deve annullare la registrazione utente perché ha inserito dei dati errati
 o per altri motivi, clicca allora sul pulsante "Annulla".
-- Il membro dello staff inserisce un codice fiscale già presente nel sistema, un pop up notificherà l'errore.
+- Il membro dello staff inserisce un codice fiscale già presente nel sistema, un pop up notificherà l'errore "Codice fiscale 
+esistente".
 
 Altre attività:
-- Il membro dello staff registra un paziente, ha allora inserito la spunta nel campo "paziente" e cliccato sul pulsante "Avanti",
-un pop up con una notifica di riepilogo appare nella schermata e il membro del personale medico clicca su "Conferma".
-- Il membro dello staff registra un medico, ha allora inserito la spunta nel campo "paziente" e cliccato sul pulsante "Avanti",
-una volta effettuato il click una nuova finestra apparirà sullo schermo, in essa il membro dello staff inserisce
-la professione medica, clicca su "Avanti" e un pop up con una notifica di riepilogo appare nella schermata e il membro del personale medico 
-clicca su "Conferma". 
-- Il membro dello staff registra un infermiere, ha allora inserito la spunta nel campo "paziente" e cliccato sul pulsante "Avanti",
-un pop up con una notifica di riepilogo appare nella schermata e il membro del personale medico clicca su "Conferma".
+- Il membro dello staff registra un medico, ha allora inserito la spunta nel campo "medico", sulla schermata comparirà 
+un nuovo campo d'inserimento testo in cui inserire la professione medica. 
 
 Stato di completamento: 
 Il membro dello staff di amministrazione ha effettuato la registrazione del nuovo utente e il codice ID a otto cifre
 associati all'utente e la password generate automaticamente dal sistema sono salvate sul sistema. 
 
-#### S9 - Caso report mensile da generare.-> collegamento con lo staff di amministrazione 
+#### S9 - Un membro dello staff di amministrazione visualizza un report mensile 
 
-Il sistema, alla fine di ogni mese, dopo le 17:30, genera un report sotto forma di raccolta dati che enuncia le seguenti informazioni:
-- Numero di pazienti per clinica;
-- Numero dei pazienti inseriti e cancellati nel sistema;
-- Numero di pazienti per sintomatologia con annessi farmaci prescritti;
-- I farmaci prescritti vengono arricchiti con i dati relativi alle dosi fornite e i costi ad essi associati.
+Assunzione iniziale: Un membro dello staff di amministrazione effettua il login inserendo il codice identificativo a 
+otto cifre e la propria password e viene visualizzata la schermata principale.
+
+Normale: Un membro dello staff di amministrazione clicca sul pulsante "Report mensile" e tramite una nuova schermata visualizza
+l'elenco delle mensilità ordinate per anno, cliccando su una delle mensilità visualizza il report contenente:
+- il numero dei pazienti inseriti e cancellati nel sistema;
+- numero farmaci per nome
+- costo complessivo farmaci
+
+Altre attività: 
+- Il membro dello staff di amministrazione una volta visualizzato il report clicca sul pulsante "Dettagli pazienti" e visualizza
+l'elenco dei pazienti 
+- Il membro dello staff di amministrazione una volta visualizzato il report clicca sul pulsante "Dettaglio costo farmaci" 
+e visualizza il costo dei singoli farmaci
+
+Stato di completamento:
+Il membro dello staff di amministrazione ha visualizzato il report mensile.
 
 ## 3.1.2 - Stakeholder
 
@@ -292,9 +300,9 @@ cartella clinica
 le loro generalità. 
 
 (e) Staff di amministrazione
-- (e.1) Un membro dello staff di amministrazione ha accesso a un'area riservata dove può ricercare un utente
-- (e.2) Un membro dello staff di amministrazione può stamparne un report del paziente 
-- (e.3) Un membro dello staff di amministrazione può aprire e modificare un report da lui creato e non quello degli altri
+- (e.1) Un membro dello staff di amministrazione può registrare un nuovo utente
+- (e.2) Un membro dello staff di amministrazione può visualizzare un report mensile
+- (e.3) Un membro dello staff di amministrazione può specificare la specializzazione del medico 
 
 ### 3.1.4 Requisiti funzionali di sicurezza e safety
 
@@ -304,8 +312,7 @@ possano avervi accesso;
 - Il sistema effettua un controllo sulle dosi dei farmaci basandosi su un range di sicurezza. In caso di errore la dose deve essere reinserita;
 - Se il paziente soffre di allergie particolari il sistema deve rispondere alla somministrazione di un farmaco scorretto con un messaggio di warning
 e se la figura che prescrive ignora il messaggio di warning.
-- Il sistema per ogni nuovo utente generato crea un codice ID univo e caratterizzato dalle prime tre cifre "000" per i medici,
-"111" per gli infermieri e "222" per i pazienti.
+- Il sistema per ogni nuovo utente generato crea un codice ID univo.
 
 ### 3.1.5 Altri requisiti funzionali
 
@@ -318,6 +325,7 @@ dal sistema,il numero di pazienti per tipologia, i farmaci loro prescritti ed i 
 ### 3.1.6 Requisiti non funzionali
 
 - Il sistema Mentcare dove essere disponibile a tutte le cliniche durante le normali ore lavorative (LUN-VEN 8:30-17:30);
+- Il sistema Mentcare genera alla fine di ogni mese, dopo le 17:30, un report sotto forma di raccolta dati;
 - Lo staff medico deve potersi autenticare con il proprio codice identificativo a 8 cifre e la rispettiva password;
 - Il sistema deve rispettare le linee guida per la privacy in HStan-03-2006-priv;
 - Gli appuntamenti devono differenziarsi per fascia oraria di minimo 20 minuti l'uno dall'altro (S7).

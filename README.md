@@ -393,6 +393,8 @@ Di seguito vengono rappresentate le attività svolte durante la fase di login.
 
 ### 4.2.4 - Operazioni dell'infermiere
 
+![](images/ActivityDiagramInfermiere.jpg)
+
 ### 4.2.5 - Operazioni del paziente
 
 ### 4.2.6 - Operazioni dello staff di amministrazione

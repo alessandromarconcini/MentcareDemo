@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Modifica alla sezione 4.2.8 con &quot;Diagramma delle sotto-attività di controllo&quot; con aggiunta del rispettivo diagramma di attività" />
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Aggiunta sezione 4.2.9 relativa all'espansione esplicita dei blocchi di sotto-attività dei sottoparagrafi 4.2.2-4.2.7" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,6 +82,7 @@
       <workItem from="1668679222058" duration="1735000" />
       <workItem from="1668686731807" duration="7343000" />
       <workItem from="1669384335727" duration="4471000" />
+      <workItem from="1669712828277" duration="323000" />
     </task>
     <task id="LOCAL-00001" summary="MentcareDemo is born!">
       <created>1667495005722</created>
@@ -216,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669652794382</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Aggiunta sezione 4.2.9 relativa all'espansione esplicita dei blocchi di sotto-attività dei sottoparagrafi 4.2.2-4.2.7">
+      <created>1669713044530</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1669713044530</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +259,7 @@
     <MESSAGE value="ho levato i requisiti di interfaccia (concordato con Ale)" />
     <MESSAGE value="Eliminazione Dose giustificata" />
     <MESSAGE value="Modifica alla sezione 4.2.8 con &quot;Diagramma delle sotto-attività di controllo&quot; con aggiunta del rispettivo diagramma di attività" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifica alla sezione 4.2.8 con &quot;Diagramma delle sotto-attività di controllo&quot; con aggiunta del rispettivo diagramma di attività" />
+    <MESSAGE value="Aggiunta sezione 4.2.9 relativa all'espansione esplicita dei blocchi di sotto-attività dei sottoparagrafi 4.2.2-4.2.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta sezione 4.2.9 relativa all'espansione esplicita dei blocchi di sotto-attività dei sottoparagrafi 4.2.2-4.2.7" />
   </component>
 </project>

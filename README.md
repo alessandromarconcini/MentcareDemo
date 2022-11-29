@@ -397,6 +397,8 @@ Di seguito vengono rappresentate le attività svolte durante la fase di login.
 
 ### 4.2.5 - Operazioni del paziente
 
+![](images/ActivityDiagramPaziente.jpg)
+
 ### 4.2.6 - Operazioni dello staff di amministrazione
 
 ### 4.2.7 - Operazioni dell' addetto alla reception 

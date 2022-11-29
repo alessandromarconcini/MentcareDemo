@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Aggiunta dello scenario S5 (Ricerca paziente) fra le attività opzionali dell'utente membro dello staff medico ai diagrammi del medico e dell'infermiere, riportando l'attività effettiva tra le sotto-attività">
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Aggiunto Diagramma del paziente">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +85,7 @@
       <workItem from="1668686731807" duration="7343000" />
       <workItem from="1669384335727" duration="4471000" />
       <workItem from="1669712828277" duration="323000" />
-      <workItem from="1669728052290" duration="3633000" />
+      <workItem from="1669728052290" duration="4702000" />
     </task>
     <task id="LOCAL-00001" summary="MentcareDemo is born!">
       <created>1667495005722</created>
@@ -263,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669731485379</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Aggiunto Diagramma del paziente">
+      <created>1669732373345</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1669732373345</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,6 +309,7 @@
     <MESSAGE value="Aggiunte attività del Check Campi occupati" />
     <MESSAGE value="Modifica Diagramma infermiere" />
     <MESSAGE value="Aggiunta dello scenario S5 (Ricerca paziente) fra le attività opzionali dell'utente membro dello staff medico ai diagrammi del medico e dell'infermiere, riportando l'attività effettiva tra le sotto-attività" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta dello scenario S5 (Ricerca paziente) fra le attività opzionali dell'utente membro dello staff medico ai diagrammi del medico e dell'infermiere, riportando l'attività effettiva tra le sotto-attività" />
+    <MESSAGE value="Aggiunto Diagramma del paziente" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto Diagramma del paziente" />
   </component>
 </project>

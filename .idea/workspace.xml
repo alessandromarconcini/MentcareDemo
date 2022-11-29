@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Aggiunto Activity Diagram Infermiere">
-      <change beforePath="$PROJECT_DIR$/images/ActivityDiagramControlli.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ActivityDiagramControlli.jpg" afterDir="false" />
-    </list>
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Aggiunte attività del Check Campi occupati" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +83,7 @@
       <workItem from="1668686731807" duration="7343000" />
       <workItem from="1669384335727" duration="4471000" />
       <workItem from="1669712828277" duration="323000" />
-      <workItem from="1669728052290" duration="509000" />
+      <workItem from="1669728052290" duration="1119000" />
     </task>
     <task id="LOCAL-00001" summary="MentcareDemo is born!">
       <created>1667495005722</created>
@@ -234,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669728257108</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Aggiunte attività del Check Campi occupati">
+      <created>1669728571347</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1669728571347</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +276,7 @@
     <MESSAGE value="Modifica alla sezione 4.2.8 con &quot;Diagramma delle sotto-attività di controllo&quot; con aggiunta del rispettivo diagramma di attività" />
     <MESSAGE value="Aggiunta sezione 4.2.9 relativa all'espansione esplicita dei blocchi di sotto-attività dei sottoparagrafi 4.2.2-4.2.7" />
     <MESSAGE value="Aggiunto Activity Diagram Infermiere" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto Activity Diagram Infermiere" />
+    <MESSAGE value="Aggiunte attività del Check Campi occupati" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunte attività del Check Campi occupati" />
   </component>
 </project>

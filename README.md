@@ -424,7 +424,7 @@ La fase di login è comune a tutti i partecipanti che utilizzano il sistema.
 
 ### 4.2.8 - Diagramma delle sotto-attività
 
-![](images/ActivityDiagramSottoAttività.jpg)
+![](images/ActivityDiagramSottoAttivita.jpg)
 
 ## 4.3 - Class Diagram
 

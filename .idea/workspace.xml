@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Aggiunto ultimo Activity Diagram che rappresenta S8 ed S9.">
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Aggiunti gli use case rimanenti">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ActivityDiagramSottoAttività.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ActivityDiagramSottoAttivita.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669799516322</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Aggiunti gli use case rimanenti">
+      <created>1669803510521</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1669803510521</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,7 +323,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Aggiunta nuova stringa di stampa in output &quot;New String&quot; in main" />
     <MESSAGE value="Ripristino demo is born" />
     <MESSAGE value="Inserimento di file README in formato Markdown con primissime indicazioni sul documento finale che verrà modificato" />
     <MESSAGE value="Aggiornamento di build.gradle (non influenza il progetto)" />
@@ -340,6 +347,7 @@
     <MESSAGE value="Arricchito Activity Diagram S7 e aggiunti nuovi controlli relativi a S7" />
     <MESSAGE value="Modifiche un po' dappertutto" />
     <MESSAGE value="Aggiunto ultimo Activity Diagram che rappresenta S8 ed S9." />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto ultimo Activity Diagram che rappresenta S8 ed S9." />
+    <MESSAGE value="Aggiunti gli use case rimanenti" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunti gli use case rimanenti" />
   </component>
 </project>

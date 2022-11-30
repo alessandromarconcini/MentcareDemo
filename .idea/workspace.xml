@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Aggiunto Diagramma del paziente">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ActivityDiagramControlli.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ActivityDiagramControlli.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ActivityDiagramReceptionist.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ActivityDiagramReceptionist.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -339,13 +339,19 @@ dal sistema,il numero di pazienti per tipologia, i farmaci loro prescritti ed i 
 
 ### 3.2.2 - Casi d'uso dell'infermiere
 
+![](images/UseCaseInfermiere.jpg)
+
 ### 3.2.3 - Casi d'uso del paziente
+
+![](images/UseCasePaziente.jpg)
 
 ### 3.2.4 - Casi d'uso dell' addetto alla reception
 
+![](images/UseCaseReceptionist.jpg)
+
 ### 3.2.5 - Casi d'uso dello staff di amministrazione
 
-### 3.2.6 - Casi d'uso degli infermieri a domicilio
+![](images/UseCaseStaffAmministrazione.jpg)
 
 ## 3.3 - Definizione degli stati del sistema
 

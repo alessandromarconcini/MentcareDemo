@@ -392,31 +392,31 @@ La fase di login è comune a tutti i partecipanti che utilizzano il sistema.
 
 ![](images/ActivityDiagramLogin.jpg)
 
-### 4.2.3 - Operazioni del medico
+### 4.2.2 - Operazioni del medico
 
 ![](images/ActivityDiagramMedico.jpg)
 
-### 4.2.4 - Operazioni dell'infermiere
+### 4.2.3 - Operazioni dell'infermiere
 
 ![](images/ActivityDiagramInfermiere.jpg)
 
-### 4.2.5 - Operazioni del paziente
+### 4.2.4 - Operazioni del paziente
 
 ![](images/ActivityDiagramPaziente.jpg)
 
-### 4.2.6 - Operazioni dello staff di amministrazione
+### 4.2.5 - Operazioni dello staff di amministrazione
 
 ![](images/ActivityDiagramStaffAmministrazione.jpg)
 
-### 4.2.7 - Operazioni dell' addetto alla reception
+### 4.2.6 - Operazioni dell' addetto alla reception
 
 ![](images/ActivityDiagramReceptionist.jpg)
 
-### 4.2.8 - Diagramma delle attività di controllo
+### 4.2.7 - Diagramma delle attività di controllo
 
 ![](images/ActivityDiagramControlli.jpg)
 
-### 4.2.9 - Diagramma delle sotto-attività
+### 4.2.8 - Diagramma delle sotto-attività
 
 ![](images/ActivityDiagramSottoAttività.jpg)
 

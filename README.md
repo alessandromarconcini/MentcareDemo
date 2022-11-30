@@ -212,7 +212,7 @@ Assunzione iniziale: Un membro dello staff di amministrazione effettua il login 
 e viene visualizzata la schermata principale.
 
 Normale: Un membro dello staff di amministrazione registra un nuovo utente nel sistema e clicca sul pulsante 
-"Nuova utente". Una volta effettuato il click compare una schermata in cui il membro dello staff inserisce
+"Nuovo utente". Una volta effettuato il click compare una schermata in cui il membro dello staff inserisce
 negli appositi campi di testo le generalità del nuovo utente come nome, cognome, data di nascita, luogo di nascita e 
 codice fiscale. 
 Inoltre nella schermata sono presenti i tre campi "paziente, medico, infermiere", il membro dello staff spunta il campo 
@@ -247,7 +247,7 @@ l'elenco delle mensilità ordinate per anno, cliccando su una delle mensilità v
 Altre attività: 
 - Il membro dello staff di amministrazione una volta visualizzato il report clicca sul pulsante "Dettagli pazienti" e visualizza
 l'elenco dei pazienti 
-- Il membro dello staff di amministrazione una volta visualizzato il report clicca sul pulsante "Dettaglio costo farmaci" 
+- Il membro dello staff di amministrazione una volta visualizzato il report clicca sul pulsante "Dettagli costo farmaci" 
 e visualizza il costo dei singoli farmaci
 
 Stato di completamento:
@@ -384,16 +384,13 @@ Consiglio mio, attuare forme di sicurezza nel backend.
 
 ## 4.2 Activity Diagram
 
-Questo diagramma enuncia tutte le possibili strade percorribili dall'esecuzione
-(Da decidere quali tipi di errore possibili specificare).
+In questa sezione è possibile visionare un riepilogo delle attività che vengono svolte dai vari attori rappresentati negli scenari.
 
 ### 4.2.1 - Fase di Login
 
-Di seguito vengono rappresentate le attività svolte durante la fase di login.
+La fase di login è comune a tutti i partecipanti che utilizzano il sistema.
 
 ![](images/ActivityDiagramLogin.jpg)
-
-### 4.2.2 - Fase di registrazione di un nuovo utente
 
 ### 4.2.3 - Operazioni del medico
 
@@ -408,6 +405,8 @@ Di seguito vengono rappresentate le attività svolte durante la fase di login.
 ![](images/ActivityDiagramPaziente.jpg)
 
 ### 4.2.6 - Operazioni dello staff di amministrazione
+
+![](images/ActivityDiagramStaffAmministrazione.jpg)
 
 ### 4.2.7 - Operazioni dell' addetto alla reception
 

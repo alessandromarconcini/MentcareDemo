@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Aggiunto Diagramma del paziente">
-      <change beforePath="$PROJECT_DIR$/images/ActivityDiagramControlli.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ActivityDiagramControlli.jpg" afterDir="false" />
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Modifiche un po' dappertutto">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/images/ActivityDiagramReceptionist.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/ActivityDiagramReceptionist.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -270,7 +270,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669732373345</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Arricchito Activity Diagram S7 e aggiunti nuovi controlli relativi a S7">
+      <created>1669795762800</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1669795762800</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Modifiche un po' dappertutto">
+      <created>1669796754085</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1669796754085</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +325,8 @@
     <MESSAGE value="Modifica Diagramma infermiere" />
     <MESSAGE value="Aggiunta dello scenario S5 (Ricerca paziente) fra le attività opzionali dell'utente membro dello staff medico ai diagrammi del medico e dell'infermiere, riportando l'attività effettiva tra le sotto-attività" />
     <MESSAGE value="Aggiunto Diagramma del paziente" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto Diagramma del paziente" />
+    <MESSAGE value="Arricchito Activity Diagram S7 e aggiunti nuovi controlli relativi a S7" />
+    <MESSAGE value="Modifiche un po' dappertutto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifiche un po' dappertutto" />
   </component>
 </project>

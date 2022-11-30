@@ -24,7 +24,7 @@ scelte o condizioni in cui ci siamo trovati.
 
 ### 3.1.1 - Scenari
 
-#### S1 - IL MEDICO EFFETTUA UNA NUOVA PRESCRIZIONE
+#### S1 - Il medico effettua una nuova prescrizione
 
 Assunzione iniziale: Il medico effettua una prescrizione per uno o più pazienti da lui in cura; in particolare, tramite il login nel 
 sistema, inserendo il codice ID a 8 cifre e la password di sicurezza, viene visualizzata la schermata principale.
@@ -48,7 +48,7 @@ pazienti e selezionato il paziente, clicca sul bottone "Visualizza Farmaci".
 
 Stato di completamento: La nuova prescrizione è stata completata ed è visibile all'interno della cartella clinica.
 
-#### S2 - IL MEDICO AGGIORNA UNA PRESCRIZIONE 
+#### S2 - Il medico aggiorna una prescrizione
 
 Assunzione iniziale: Il medico effettua un aggiornamento della prescrizione medica per uno o più pazienti da lui in cura;
 effettua il login nel sistema inserendo il codice ID a 8 cifre e la password di sicurezza e viene visualizzata la schermata principale.

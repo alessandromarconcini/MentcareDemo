@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Aggiunto Diagramma del paziente">
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="COMPLETAMENTO SCENARI. &#10;REVISIONE REQUISITI.">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -270,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669732373345</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="COMPLETAMENTO SCENARI. &#10;REVISIONE REQUISITI.">
+      <created>1669743578416</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1669743578416</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +320,7 @@
     <MESSAGE value="Modifica Diagramma infermiere" />
     <MESSAGE value="Aggiunta dello scenario S5 (Ricerca paziente) fra le attività opzionali dell'utente membro dello staff medico ai diagrammi del medico e dell'infermiere, riportando l'attività effettiva tra le sotto-attività" />
     <MESSAGE value="Aggiunto Diagramma del paziente" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto Diagramma del paziente" />
+    <MESSAGE value="COMPLETAMENTO SCENARI. &#10;REVISIONE REQUISITI." />
+    <option name="LAST_COMMIT_MESSAGE" value="COMPLETAMENTO SCENARI. &#10;REVISIONE REQUISITI." />
   </component>
 </project>

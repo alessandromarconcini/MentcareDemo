@@ -434,7 +434,7 @@ Questo diagramma presenta la struttura del progetto suddivisa in classi.
 ## 4.4 - Sequence Diagram
 
 Questo diagramma a vari livelli di dettaglio (logica astratta e/o metodi interni) spiega come avviene lo scambio di messaggi tra gli interlocutori (attori e sistema o attori e componenti di sistema).
-![](images/ScenarioS8.jpg)
+![](images/ScenarioS8.png)
 
 ## 4.5 - Mock up d'interfaccia grafica
 

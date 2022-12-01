@@ -24,7 +24,7 @@ scelte o condizioni in cui ci siamo trovati.
 
 ### 3.1.1 - Scenari
 
-#### S1 - IL MEDICO EFFETTUA UNA NUOVA PRESCRIZIONE
+#### S1 - Il medico effettua una nuova prescrizione
 
 Assunzione iniziale: Il medico effettua una prescrizione per uno o più pazienti da lui in cura; in particolare, tramite il login nel 
 sistema, inserendo il codice ID a 8 cifre e la password di sicurezza, viene visualizzata la schermata principale.
@@ -48,7 +48,7 @@ pazienti e selezionato il paziente, clicca sul bottone "Visualizza Farmaci".
 
 Stato di completamento: La nuova prescrizione è stata completata ed è visibile all'interno della cartella clinica.
 
-#### S2 - IL MEDICO AGGIORNA UNA PRESCRIZIONE 
+#### S2 - Il medico aggiorna una prescrizione
 
 Assunzione iniziale: Il medico effettua un aggiornamento della prescrizione medica per uno o più pazienti da lui in cura;
 effettua il login nel sistema inserendo il codice ID a 8 cifre e la password di sicurezza e viene visualizzata la schermata principale.
@@ -212,7 +212,7 @@ Assunzione iniziale: Un membro dello staff di amministrazione effettua il login 
 e viene visualizzata la schermata principale.
 
 Normale: Un membro dello staff di amministrazione registra un nuovo utente nel sistema e clicca sul pulsante 
-"Nuova utente". Una volta effettuato il click compare una schermata in cui il membro dello staff inserisce
+"Nuovo utente". Una volta effettuato il click compare una schermata in cui il membro dello staff inserisce
 negli appositi campi di testo le generalità del nuovo utente come nome, cognome, data di nascita, luogo di nascita e 
 codice fiscale. 
 Inoltre nella schermata sono presenti i tre campi "paziente, medico, infermiere", il membro dello staff spunta il campo 
@@ -247,7 +247,7 @@ l'elenco delle mensilità ordinate per anno, cliccando su una delle mensilità v
 Altre attività: 
 - Il membro dello staff di amministrazione una volta visualizzato il report clicca sul pulsante "Dettagli pazienti" e visualizza
 l'elenco dei pazienti 
-- Il membro dello staff di amministrazione una volta visualizzato il report clicca sul pulsante "Dettaglio costo farmaci" 
+- Il membro dello staff di amministrazione una volta visualizzato il report clicca sul pulsante "Dettagli costo farmaci" 
 e visualizza il costo dei singoli farmaci
 
 Stato di completamento:
@@ -339,13 +339,19 @@ dal sistema,il numero di pazienti per tipologia, i farmaci loro prescritti ed i 
 
 ### 3.2.2 - Casi d'uso dell'infermiere
 
+![](images/UseCaseInfermiere.jpg)
+
 ### 3.2.3 - Casi d'uso del paziente
+
+![](images/UseCasePaziente.jpg)
 
 ### 3.2.4 - Casi d'uso dell' addetto alla reception
 
+![](images/UseCaseReceptionist.jpg)
+
 ### 3.2.5 - Casi d'uso dello staff di amministrazione
 
-### 3.2.6 - Casi d'uso degli infermieri a domicilio
+![](images/UseCaseStaffAmministrazione.jpg)
 
 ## 3.3 - Definizione degli stati del sistema
 
@@ -384,42 +390,41 @@ Consiglio mio, attuare forme di sicurezza nel backend.
 
 ## 4.2 Activity Diagram
 
-Questo diagramma enuncia tutte le possibili strade percorribili dall'esecuzione
-(Da decidere quali tipi di errore possibili specificare).
+In questa sezione è possibile visionare un riepilogo delle attività che vengono svolte dai vari attori rappresentati negli scenari.
 
 ### 4.2.1 - Fase di Login
 
-Di seguito vengono rappresentate le attività svolte durante la fase di login.
+La fase di login è comune a tutti i partecipanti che utilizzano il sistema.
 
 ![](images/ActivityDiagramLogin.jpg)
 
-### 4.2.2 - Fase di registrazione di un nuovo utente
-
-### 4.2.3 - Operazioni del medico
+### 4.2.2 - Operazioni del medico
 
 ![](images/ActivityDiagramMedico.jpg)
 
-### 4.2.4 - Operazioni dell'infermiere
+### 4.2.3 - Operazioni dell'infermiere
 
 ![](images/ActivityDiagramInfermiere.jpg)
 
-### 4.2.5 - Operazioni del paziente
+### 4.2.4 - Operazioni del paziente
 
 ![](images/ActivityDiagramPaziente.jpg)
 
-### 4.2.6 - Operazioni dello staff di amministrazione
+### 4.2.5 - Operazioni dello staff di amministrazione
 
-### 4.2.7 - Operazioni dell' addetto alla reception
+![](images/ActivityDiagramStaffAmministrazione.jpg)
+
+### 4.2.6 - Operazioni dell' addetto alla reception
 
 ![](images/ActivityDiagramReceptionist.jpg)
 
-### 4.2.8 - Diagramma delle attività di controllo
+### 4.2.7 - Diagramma delle attività di controllo
 
 ![](images/ActivityDiagramControlli.jpg)
 
-### 4.2.9 - Diagramma delle sotto-attività
+### 4.2.8 - Diagramma delle sotto-attività
 
-![](images/ActivityDiagramSottoAttività.jpg)
+![](images/ActivityDiagramSottoAttivita.jpg)
 
 ## 4.3 - Class Diagram
 

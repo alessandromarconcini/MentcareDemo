@@ -40,10 +40,9 @@ Cosa può andare storto:
 - Il farmaco non è presente e cliccando su di esso appare una notifica di errore. 
 - Il medico decide di non effettuare più la prescrizione, così cliccando sul pulsante "Annulla" l'operazione di 
   prescrizione viene annullata e viene reindirizzato alla schermata principale.
-- Il medico vuole effettuare una nuova prescrizione a un paziente che già ne possiede una e viene allora visualizzata una schermata con la relativa notifica di errore.
 - Il dosaggio non rientra nel range di sicurezza e il sistema genera una notifica di errore chiedendo d'inserire il valore atteso. 
 
-Altre attività: il medico visualizza la lista dei farmaci appena prescritti al paziente e i relativi dosaggi e dopo aver visualizzato l'elenco dei 
+Altre attività: il medico visualizza la lista dei farmaci appena prescritti al paziente e i relativi dosaggi, dopo aver visualizzato l'elenco dei 
 pazienti e selezionato il paziente, clicca sul bottone "Visualizza Farmaci".
 
 Stato di completamento: La nuova prescrizione è stata completata ed è visibile all'interno della cartella clinica.
@@ -104,7 +103,7 @@ il trasferimento del paziente. Così, un pop up notifica la mancata disponibilit
 conferma la detenzione, cliccando su “Conferma Detenzione” una notifica di trasferimento viene inviata alla stazione di polizia
 che preleva il paziente.
 
-Stato di completamento: La procedura di ricovero forzato è stata completata e il nuovo paziente e suoi dati 
+Stato di completamento: La procedura di ricovero è stata completata e il nuovo paziente e suoi dati 
 sono visibili e reperibili negli elenchi a disposizione del personale medico; inoltre, viene aggiornato lo storico 
 “notifiche inviate” visibile dal personale amministrativo e lo storico “Notifiche ricevute" visibile dal medico che 
 riceve in cura il paziente.
@@ -285,6 +284,7 @@ cartella clinica
 - (b.4) Un infermiere può registrare la detenzione di un nuovo paziente (S3)
 - (b.5) Un infermiere può effettuare una ricerca solo dei propri pazienti visualizzando le loro generalità, farmaci assunti e
   cartella clinica
+- (b.6) Un infermiere può effettuare un nuovo ricovero
 
 (c) Pazienti
 - (c.1) Un paziente può visualizzare il proprio calendario farmacologico
@@ -366,7 +366,7 @@ Il sistema ruota tutto attorno alle prescrizioni, per cui potrebbero essere alcu
 - MODIFIED (Modificata in corso d'opera)
 - ISPECTIONED (Se subisce ispezioni di polizia)
 - DELETED (Cancellata in corso d'opera)
-- CLOSED (Chiusa perchè conclusa)
+- CLOSED (Chiusa perché conclusa)
 
 ## 3.4 - Creazione Test di accettazione
 

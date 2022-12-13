@@ -463,7 +463,7 @@ Codice del frontend
 
 ## 5.1.4 - Errori
 
-Codice rigardante possibili errori definti come classi
+Codice riguardante possibili errori definti come classi
 
 ## 5.2 - Implementazione della sicurezza
 

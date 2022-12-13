@@ -42,10 +42,13 @@ Cosa può andare storto:
   prescrizione viene annullata e viene reindirizzato alla schermata principale.
 - Il dosaggio non rientra nel range di sicurezza e il sistema genera una notifica di errore chiedendo d'inserire il valore atteso. 
 
-Altre attività: il medico visualizza la lista dei farmaci appena prescritti al paziente e i relativi dosaggi, dopo aver visualizzato l'elenco dei 
+Altre attività: 
+- Il medico visualizza la lista dei farmaci appena prescritti al paziente e i relativi dosaggi, dopo aver visualizzato l'elenco dei 
 pazienti e selezionato il paziente, clicca sul bottone "Visualizza Farmaci".
+- Il medico inserisce/modifica la patologia del paziente, allora clicca sul pulsante "Patologia paziente" e compila il campo di testo.
 
-Stato di completamento: La nuova prescrizione è stata completata ed è visibile all'interno della cartella clinica.
+Stato di completamento: La nuova prescrizione è stata completata ed è visibile all'interno della cartella clinica con la data di ultima
+modifica aggiornata.
 
 #### S2 - Il medico aggiorna una prescrizione
 
@@ -84,7 +87,7 @@ estremi del paziente e lo stato di pericolosità spuntando o meno la casella “
 pericoloso viene informato dei propri diritti inerenti il ricovero e le proprie azioni; successivamente l’infermiere 
 inserisce i dati anagrafici, seleziona il medico che lo riceverà in cura e clicca sul bottone “Avanti” e un pop 
 up chiede conferma di detenzione. L’infermiere, fatto ciò, clicca sul bottone “Conferma detenzione” registrando così la decisione 
-di detenzione. Il paziente viene allora ricoverato nella clinica e un messaggio di notifica di detenzione con le 
+di detenzione. Il paziente viene allora preso in carico dalla clinica e un messaggio di notifica di detenzione con le 
 informazioni rispettivamente del paziente e del medico curante viene inviata ai servizi sociali e al medico che lo avrà in cura.
 
 Cosa può andare storto:
@@ -178,7 +181,7 @@ e viene visualizzata la schermata principale.
 
 Normale: Il receptionist inserisce un nuovo appuntamento e clicca sul pulsante "Nuovo Appuntamento". 
 Una volta effettuato il click compare una schermata all'interno della quale viene chiesto d'inserire il codice fiscale del 
-paziente e tramite un menù a tendina seleziona il medico che effettuerà la vista; cliccando sul pulsate "Continua", viene reindirizzato in una
+paziente e tramite un menù a tendina seleziona il medico che effettuerà la visita; cliccando sul pulsate "Continua", viene reindirizzato in una
 pagina in cui inserisce i dettagli dell’appuntamento (giorno, mese, anno, ora). Il receptionist conferma l'operazione 
 cliccando sul bottone "Conferma".
 
@@ -230,7 +233,7 @@ un nuovo campo d'inserimento testo in cui inserire la professione medica.
 
 Stato di completamento: 
 Il membro dello staff di amministrazione ha effettuato la registrazione del nuovo utente e il codice ID a otto cifre
-associati all'utente e la password generate automaticamente dal sistema sono salvate sul sistema. 
+associati all'utente e la password generati automaticamente e salvate sul sistema. 
 
 #### S9 - Un membro dello staff di amministrazione visualizza un report mensile 
 
@@ -238,7 +241,7 @@ Assunzione iniziale: Un membro dello staff di amministrazione effettua il login 
 otto cifre e la propria password e viene visualizzata la schermata principale.
 
 Normale: Un membro dello staff di amministrazione clicca sul pulsante "Report mensile" e tramite una nuova schermata visualizza
-l'elenco delle mensilità ordinate per anno, cliccando su una delle mensilità visualizza il report contenente:
+l'elenco dei report della clinica. Ogni report contiene:
 - il numero dei pazienti inseriti e cancellati nel sistema;
 - numero farmaci per nome
 - costo complessivo farmaci
@@ -288,8 +291,9 @@ cartella clinica
 
 (c) Pazienti
 - (c.1) Un paziente può visualizzare il proprio calendario farmacologico
-- (c.2) Un paziente può visualizzare la lista dei propri appuntamenti sul calendario
-- (c.3) Un paziente può visualizzare le dosi che deve assumere per ogni farmaco avendo la possibilità di filtrare ogni farmaco in base al nome
+- (c.2) Un paziente può visualizzare la propria prescrizione medica (S6)
+- (c.3) Un paziente può visualizzare le dosi che deve assumere per ogni farmaco (S6)
+- (c.4) Un paziente può visualizzare il medico che lo ha in cura (S6)
 
 (d) Addetto alla reception
 - (d.1) Un receptionist può registrare gli appuntamenti dei pazienti 
@@ -308,25 +312,21 @@ le loro generalità.
 
 - Il sistema deve garantire la protezione dei dati coperti da privacy in modo che solamente lo staff medico e il paziente
 possano avervi accesso;
-- Ogni membro dello staff deve essere identificato da un codice univoco di 8 cifre;
-- Il sistema effettua un controllo sulle dosi dei farmaci basandosi su un range di sicurezza. In caso di errore la dose deve essere reinserita;
-- Se il paziente soffre di allergie particolari il sistema deve rispondere alla somministrazione di un farmaco scorretto con un messaggio di warning
-e se la figura che prescrive ignora il messaggio di warning.
-- Il sistema per ogni nuovo utente generato crea un codice ID univo.
+- Il sistema effettua un controllo sulle dosi dei farmaci basandosi su un range di sicurezza. In caso di errore 
+la dose deve essere reinserita;
+- Il sistema per ogni nuovo utente generato crea un codice ID univo a 8 cifre.
 
 ### 3.1.5 Altri requisiti funzionali
 
 - Ogni farmaco deve possedere i campi 'Maximum dose' e 'Minimum dose';
 - Il sistema genera un report mensile mostrando il numero di pazienti per clinica, il numero dei pazienti inseriti o cancellati 
-dal sistema,il numero di pazienti per tipologia, i farmaci loro prescritti ed i relativi costi, questo l'ultimo giorno *lavorativo* del mese, dopo le 17:30;
-- Il report deve contenere anche le seguenti informazioni: nomi dei farmaci,numero di prescrizioni,numero di dosi prescritte e costi totali delle dosi prescritte;
-- Se il report ha dosi di differenti unità, il sistema deve registrarle in report separati per ogni unità.
+dal sistema, il numero di pazienti per tipologia, i farmaci loro prescritti e i relativi costi, questo l'ultimo giorno lavorativo del mese, dopo le 17:30;
+- Il report deve contenere anche le seguenti informazioni: nomi dei farmaci, numero di prescrizioni,numero di dosi prescritte e costi totali delle dosi prescritte;
 
 ### 3.1.6 Requisiti non funzionali
 
 - Il sistema Mentcare dove essere disponibile a tutte le cliniche durante le normali ore lavorative (LUN-VEN 8:30-17:30);
 - Il sistema Mentcare genera alla fine di ogni mese, dopo le 17:30, un report sotto forma di raccolta dati;
-- Lo staff medico deve potersi autenticare con il proprio codice identificativo a 8 cifre e la rispettiva password;
 - Il sistema deve rispettare le linee guida per la privacy in HStan-03-2006-priv;
 - Gli appuntamenti devono differenziarsi per fascia oraria di minimo 20 minuti l'uno dall'altro (S7).
 

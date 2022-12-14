@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Model class implementation and initialization check exception class implementation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/exception/IllegalPrescriptionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/exception/IllegalReportException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Drug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Drug.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Nurse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Nurse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Doctor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Prescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Prescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Report.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Receptionist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Receptionist.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

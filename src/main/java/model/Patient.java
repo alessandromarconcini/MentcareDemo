@@ -34,7 +34,6 @@ public class Patient extends User {
         if (pathology == null || pathology.length() == 0)
             throw new IllegalArgumentException();
 
-
         if (phoneNumber == null || phoneNumber.length() > 13)
             throw new IllegalArgumentException();
 
@@ -43,6 +42,7 @@ public class Patient extends User {
         this.dangerous = dangerous;
         this.pathology = pathology;
         this.phoneNumber = phoneNumber;
+        this.prescription = prescription;
     }
 
     public Patient() {}

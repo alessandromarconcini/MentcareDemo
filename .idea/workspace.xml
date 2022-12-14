@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Few Changes">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_12_22,_20_14_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_12_22__20_14__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enumeration/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/DrugCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enumeration/DrugCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
-    </list>
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Few Changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,6 +136,7 @@
       <workItem from="1671012956718" duration="655000" />
       <workItem from="1671013667523" duration="1166000" />
       <workItem from="1671014863963" duration="116000" />
+      <workItem from="1671018194246" duration="326000" />
     </task>
     <task id="LOCAL-00001" summary="MentcareDemo is born!">
       <created>1667495005722</created>
@@ -388,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670951956606</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Few Changes">
+      <created>1671018520465</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1671018520465</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +401,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Inserimento introduzione" />
     <MESSAGE value="Elenco dei requisiti" />
     <MESSAGE value="Popolate sezioni dei requisiti di safety,security,automazione, altri funzionali e requisiti non funzionali" />
     <MESSAGE value="Spostata sezione Scenari e Stories e rinominata in Scenari e popolata con i 9 scenari maggiormente dettagliati" />
@@ -431,6 +425,7 @@
     <MESSAGE value="INSERIMENTO SEQUENCE DIAGRAM SCENARIO S8 &quot;ScenarioS8.png&quot;" />
     <MESSAGE value="Modifiche requisiti, class diagram" />
     <MESSAGE value="Update Class Model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Class Model" />
+    <MESSAGE value="Few Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Few Changes" />
   </component>
 </project>

@@ -1,5 +1,8 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Nurse {
 
     private List<Appointment> appointmentList = new ArrayList<>();
@@ -8,9 +11,9 @@ public class Nurse {
 
     public Nurse(Boolean nursePermission, List<Appointment> appointmentList, List<Patient> dailyPatientList) {
 
-        if (appointmentList == null || appointmentList.size() < 0 )
+        if (appointmentList == null)
             throw new IllegalArgumentException();
-        if (dailyPatientList == null || dailyPatientList.size() < 0)
+        if (dailyPatientList == null)
             throw new IllegalArgumentException();
 
 
@@ -20,7 +23,7 @@ public class Nurse {
     }
     public Nurse() {}
 
-    public isANurse() { return nursePermission; }
+    public Boolean isANurse() { return nursePermission; }
 
     public List<Appointment> getAppointmentList() { return appointmentList; }
 

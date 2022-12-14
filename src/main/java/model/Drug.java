@@ -16,6 +16,9 @@ public class Drug {
     private Float assignedDose;
     private String frequency;
     private DrugCost cost;
+    @ManyToOne
+    @JoinColumn(name = "prescription_id")
+    private Prescription prescription;
 
     public Drug(){}
 

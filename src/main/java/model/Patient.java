@@ -1,8 +1,6 @@
 package model;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +15,14 @@ public class Patient extends User {
     @OneToOne
     private Prescription prescription;
     private String pathology;
+
+    @ManyToOne
+    @JoinColumn(name = "hospital_id")
+    private Hospital hospital;
+
+    @ManyToOne
+    @JoinColumn(name = "nurse_id")
+    private Nurse nurse;
 
     public Patient(List<Appointment> appointmentList, Boolean patientPermissions, Prescription prescription,
                    String pathology, Boolean dangerous, String phoneNumber) {

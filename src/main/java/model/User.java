@@ -1,15 +1,21 @@
 package model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.time.LocalDate;
 
 
 /**
  * Classe rappresentante un utente generico del sistema Mentcare
  */
+
+@Entity
 public class User {
 
     private String name;
     private String surname;
+    @Id @GeneratedValue
     private int id;
     private String password;
     private String fiscalCode;
@@ -25,6 +31,10 @@ public class User {
         this.fiscalCode = fiscalCode;
         this.birthplace = birthplace;
         this.birthday = birthday;
+    }
+
+    // é necessario realizzare anche un costruttore vuoto per ogni classe model se si vuole utilizzare nel database
+    public User() {
     }
 
     public void setName(String name) {
@@ -82,17 +92,5 @@ public class User {
     public String getBirthplace() {
         return birthplace;
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

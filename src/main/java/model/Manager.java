@@ -7,6 +7,5 @@ public class Manager {
     public Manager(Boolean adminPermissions) { this.adminPermissions = adminPermissions; }
     public Manager() {}
 
-    public IsAnAdmin() { return adminPermissions; }
-
+    public Boolean IsAnAdmin() { return adminPermissions; }
 }

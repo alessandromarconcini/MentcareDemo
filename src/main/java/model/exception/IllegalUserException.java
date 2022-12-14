@@ -8,6 +8,4 @@ public class IllegalUserException extends IllegalArgumentException{
     public IllegalUserException(){ super("Invalid user for void or null field initialization, see User constructor checks for details");}
 
     public IllegalUserException(Integer id){ super("Invalid id in user fields, see User constructor checks for details");}
-
-    public IllegalUserException(LocalDate date){ super("Invalid BirthDay in user fields, see User constructor checks for details");}
 }

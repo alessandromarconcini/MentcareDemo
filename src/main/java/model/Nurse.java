@@ -1,21 +1,30 @@
 package model;
 
+import model.exception.IllegalNurseException;
+
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Nurse {
+@Entity
+public class Nurse extends User{
 
+    //NOTE In Java il tipo List<T> con T generico si differenzia in Vector,ArrayList e LinkedList, a noi interessa il secondo
+    //NOTE  L'annotazione @OneToMany è uno strumentopolo misterioso che ci servirà più tardi
+    @OneToMany(fetch = FetchType.LAZY)
     private List<Appointment> appointmentList = new ArrayList<>();
     private Boolean nursePermission;
+    @OneToMany(fetch = FetchType.LAZY)
     private List<Patient> dailyPatientList = new ArrayList<>();
 
     public Nurse(Boolean nursePermission, List<Appointment> appointmentList, List<Patient> dailyPatientList) {
 
         if (appointmentList == null)
-            throw new IllegalArgumentException();
+            throw new IllegalNurseException();
         if (dailyPatientList == null)
-            throw new IllegalArgumentException();
-
+            throw new IllegalNurseException();
 
         this.nursePermission = nursePermission;
         this.appointmentList = appointmentList;

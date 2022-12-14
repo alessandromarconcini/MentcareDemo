@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Update Class Model">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_14_12_2022_12_58__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_14_12_2022_12_58__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_12_2022_19_12__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_12_2022_19_12__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/exception/IllegalAppointmentException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/exception/IllegalClinicException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/exception/IllegalDrugException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/exception/IllegalEventException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/exception/IllegalHospitalException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Clinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Clinic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Drug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Drug.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Hospital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Hospital.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Prescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Prescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Report.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +48,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>

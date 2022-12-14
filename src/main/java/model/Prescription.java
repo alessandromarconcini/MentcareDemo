@@ -4,6 +4,8 @@ import javax.persistence.*;
 
 @Entity
 public class Prescription {
+
+    //TODO Finire prescription
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id", nullable = false)

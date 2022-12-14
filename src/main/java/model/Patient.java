@@ -1,14 +1,20 @@
 package model;
 
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Patient extends User {
 
+    @OneToMany
     private List<Appointment> appointmentList = new ArrayList<>();
     private Boolean patientPermissions;
     private String phoneNumber;
     private Boolean dangerous;
+    @OneToOne
     private Prescription prescription;
     private String pathology;
 
@@ -23,7 +29,7 @@ public class Patient extends User {
             throw new IllegalArgumentException();
 
 
-        if (phoneNumber == null || phoneNumber.length() < 0 || phoneNumber.length() > 13)
+        if (phoneNumber == null || phoneNumber.length() > 13)
             throw new IllegalArgumentException();
 
         this.appointmentList = appointmentList;
@@ -32,6 +38,8 @@ public class Patient extends User {
         this.pathology = pathology;
         this.phoneNumber = phoneNumber;
     }
+
+    public Patient() {}
 
     public Boolean isAPatient() { return patientPermissions; }
 

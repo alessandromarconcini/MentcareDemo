@@ -26,7 +26,7 @@ public class User {
 
     //NOTE Nel costruttore effettuo i controlli per assicurarmi che quando creo un oggetto di tipo User, ottengo un oggetto i cui campi sono validi
 
-    public User(String name, String surname, int id, String password, String fiscalCode, String birthplace,
+    public User(String name, String surname, String password, String fiscalCode, String birthplace,
                 LocalDate birthday) {
 
         //NOTE è buona prassi mettere i controlli prima delle righe this.name=...
@@ -34,8 +34,6 @@ public class User {
             throw new IllegalUserException();
         if(surname == null || surname.length() == 0)
             throw new IllegalUserException();
-        if(id < 0)
-            throw new IllegalUserException(id);
         if(password == null || password.length() == 0)
             throw new IllegalUserException();
         //NOTE Il codice fiscale è una stringa lunga 16 caratteri massimi
@@ -47,7 +45,6 @@ public class User {
 
         this.name = name;
         this.surname = surname;
-        this.id = id;
         this.password = password;
         this.fiscalCode = fiscalCode;
         this.birthplace = birthplace;

@@ -17,12 +17,12 @@ public class Doctor extends User{
     private List<Appointment> appointmentList = new ArrayList<>();
     private boolean doctorPermission;
     @OneToMany
-    private List<Patient> patientList;
+    private List<Patient> patientList = new ArrayList<>();
     private String phoneNumber;
     @OneToMany
     private List<Message> messageList = new ArrayList<>();
     @OneToMany
-    private List<Prescription> prescriptionList;
+    private List<Prescription> prescriptionList = new ArrayList<>();
     private String specialization;
 
     public Doctor(List<Appointment> appointmentList, List<Patient> patientList, List<Message> messageList,
@@ -35,7 +35,7 @@ public class Doctor extends User{
         if(patientList == null)
             throw new IllegalDoctorException();
 
-        if (phoneNumber == null || phoneNumber.length() < 13)
+        if (phoneNumber == null || phoneNumber.length() < 10 || phoneNumber.length() > 13)
             throw new IllegalDoctorException();
 
         if (prescriptionList == null)
@@ -43,9 +43,6 @@ public class Doctor extends User{
 
         if (specialization == null || specialization.length() == 0)
             throw new IllegalDoctorException();
-
-        if(id< 0)
-            throw new IllegalDoctorException(id);
 
         this.appointmentList = appointmentList;
         this.doctorPermission = PERMISSION_DOCTOR;

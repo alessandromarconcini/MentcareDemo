@@ -17,11 +17,9 @@ public class Report {
 
     public Report(){}
 
-    public Report(Long id, LocalDate date, String name, String text) {
+    public Report(LocalDate date, String name, String text) {
 
-        if(id < 0)
-            throw new IllegalReportException(id);
-        if(date == null || name == null || name == null || text == null)
+        if(date == null || name == null || text == null)
             throw new IllegalReportException();
 
         this.id = id;

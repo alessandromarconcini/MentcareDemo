@@ -19,16 +19,13 @@ public class Hospital {
     private List<Patient> patientList = new ArrayList<>();
     private Integer countAvailability;
 
-    public Hospital(Long id, String name, String phoneNumber, String address, List<Patient> patientList, Integer countAvailability) {
+    public Hospital(String name, String phoneNumber, String address, List<Patient> patientList, Integer countAvailability) {
 
-        if(id < 0)
-            throw new IllegalHospitalException(id);
         if(name == null || phoneNumber == null || address == null || patientList == null || countAvailability == null)
             throw new IllegalHospitalException();
         if(name.length() == 0||phoneNumber.length() == 0 || address.length() == 0 || countAvailability < 0)
             throw new IllegalHospitalException();
 
-        this.id = id;
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.address = address;

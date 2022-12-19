@@ -32,10 +32,8 @@ public class Clinic{
 
     public Clinic(){}
 
-    public Clinic(Long id, String name, String phoneNumber, List<Patient> patientList, List<Doctor> doctorList, List<Nurse> nurseList) {
+    public Clinic(String name, String phoneNumber, List<Patient> patientList, List<Doctor> doctorList, List<Nurse> nurseList) {
 
-        if(id < 0)
-            throw new IllegalClinicException(id);
         if(name == null || phoneNumber == null || patientList == null || doctorList == null || nurseList == null)
             throw new IllegalClinicException();
         if(phoneNumber.length() > 13)

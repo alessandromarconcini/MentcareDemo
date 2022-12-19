@@ -27,14 +27,11 @@ public class Appointment {
 
     public Appointment() {}
 
-    public Appointment(Integer id, Nurse nurse, LocalDate date, Patient patient, Doctor doctor) {
+    public Appointment(Nurse nurse, LocalDate date, Patient patient, Doctor doctor) {
 
-        if(id < 0)
-            throw new IllegalAppointmentException(id);
         if(nurse == null || date == null || patient == null || doctor == null)
             throw new IllegalAppointmentException();
 
-        this.id = id;
         this.nurse = nurse;
         this.date = date;
         this.patient = patient;

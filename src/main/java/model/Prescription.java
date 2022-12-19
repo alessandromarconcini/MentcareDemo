@@ -22,14 +22,11 @@ public class Prescription {
 
     public Prescription(){}
 
-    public Prescription(Long id, String textReport, List<Drug> drugList, LocalDate lastModify) {
+    public Prescription(String textReport, List<Drug> drugList, LocalDate lastModify) {
 
-        if(id < 0)
-            throw new IllegalPrescriptionException(id);
         if(textReport == null || textReport.isEmpty() || drugList == null || lastModify == null)
             throw new IllegalPrescriptionException();
 
-        this.id = id;
         this.textReport = textReport;
         this.drugList = drugList;
         this.lastModify = lastModify;

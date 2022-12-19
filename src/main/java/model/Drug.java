@@ -22,16 +22,13 @@ public class Drug {
 
     public Drug(){}
 
-    public Drug(Long id, String name, Float minimumDose, Float maximumDose, Float assignedDose, String frequency, DrugCost cost) {
+    public Drug(String name, Float minimumDose, Float maximumDose, Float assignedDose, String frequency, DrugCost cost) {
 
-        if(id < 0)
-            throw new IllegalDrugException(id);
         if(name == null || minimumDose == null || maximumDose == null || assignedDose == null || frequency == null || cost == null)
             throw new IllegalDrugException();
         if(minimumDose < 0 || maximumDose > 0 || assignedDose < 0)
             throw  new IllegalDrugException(assignedDose);
 
-        this.id = id;
         this.name = name;
         this.minimumDose = minimumDose;
         this.maximumDose = maximumDose;

@@ -19,14 +19,11 @@ public class Event {
     private LocalDate date;
     private Action action;
 
-    public Event(Long id, User actor, LocalDate date, Action action) {
+    public Event(User actor, LocalDate date, Action action) {
 
-        if(id < 0)
-            throw new IllegalEventException(id);
         if(actor == null || date == null || action == null)
             throw new IllegalEventException();
 
-        this.id = id;
         this.actor = actor;
         this.date = date;
         this.action = action;

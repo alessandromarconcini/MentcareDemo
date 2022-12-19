@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Model Testing">
-      <change afterPath="$PROJECT_DIR$/src/test/java/modelTest/DrugTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/modelTest/EventTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/modelTest/HospitalTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/modelTest/ManagerTest.java" afterDir="false" />
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Completamento classi MODEL. Guardare TODO.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/modelTest/MessageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/modelTest/NurseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Drug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Drug.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Nurse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Nurse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Receptionist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Receptionist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enumeration/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enumeration/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enumeration/DrugCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enumeration/DrugCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/AppointmentInitializationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/AppointmentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/ClinicInitializationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/ClinicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/DoctorInitializationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/DoctorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/UserInitializationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -604,5 +590,8 @@
     <MESSAGE value="Aggiunta id e IllegalDoctorException a Doctor, sistemazione Receptionisti come per doctor" />
     <MESSAGE value="Model Testing" />
     <option name="LAST_COMMIT_MESSAGE" value="Model Testing" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MentcareDemo$Tests_in__modelTest_.ic" NAME="Tests in 'modelTest' Coverage Results" MODIFIED="1671476276662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

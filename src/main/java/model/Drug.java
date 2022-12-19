@@ -26,7 +26,7 @@ public class Drug {
 
         if(name == null || minimumDose == null || maximumDose == null || assignedDose == null || frequency == null || cost == null)
             throw new IllegalDrugException();
-        if(minimumDose < 0 || maximumDose > 0 || assignedDose < 0)
+        if(minimumDose < 0 || maximumDose < 0 || assignedDose < 0 || maximumDose < minimumDose)
             throw  new IllegalDrugException(assignedDose);
 
         this.name = name;

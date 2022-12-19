@@ -1,6 +1,7 @@
 package model;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +10,7 @@ public class Patient extends User {
 
     @OneToMany
     private List<Appointment> appointmentList = new ArrayList<>();
-    private Boolean patientPermissions;
+    private final Boolean patientPermissions = true;
     private String phoneNumber;
     private Boolean dangerous;
     @OneToOne
@@ -24,8 +25,11 @@ public class Patient extends User {
     @JoinColumn(name = "nurse_id")
     private Nurse nurse;
 
-    public Patient(List<Appointment> appointmentList, Boolean patientPermissions, Prescription prescription,
-                   String pathology, Boolean dangerous, String phoneNumber) {
+    public Patient(List<Appointment> appointmentList, Prescription prescription,
+                   String pathology, Boolean dangerous, String phoneNumber,
+                   String name, String surname, String password, String fiscalCode, String birthPlace, LocalDate birthDay) {
+
+        super(name,surname,password,fiscalCode,birthPlace,birthDay);
 
         if (appointmentList == null)
             throw new IllegalArgumentException();
@@ -38,7 +42,6 @@ public class Patient extends User {
             throw new IllegalArgumentException();
 
         this.appointmentList = appointmentList;
-        this.patientPermissions = patientPermissions;
         this.dangerous = dangerous;
         this.pathology = pathology;
         this.phoneNumber = phoneNumber;

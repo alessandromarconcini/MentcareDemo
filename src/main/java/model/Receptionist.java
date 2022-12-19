@@ -2,25 +2,27 @@ package model;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
 public class Receptionist extends User{
-
-    final boolean RECEPTIONIST_PERMISSION = true;
     @OneToMany
     private List<Message> messageList;
 
     //TODO Per Ale-> Inserire l'attributo receptionistPermission come final nel class diagram in quanto l'istanza receptionist
     // presuppone l'attributo impostato a TRUE
-    private boolean receptionistPermission;
+    private final boolean receptionistPermission = true;
 
-    public Receptionist(List<Message> messageList) {
+    public Receptionist(List<Message> messageList,
+                        String name, String surname, String password, String fiscalCode, String birthPlace, LocalDate birthDay) {
+
+        super(name,surname,password,fiscalCode,birthPlace,birthDay);
+
         if(messageList == null)
             throw  new IllegalArgumentException();
 
         this.messageList = messageList;
-        this.receptionistPermission = RECEPTIONIST_PERMISSION;
     }
 
     public Receptionist(){}

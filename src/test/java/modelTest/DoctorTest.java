@@ -1,7 +1,7 @@
 package modelTest;
 
 import model.*;
-import org.junit.Assert;
+import net.bytebuddy.asm.Advice;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +12,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 
-public class DoctorInitializationTest {
+public class DoctorTest {
 
 
     // Testa un dottore sprovvisto di campi
@@ -44,14 +44,15 @@ public class DoctorInitializationTest {
        List<Patient> pl = new ArrayList<>();
        List<Message> ml = new ArrayList<>();
        List<Prescription> prl = new ArrayList<>();
+       LocalDate now = LocalDate.now();
 
-        Doctor test0 = new Doctor(al,pl,ml,"3456949888",prl,"spec");
+       Doctor test0 = new Doctor(al,pl,ml,"3456949888",prl,"spec","name","surname","password","CNNLSN56G98F566Y","Univr",now);
 
-        Assertions.assertEquals(al,test0.getAppointmentList());
-        Assertions.assertEquals(pl,test0.getPatientList());
-        Assertions.assertEquals(ml,test0.getMessageList());
-        Assertions.assertEquals("3456949888",test0.getPhoneNumber());
-        Assertions.assertEquals(prl,test0.getPrescriptionList());
-        Assertions.assertEquals("spec",test0.getSpecialization());
+       Assertions.assertEquals(al,test0.getAppointmentList());
+       Assertions.assertEquals(pl,test0.getPatientList());
+       Assertions.assertEquals(ml,test0.getMessageList());
+       Assertions.assertEquals("3456949888",test0.getPhoneNumber());
+       Assertions.assertEquals(prl,test0.getPrescriptionList());
+       Assertions.assertEquals("spec",test0.getSpecialization());
     }
 }

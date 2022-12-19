@@ -4,14 +4,13 @@ import model.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
 
-public class ClinicInitializationTest {
+public class ClinicTest {
 
 
     // Testa una clinica sprovvista di campi

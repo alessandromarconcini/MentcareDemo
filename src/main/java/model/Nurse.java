@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,18 +17,20 @@ public class Nurse extends User{
     //NOTE  L'annotazione @OneToMany è uno strumentopolo misterioso che ci servirà più tardi
     @OneToMany(fetch = FetchType.LAZY)
     private List<Appointment> appointmentList = new ArrayList<>();
-    private Boolean nursePermission;
+    private final Boolean nursePermission = true;
     @OneToMany(fetch = FetchType.LAZY)
     private List<Patient> dailyPatientList = new ArrayList<>();
 
-    public Nurse(Boolean nursePermission, List<Appointment> appointmentList, List<Patient> dailyPatientList) {
+    public Nurse(List<Appointment> appointmentList, List<Patient> dailyPatientList,
+                 String name, String surname, String password, String fiscalCode, String birthPlace, LocalDate birthDay) {
+
+        super(name,surname,password,fiscalCode,birthPlace,birthDay);
 
         if (appointmentList == null)
             throw new IllegalNurseException();
         if (dailyPatientList == null)
             throw new IllegalNurseException();
 
-        this.nursePermission = nursePermission;
         this.appointmentList = appointmentList;
         this.dailyPatientList = dailyPatientList;
     }

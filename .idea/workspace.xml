@@ -4,31 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Aggiunta id e IllegalDoctorException a Doctor, sistemazione Receptionisti come per doctor">
-      <change afterPath="$PROJECT_DIR$/src/test/java/modelTest/AppointmentInitializationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/modelTest/ClinicInitializationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/modelTest/DoctorInitializationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/modelTest/UserInitializationTest.java" afterDir="false" />
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Model Testing">
+      <change afterPath="$PROJECT_DIR$/src/test/java/modelTest/DrugTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/modelTest/EventTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/modelTest/HospitalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/modelTest/ManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Appointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Clinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Clinic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Doctor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Drug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Drug.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Hospital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Hospital.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Prescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Prescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Report.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalAppointmentException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exception/IllegalAppointmentException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalClinicException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exception/IllegalClinicException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalDoctorException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exception/IllegalDoctorException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalDrugException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exception/IllegalDrugException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalEventException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exception/IllegalEventException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalHospitalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exception/IllegalHospitalException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalPrescriptionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exception/IllegalPrescriptionException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalReceptionistException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exception/IllegalReceptionistException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalReportException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exception/IllegalReportException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalUserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/exception/IllegalUserException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Nurse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Nurse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Receptionist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Receptionist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enumeration/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enumeration/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/enumeration/DrugCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enumeration/DrugCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/AppointmentInitializationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/AppointmentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/ClinicInitializationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/ClinicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/DoctorInitializationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/DoctorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/UserInitializationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +108,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.Tests in 'modelTest'">
-    <configuration name="AppointmentInitializationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DrugTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -128,7 +121,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;modelTest.AppointmentInitializationTest&quot;" />
+            <option value="&quot;modelTest.DrugTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -138,7 +131,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ClinicInitializationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EventTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -151,7 +144,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;modelTest.ClinicInitializationTest&quot;" />
+            <option value="&quot;modelTest.EventTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -161,7 +154,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="DoctorInitializationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HospitalTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -174,7 +167,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;modelTest.DoctorInitializationTest&quot;" />
+            <option value="&quot;modelTest.HospitalTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ManagerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;modelTest.ManagerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -207,36 +223,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserInitializationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;modelTest.UserInitializationTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Tests in 'modelTest'" />
-        <item itemvalue="Gradle.DoctorInitializationTest" />
-        <item itemvalue="Gradle.ClinicInitializationTest" />
-        <item itemvalue="Gradle.AppointmentInitializationTest" />
-        <item itemvalue="Gradle.UserInitializationTest" />
+        <item itemvalue="Gradle.ManagerTest" />
+        <item itemvalue="Gradle.HospitalTest" />
+        <item itemvalue="Gradle.EventTest" />
+        <item itemvalue="Gradle.DrugTest" />
       </list>
     </recent_temporary>
   </component>
@@ -560,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671444706651</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Model Testing">
+      <created>1671450020666</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1671450020666</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,7 +578,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Scenario 3; Completamento di quanto fatto nel pomeriggio del 23-11 con aggiunta &quot;cosa potrebbe andare storto&quot; e &quot;stato di completamento&quot;. Nota: non ho cancellato lo scenario S3 precedente per alcune info che potrebbero essere utili successivamente." />
     <MESSAGE value="- Sono stati scartati gli infermieri a domicilio;&#10;- E' stato scartato S10: indagine polizia&#10;- Sono stati ridotti i requisiti cercando di mantenere quelli essenziali;&#10;- Sono state effettuate piccole correzioni sugli scenari" />
     <MESSAGE value="messo gli stakeholder dopo gli scenari e sistemato gli indici" />
     <MESSAGE value="ho levato i requisiti di interfaccia (concordato con Ale)" />
@@ -603,6 +602,7 @@
     <MESSAGE value="Model class implementation and initialization check exception class implementation" />
     <MESSAGE value="Modifica alla classe doctor per il funzionamento del framework springboot e aggiunta di Message per lo stesso motivo" />
     <MESSAGE value="Aggiunta id e IllegalDoctorException a Doctor, sistemazione Receptionisti come per doctor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta id e IllegalDoctorException a Doctor, sistemazione Receptionisti come per doctor" />
+    <MESSAGE value="Model Testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model Testing" />
   </component>
 </project>

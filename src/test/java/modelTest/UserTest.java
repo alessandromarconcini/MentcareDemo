@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import static org.junit.Assert.assertEquals;
 
 
-public class UserInitializationTest {
+public class UserTest {
 
 
     // Testa un utente sprovvisto di campi

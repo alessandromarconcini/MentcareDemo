@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import static org.junit.Assert.assertEquals;
 
 
-public class AppointmentInitializationTest {
+public class AppointmentTest {
 
 
     // Testa un appuntamento sprovvisto di campi

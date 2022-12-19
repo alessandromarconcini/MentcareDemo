@@ -3,6 +3,7 @@ package model;
 import model.exception.IllegalDoctorException;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,9 +27,13 @@ public class Doctor extends User{
     private String specialization;
 
     public Doctor(List<Appointment> appointmentList, List<Patient> patientList, List<Message> messageList,
-                  String phoneNumber, List<Prescription> prescriptionList, String specialization) {
+                  String phoneNumber, List<Prescription> prescriptionList, String specialization,
+                  String name, String surname, String password, String fiscalCode, String birthPlace, LocalDate birthDay) {
         //TODO Per Ale-> Inserire l'attributo doctorPermission come final nel class diagram in quanto l'istanza doctor
         // presuppone l'attributo impostato a TRUE
+
+        super(name,surname,password,fiscalCode,birthPlace,birthDay);
+
         if (appointmentList == null)
             throw new IllegalDoctorException();
 
@@ -51,6 +56,7 @@ public class Doctor extends User{
         this.phoneNumber = phoneNumber;
         this.prescriptionList = prescriptionList;
         this.specialization = specialization;
+
     }
 
     public Doctor() { //NOTE Servono anche dei costruttori vuoti per consentire a springboot il funzionamento del database

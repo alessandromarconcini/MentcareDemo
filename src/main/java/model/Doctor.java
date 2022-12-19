@@ -1,7 +1,8 @@
 package model;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
+import model.exception.IllegalDoctorException;
+
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,6 +10,9 @@ import java.util.List;
 public class Doctor extends User{
 
     final boolean PERMISSION_DOCTOR = true;
+
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
     @OneToMany
     private List<Appointment> appointmentList = new ArrayList<>();
     private boolean doctorPermission;
@@ -26,19 +30,22 @@ public class Doctor extends User{
         //TODO Per Ale-> Inserire l'attributo doctorPermission come final nel class diagram in quanto l'istanza doctor
         // presuppone l'attributo impostato a TRUE
         if (appointmentList == null)
-            throw new IllegalArgumentException();
+            throw new IllegalDoctorException();
 
         if(patientList == null)
-            throw  new IllegalArgumentException();
+            throw new IllegalDoctorException();
 
         if (phoneNumber == null || phoneNumber.length() < 13)
-            throw new IllegalArgumentException();
+            throw new IllegalDoctorException();
 
         if (prescriptionList == null)
-            throw  new IllegalArgumentException();
+            throw new IllegalDoctorException();
 
         if (specialization == null || specialization.length() == 0)
-            throw new IllegalArgumentException();
+            throw new IllegalDoctorException();
+
+        if(id< 0)
+            throw new IllegalDoctorException(id);
 
         this.appointmentList = appointmentList;
         this.doctorPermission = PERMISSION_DOCTOR;
@@ -98,5 +105,11 @@ public class Doctor extends User{
         this.specialization = specialization;
     }
 
+    public int getId() {
+        return id;
+    }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
 }

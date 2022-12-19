@@ -2,23 +2,26 @@ package model;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 public class Doctor extends User{
 
     final boolean PERMISSION_DOCTOR = true;
-    private List<Appointment> appointmentList;
-    private final boolean doctorPermission;
+    @OneToMany
+    private List<Appointment> appointmentList = new ArrayList<>();
+    private boolean doctorPermission;
     @OneToMany
     private List<Patient> patientList;
     private String phoneNumber;
-    private List<String> messageList;
+    @OneToMany
+    private List<Message> messageList = new ArrayList<>();
     @OneToMany
     private List<Prescription> prescriptionList;
     private String specialization;
 
-    public Doctor(List<Appointment> appointmentList, List<Patient> patientList, List<String> messageList,
+    public Doctor(List<Appointment> appointmentList, List<Patient> patientList, List<Message> messageList,
                   String phoneNumber, List<Prescription> prescriptionList, String specialization) {
         //TODO Per Ale-> Inserire l'attributo doctorPermission come final nel class diagram in quanto l'istanza doctor
         // presuppone l'attributo impostato a TRUE
@@ -46,6 +49,9 @@ public class Doctor extends User{
         this.specialization = specialization;
     }
 
+    public Doctor() { //NOTE Servono anche dei costruttori vuoti per consentire a springboot il funzionamento del database
+    }
+
     public List<Appointment> getAppointmentList() {
         return appointmentList;
     }
@@ -67,11 +73,11 @@ public class Doctor extends User{
     }
     //TODO per Ale-> inserire nel class diagram il metodo setMessageList, in quanto deve essere associato ad una lista di
     // messaggi (in controller poi aggiungere un modifica, assegna, crea message list etc etc)
-    public void setMessageList(List<String> messageList) {
+    public void setMessageList(List<Message> messageList) {
         this.messageList = messageList;
     }
 
-    public List<String> getMessageList() {
+    public List<Message> getMessageList() {
         return messageList;
     }
     public List<Prescription> getPrescriptionList() {

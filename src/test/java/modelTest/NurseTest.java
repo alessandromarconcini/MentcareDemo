@@ -11,10 +11,9 @@ import java.util.List;
 
 public class NurseTest {
 
-
     // Testa un infermiere
     @Test
-    public void basicVoidMessageInitialization(){
+    public void basicVoidNurseInitialization(){
 
         Nurse testVoid = new Nurse();
 
@@ -33,7 +32,7 @@ public class NurseTest {
 
     // Testa un infermiere standard
     @Test
-    public void basicMessageInitializationTest(){
+    public void basicNurseInitializationTest(){
 
         List<Appointment> appointmentList = new ArrayList<>();
         List<Patient> dailyPatientList = new ArrayList<>();

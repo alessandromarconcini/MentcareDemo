@@ -28,7 +28,7 @@ public class ReceptionistTest {
         Assertions.assertNull(testVoid.getPassword());
         Assertions.assertNull(testVoid.getSurname());
         Assertions.assertNull(testVoid.getBirthplace());
-
+        Assertions.assertTrue(testVoid.isAReceptionist());
     }
 
     // Testa un receptionist standard
@@ -47,5 +47,6 @@ public class ReceptionistTest {
         Assertions.assertEquals("CNNLSN56G98F566Y",test0.getFiscalCode());
         Assertions.assertEquals("Univr",test0.getBirthplace());
         Assertions.assertEquals(now,test0.getBirthday());
+        Assertions.assertTrue(test0.isAReceptionist());
     }
 }

@@ -33,6 +33,7 @@ public class DoctorTest {
         Assertions.assertNull(testVoid.getPassword());
         Assertions.assertNull(testVoid.getSurname());
         Assertions.assertNull(testVoid.getBirthplace());
+        Assertions.assertTrue(testVoid.isDoctor());
 
     }
 
@@ -54,5 +55,6 @@ public class DoctorTest {
        Assertions.assertEquals("3456949888",test0.getPhoneNumber());
        Assertions.assertEquals(prl,test0.getPrescriptionList());
        Assertions.assertEquals("spec",test0.getSpecialization());
+        Assertions.assertTrue(test0.isDoctor());
     }
 }

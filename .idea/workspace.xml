@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Model testing pt4">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/ClinicRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/DoctorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/DrugRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/EventRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/HospitalRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/ManagerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/MessageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/NurseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/PrescriptionRepository.java" afterDir="false" />
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Repositories Creation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/AppointmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/repository/AppointmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Nurse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Nurse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Receptionist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Receptionist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/DoctorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/DoctorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/ManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/ManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/NurseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/NurseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -562,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671523393933</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Repositories Creation">
+      <created>1671524038316</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1671524038316</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -580,7 +585,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="messo gli stakeholder dopo gli scenari e sistemato gli indici" />
     <MESSAGE value="ho levato i requisiti di interfaccia (concordato con Ale)" />
     <MESSAGE value="Eliminazione Dose giustificata" />
     <MESSAGE value="Modifica alla sezione 4.2.8 con &quot;Diagramma delle sotto-attività di controllo&quot; con aggiunta del rispettivo diagramma di attività" />
@@ -605,11 +609,12 @@
     <MESSAGE value="Aggiunta id e IllegalDoctorException a Doctor, sistemazione Receptionisti come per doctor" />
     <MESSAGE value="Model Testing" />
     <MESSAGE value="Model testing pt4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Model testing pt4" />
+    <MESSAGE value="Repositories Creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repositories Creation" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MentcareDemo$ReportTest.ic" NAME="ReportTest Coverage Results" MODIFIED="1671523281525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/MentcareDemo$Tests_in__modelTest_.ic" NAME="Tests in 'modelTest' Coverage Results" MODIFIED="1671522195061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/MentcareDemo$ReportTest.ic" NAME="ReportTest Coverage Results" MODIFIED="1671523965009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/MentcareDemo$Tests_in__modelTest_.ic" NAME="Tests in 'modelTest' Coverage Results" MODIFIED="1671523991889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/MentcareDemo$ReceptionistTest.ic" NAME="ReceptionistTest Coverage Results" MODIFIED="1671522917462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

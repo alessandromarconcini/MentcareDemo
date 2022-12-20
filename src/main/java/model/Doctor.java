@@ -10,13 +10,10 @@ import java.util.List;
 @Entity
 public class Doctor extends User{
 
-    final boolean PERMISSION_DOCTOR = true;
-
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     @OneToMany
     private List<Appointment> appointmentList = new ArrayList<>();
-    private boolean doctorPermission;
     @OneToMany
     private List<Patient> patientList = new ArrayList<>();
     private String phoneNumber;
@@ -51,7 +48,6 @@ public class Doctor extends User{
             throw new IllegalDoctorException();
 
         this.appointmentList = appointmentList;
-        this.doctorPermission = PERMISSION_DOCTOR;
         this.patientList = patientList;
         this.messageList = messageList;
         this.phoneNumber = phoneNumber;
@@ -68,7 +64,7 @@ public class Doctor extends User{
     }
 
     public boolean isDoctor() {
-        return doctorPermission;
+        return true;
     }
 
     public List<Patient> getPatientList() {

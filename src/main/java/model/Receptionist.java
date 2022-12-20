@@ -13,7 +13,6 @@ public class Receptionist extends User{
 
     //TODO Per Ale-> Inserire l'attributo receptionistPermission come final nel class diagram in quanto l'istanza receptionist
     // presuppone l'attributo impostato a TRUE
-    private final boolean receptionistPermission = true;
 
     public Receptionist(List<Message> messageList,
                         String name, String surname, String password, String fiscalCode, String birthPlace, LocalDate birthDay) {
@@ -29,7 +28,7 @@ public class Receptionist extends User{
     public Receptionist(){}
 
     public boolean isAReceptionist() {
-        return this.receptionistPermission;
+        return true;
     }
 
     //TODO per Ale-> inserire nel class diagram il metodo setMessageList, in quanto un receptionist

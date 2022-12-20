@@ -27,6 +27,7 @@ public class NurseTest {
         Assertions.assertNull(testVoid.getBirthplace());
         Assertions.assertNull(testVoid.getPassword());
         Assertions.assertEquals(0, testVoid.getDailyPatientList().size());
+        Assertions.assertTrue(testVoid.isANurse());
 
     }
 
@@ -54,5 +55,6 @@ public class NurseTest {
         Assertions.assertEquals(fiscalCode, test0.getFiscalCode());
         Assertions.assertEquals(birthplace, test0.getBirthplace());
         Assertions.assertEquals(birthday, test0.getBirthday());
+        Assertions.assertTrue(test0.isANurse());
     }
 }

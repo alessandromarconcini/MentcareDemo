@@ -26,6 +26,7 @@ public class ManagerTest {
         Assertions.assertNull(testVoid.getFiscalCode());
         Assertions.assertNull(testVoid.getPassword());
         Assertions.assertNull(testVoid.getSurname());
+        Assertions.assertTrue(testVoid.isManager());
     }
 
     // Testa un membro dello staff di amministrazione standard
@@ -42,5 +43,6 @@ public class ManagerTest {
         Assertions.assertEquals("CNNLSN56G98F566Y",test0.getFiscalCode());
         Assertions.assertEquals("Univr",test0.getBirthplace());
         Assertions.assertEquals(now,test0.getBirthday());
+        Assertions.assertTrue(test0.isManager());
     }
 }

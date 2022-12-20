@@ -10,7 +10,6 @@ public class Patient extends User {
 
     @OneToMany
     private List<Appointment> appointmentList = new ArrayList<>();
-    private final Boolean patientPermissions = true;
     private String phoneNumber;
     private Boolean dangerous;
     @OneToOne
@@ -50,7 +49,7 @@ public class Patient extends User {
 
     public Patient() {}
 
-    public Boolean isAPatient() { return patientPermissions; }
+    public Boolean isAPatient() { return true; }
 
     public Boolean isDangerous() { return dangerous; }
 

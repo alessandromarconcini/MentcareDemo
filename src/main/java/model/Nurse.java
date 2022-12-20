@@ -17,7 +17,6 @@ public class Nurse extends User{
     //NOTE  L'annotazione @OneToMany è uno strumentopolo misterioso che ci servirà più tardi
     @OneToMany(fetch = FetchType.LAZY)
     private List<Appointment> appointmentList = new ArrayList<>();
-    private final Boolean nursePermission = true;
     @OneToMany(fetch = FetchType.LAZY)
     private List<Patient> dailyPatientList = new ArrayList<>();
 
@@ -36,7 +35,7 @@ public class Nurse extends User{
     }
     public Nurse() {}
 
-    public Boolean isANurse() { return nursePermission; }
+    public Boolean isANurse() {return true; }
 
     public List<Appointment> getAppointmentList() { return appointmentList; }
 

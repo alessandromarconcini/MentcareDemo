@@ -4,19 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Completamento classi MODEL. Guardare TODO.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/PatientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/modelTest/ReceptionistTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/modelTest/ReportTest.java" afterDir="false" />
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Model testing pt4">
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/ClinicRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/DoctorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/DrugRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/EventRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/HospitalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/ManagerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/MessageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/NurseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/repository/PrescriptionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Receptionist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Receptionist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Report.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enumeration/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/enumeration/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/AppointmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/AppointmentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/DoctorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/DoctorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/AppointmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/repository/AppointmentRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +47,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -102,7 +102,7 @@
       <recent name="model" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ReportTest">
+  <component name="RunManager" selected="Gradle.Tests in 'modelTest'">
     <configuration name="HospitalTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -220,9 +220,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'modelTest'" />
         <item itemvalue="Gradle.ReportTest" />
         <item itemvalue="Gradle.ReceptionistTest" />
-        <item itemvalue="Gradle.Tests in 'modelTest'" />
         <item itemvalue="Gradle.ManagerTest" />
         <item itemvalue="Gradle.HospitalTest" />
       </list>
@@ -555,7 +555,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671450020666</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Model testing pt4">
+      <created>1671523393933</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1671523393933</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,7 +580,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- Sono stati scartati gli infermieri a domicilio;&#10;- E' stato scartato S10: indagine polizia&#10;- Sono stati ridotti i requisiti cercando di mantenere quelli essenziali;&#10;- Sono state effettuate piccole correzioni sugli scenari" />
     <MESSAGE value="messo gli stakeholder dopo gli scenari e sistemato gli indici" />
     <MESSAGE value="ho levato i requisiti di interfaccia (concordato con Ale)" />
     <MESSAGE value="Eliminazione Dose giustificata" />
@@ -598,9 +604,11 @@
     <MESSAGE value="Modifica alla classe doctor per il funzionamento del framework springboot e aggiunta di Message per lo stesso motivo" />
     <MESSAGE value="Aggiunta id e IllegalDoctorException a Doctor, sistemazione Receptionisti come per doctor" />
     <MESSAGE value="Model Testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Model Testing" />
+    <MESSAGE value="Model testing pt4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model testing pt4" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MentcareDemo$ReportTest.ic" NAME="ReportTest Coverage Results" MODIFIED="1671523281525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/MentcareDemo$Tests_in__modelTest_.ic" NAME="Tests in 'modelTest' Coverage Results" MODIFIED="1671522195061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/MentcareDemo$ReceptionistTest.ic" NAME="ReceptionistTest Coverage Results" MODIFIED="1671522917462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>

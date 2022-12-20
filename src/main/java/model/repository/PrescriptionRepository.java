@@ -1,8 +1,8 @@
 package model.repository;
 
-import model.Appointment;
 import model.Patient;
+import model.Prescription;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface AppointmentRepository extends JpaRepository<Long, Appointment> {
+public interface PrescriptionRepository extends JpaRepository<Long, Prescription> {
 }

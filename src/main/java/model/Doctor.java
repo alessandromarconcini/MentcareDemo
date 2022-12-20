@@ -26,6 +26,7 @@ public class Doctor extends User{
     private List<Prescription> prescriptionList = new ArrayList<>();
     private String specialization;
 
+
     public Doctor(List<Appointment> appointmentList, List<Patient> patientList, List<Message> messageList,
                   String phoneNumber, List<Prescription> prescriptionList, String specialization,
                   String name, String surname, String password, String fiscalCode, String birthPlace, LocalDate birthDay) {

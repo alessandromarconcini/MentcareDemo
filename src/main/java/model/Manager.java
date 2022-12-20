@@ -6,8 +6,7 @@ import java.time.LocalDate;
 @Entity
 public class Manager extends User{
     public Boolean adminPermissions = true;
-    public Manager(
-                   String name, String surname, String password, String fiscalCode, String birthPlace, LocalDate birthDay) {
+    public Manager(String name, String surname, String password, String fiscalCode, String birthPlace, LocalDate birthDay) {
 
         super(name,surname,password,fiscalCode,birthPlace,birthDay);
     }

@@ -38,6 +38,7 @@ public class AppointmentTest {
         Assertions.assertEquals(nurse,test0.getNurse());
         Assertions.assertEquals(now,test0.getDate());
         Assertions.assertEquals(doctor,test0.getDoctor());
+        Assertions.assertEquals(patient,test0.getPatient());
 
     }
 }

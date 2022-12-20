@@ -17,7 +17,7 @@ public class DoctorTest {
 
     // Testa un dottore sprovvisto di campi
     @Test
-    public void basicVoidDoctorInitialization(){
+    public void basicVoidDoctorInitializationTest(){
 
         Doctor testVoid = new Doctor();
 

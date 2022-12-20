@@ -11,6 +11,14 @@ public class Message {
 
     private String text;
 
+    @JoinColumn(name = "doctor_id")
+    @ManyToOne
+    private Doctor doctor;
+
+    @JoinColumn(name = "receptionist_id")
+    @ManyToOne
+    private Receptionist receptionist;
+
     public Message(String text) {
         this.text = text;
     }

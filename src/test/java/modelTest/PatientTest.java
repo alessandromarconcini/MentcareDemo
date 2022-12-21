@@ -47,7 +47,7 @@ public class PatientTest {
         String birthplace = "UniVr";
         String pathology = "pat";
 
-        Patient test0 = new Patient(al, name, surname, presc, password, fiscalCode,phoneNumber, birthplace, birthday, pathology);
+        Patient test0 = new Patient(al,presc,pathology,false,phoneNumber,name,surname,password,fiscalCode,birthplace,birthday);
 
         Assertions.assertTrue(test0.isAPatient());
         Assertions.assertEquals(false, test0.isDangerous()); //TODO

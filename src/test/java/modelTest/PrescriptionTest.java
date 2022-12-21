@@ -18,7 +18,7 @@ public class PrescriptionTest {
         Prescription testVoid = new Prescription();
 
         Assertions.assertNull(testVoid.getTextReport());
-        Assertions.assertNull(testVoid.getDrugList());
+        Assertions.assertEquals(0,testVoid.getDrugList().size());
         Assertions.assertNull(testVoid.getLastModify());
 
     }
@@ -31,7 +31,7 @@ public class PrescriptionTest {
         String textReport = "abc";
         LocalDate lastModify = LocalDate.now();
 
-        Prescription test0 = new Prescription(drugList, textReport, lastModify);
+        Prescription test0 = new Prescription(textReport,drugList,lastModify);
 
         Assertions.assertEquals(drugList,test0.getDrugList());
         Assertions.assertEquals(textReport,test0.getTextReport());

@@ -11,7 +11,7 @@ public class Patient extends User {
     @OneToMany
     private List<Appointment> appointmentList = new ArrayList<>();
     private String phoneNumber;
-    private Boolean dangerous;
+    private Boolean dangerous = false;
     @OneToOne
     private Prescription prescription;
     private String pathology;

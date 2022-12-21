@@ -23,6 +23,8 @@ repositories {
     maven { setUrl("https://maven.vaadin.com/vaadin-addons") }
 }
 
+
+
 defaultTasks("clean", "build")
 
 dependencies {

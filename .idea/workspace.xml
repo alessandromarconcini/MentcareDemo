@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Repositories Creation">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_14_12_2022_12_58__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_14_12_2022_12_58__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_12_2022_19_12__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_12_2022_19_12__Changes_.xml" afterDir="false" />
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Model testing final pt + @Repository annotations added to the repoes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/DoctorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/DoctorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/NurseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/NurseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/PatientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/PatientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/PrescriptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/PrescriptionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +57,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2H2tFAE7ALzCjZ6Imq84FgMxWS1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -257,6 +251,7 @@
       <workItem from="1671013667523" duration="1166000" />
       <workItem from="1671014863963" duration="116000" />
       <workItem from="1671018194246" duration="326000" />
+      <workItem from="1671613397188" duration="1456000" />
     </task>
     <task id="LOCAL-00001" summary="MentcareDemo is born!">
       <created>1667495005722</created>
@@ -566,7 +561,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671524038316</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Model testing final pt + @Repository annotations added to the repoes">
+      <created>1671613097987</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1671613097987</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Model testing final pt + @Repository annotations added to the repoes">
+      <created>1671613273854</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1671613273854</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,7 +593,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ho levato i requisiti di interfaccia (concordato con Ale)" />
     <MESSAGE value="Eliminazione Dose giustificata" />
     <MESSAGE value="Modifica alla sezione 4.2.8 con &quot;Diagramma delle sotto-attività di controllo&quot; con aggiunta del rispettivo diagramma di attività" />
     <MESSAGE value="Aggiunta sezione 4.2.9 relativa all'espansione esplicita dei blocchi di sotto-attività dei sottoparagrafi 4.2.2-4.2.7" />
@@ -609,7 +617,8 @@
     <MESSAGE value="Model Testing" />
     <MESSAGE value="Model testing pt4" />
     <MESSAGE value="Repositories Creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repositories Creation" />
+    <MESSAGE value="Model testing final pt + @Repository annotations added to the repoes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model testing final pt + @Repository annotations added to the repoes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MentcareDemo$ReportTest.ic" NAME="ReportTest Coverage Results" MODIFIED="1671523965009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

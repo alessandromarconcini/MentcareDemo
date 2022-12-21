@@ -2,7 +2,7 @@ plugins {
     id 'org.springframework.boot' version '2.6.6'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
-    id 'com.vaadin' version '20.0.0'
+    id 'com.vaadin' version '23.3.1'
     id 'org.gretty' version '3.0.3'
     id 'war'
     id 'groovy'
@@ -19,7 +19,6 @@ sourceCompatibility = '11'
 
 repositories {
     mavenCentral()
-    maven { setUrl("https://maven.vaadin.com/vaadin-prereleases") }
     maven { setUrl("https://maven.vaadin.com/vaadin-addons") }
 }
 
@@ -53,7 +52,7 @@ dependencies {
 }
 
 vaadin {
-    optimizeBundle = true
+    optimizeBundle = false
 }
 
 tasks.named('test') {

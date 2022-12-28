@@ -10,8 +10,7 @@ import java.util.List;
 @Entity
 public class Clinic{
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Column(name = "id", nullable = false)
+    @GeneratedValue
     private Long id;
     private String name;
     private String phoneNumber;
@@ -39,7 +38,6 @@ public class Clinic{
         if(phoneNumber.length() > 13)
             throw new IllegalClinicException();
 
-        this.id = id;
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.patientList = patientList;

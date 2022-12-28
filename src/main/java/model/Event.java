@@ -9,12 +9,10 @@ import java.time.LocalDate;
 @Entity
 public class Event {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Column(name = "id", nullable = false)
+    @GeneratedValue
     private Long id;
 
     @OneToOne
-    //TODO Fixare il conflitto con la superclasse
     private User actor;
     private LocalDate date;
     private Action action;

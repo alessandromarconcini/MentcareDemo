@@ -9,7 +9,7 @@ import java.util.List;
 @Entity
 public class Hospital {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private Long id;
     private String name;
     private String phoneNumber;

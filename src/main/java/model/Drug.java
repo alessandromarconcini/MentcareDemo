@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Entity
 public class Drug {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private Long id;
     private String name;
     private Float minimumDose;
@@ -17,7 +17,6 @@ public class Drug {
     private String frequency;
     private DrugCost cost;
     @ManyToOne
-    @JoinColumn(name = "prescription_id")
     private Prescription prescription;
 
     public Drug(){}

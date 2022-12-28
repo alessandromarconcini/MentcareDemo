@@ -10,13 +10,14 @@ import java.time.LocalDate;
  * Classe rappresentante un utente generico del sistema Mentcare
  */
 
-@MappedSuperclass
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class User {
 
     //TODO Verificare di gruppo se l'id è limitabile con delle annotazioni a 8 cifre
     // Cerchiamo una funzionalità che limita il valore a 99.999.99 e poi ricomicia da 0
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+    @Id @GeneratedValue
+    private Long id;
     private String name;
     private String surname;
     private String password;
@@ -71,11 +72,11 @@ public class User {
         return surname;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 

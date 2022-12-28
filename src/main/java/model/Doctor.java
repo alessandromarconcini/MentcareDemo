@@ -9,9 +9,6 @@ import java.util.List;
 
 @Entity
 public class Doctor extends User{
-
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
     @OneToMany
     private List<Appointment> appointmentList = new ArrayList<>();
     @OneToMany
@@ -103,13 +100,5 @@ public class Doctor extends User{
 
     public void setSpecialization(String specialization) {
         this.specialization = specialization;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 }

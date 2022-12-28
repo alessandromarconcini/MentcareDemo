@@ -5,17 +5,14 @@ import javax.persistence.*;
 @Entity
 public class Message {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Column(name = "id", nullable = false)
+    @GeneratedValue
     private Long id;
 
     private String text;
 
-    @JoinColumn(name = "doctor_id")
     @ManyToOne
     private Doctor doctor;
 
-    @JoinColumn(name = "receptionist_id")
     @ManyToOne
     private Receptionist receptionist;
 

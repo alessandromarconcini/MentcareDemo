@@ -9,12 +9,11 @@ import java.time.LocalDate;
 @Entity
 public class Appointment {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue
     private Integer id;
 
     //NOTE Considerare i campi con il @Join come elementi per la relazione nel database
     @ManyToOne
-    @JoinColumn(name = "nurse_id")
     private Nurse nurse;
 
     private LocalDate date;

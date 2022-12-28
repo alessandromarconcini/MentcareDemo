@@ -9,7 +9,7 @@ import java.time.LocalDate;
 @Entity
 public class Report {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private Long id;
     private LocalDate date;
     private String name;
@@ -22,7 +22,6 @@ public class Report {
         if(date == null || name == null || text == null)
             throw new IllegalReportException();
 
-        this.id = id;
         this.date = date;
         this.name = name;
         this.text = text;

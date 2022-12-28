@@ -12,8 +12,7 @@ import java.util.List;
 public class Prescription {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Column(name = "id", nullable = false)
+    @GeneratedValue
     private Long id;
     private String textReport;
     @OneToMany

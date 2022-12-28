@@ -17,11 +17,9 @@ public class Patient extends User {
     private String pathology;
 
     @ManyToOne
-    @JoinColumn(name = "hospital_id")
     private Hospital hospital;
 
     @ManyToOne
-    @JoinColumn(name = "nurse_id")
     private Nurse nurse;
 
     public Patient(List<Appointment> appointmentList, Prescription prescription,

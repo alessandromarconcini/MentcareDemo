@@ -15,9 +15,9 @@ public class Nurse extends User{
 
     //NOTE In Java il tipo List<T> con T generico si differenzia in Vector,ArrayList e LinkedList, a noi interessa il secondo
     //NOTE  L'annotazione @OneToMany è uno strumentopolo misterioso che ci servirà più tardi
-    @OneToMany(fetch = FetchType.LAZY)
+    @OneToMany
     private List<Appointment> appointmentList = new ArrayList<>();
-    @OneToMany(fetch = FetchType.LAZY)
+    @OneToMany
     private List<Patient> dailyPatientList = new ArrayList<>();
 
     public Nurse(List<Appointment> appointmentList, List<Patient> dailyPatientList,

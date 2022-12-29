@@ -2,28 +2,28 @@ package model;
 
 import model.exception.IllegalNurseException;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Nurse extends User{
+public class Nurse {
+
+    @Id @GeneratedValue
+    private Long id;
 
     //NOTE In Java il tipo List<T> con T generico si differenzia in Vector,ArrayList e LinkedList, a noi interessa il secondo
     //NOTE  L'annotazione @OneToMany è uno strumentopolo misterioso che ci servirà più tardi
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Appointment> appointmentList = new ArrayList<>();
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Patient> dailyPatientList = new ArrayList<>();
 
     public Nurse(List<Appointment> appointmentList, List<Patient> dailyPatientList,
                  String name, String surname, String password, String fiscalCode, String birthPlace, LocalDate birthDay) {
 
-        super(name,surname,password,fiscalCode,birthPlace,birthDay);
+        //super(name,surname,password,fiscalCode,birthPlace,birthDay);
 
         if (appointmentList == null)
             throw new IllegalNurseException();

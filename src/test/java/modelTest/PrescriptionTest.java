@@ -1,6 +1,5 @@
 package modelTest;
 
-import com.vaadin.flow.component.html.Pre;
 import model.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

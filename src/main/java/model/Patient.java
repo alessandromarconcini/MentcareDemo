@@ -8,18 +8,23 @@ import java.util.List;
 @Entity
 public class Patient extends User {
 
-    @OneToMany
+    @Id @GeneratedValue
+    private Long id;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Appointment> appointmentList = new ArrayList<>();
     private String phoneNumber;
     private Boolean dangerous = false;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Prescription prescription;
     private String pathology;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn
     private Hospital hospital;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn
     private Nurse nurse;
 
     public Patient(List<Appointment> appointmentList, Prescription prescription,

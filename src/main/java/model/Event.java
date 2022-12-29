@@ -12,7 +12,7 @@ public class Event {
     @GeneratedValue
     private Long id;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private User actor;
     private LocalDate date;
     private Action action;
@@ -26,7 +26,6 @@ public class Event {
         this.date = date;
         this.action = action;
     }
-
     public Event(){}
     public Long getId() {
         return id;

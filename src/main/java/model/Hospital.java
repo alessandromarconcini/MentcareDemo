@@ -15,7 +15,7 @@ public class Hospital {
     private String phoneNumber;
     private String address;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Patient> patientList = new ArrayList<>();
     private Integer countAvailability;
 

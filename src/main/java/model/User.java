@@ -11,7 +11,7 @@ import java.time.LocalDate;
  */
 
 @Entity
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+//@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class User {
 
     //TODO Verificare di gruppo se l'id è limitabile con delle annotazioni a 8 cifre

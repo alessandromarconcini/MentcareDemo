@@ -15,7 +15,7 @@ public class Prescription {
     @GeneratedValue
     private Long id;
     private String textReport;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Drug> drugList = new ArrayList<>();
     private LocalDate lastModify;
 

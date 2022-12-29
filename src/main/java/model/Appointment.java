@@ -10,18 +10,19 @@ import java.time.LocalDate;
 public class Appointment {
     @Id
     @GeneratedValue
-    private Integer id;
+    private Long id;
 
     //NOTE Considerare i campi con il @Join come elementi per la relazione nel database
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn
     private Nurse nurse;
 
     private LocalDate date;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Patient patient;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Doctor doctor;
 
     public Appointment() {}
@@ -37,11 +38,11 @@ public class Appointment {
         this.doctor = doctor;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

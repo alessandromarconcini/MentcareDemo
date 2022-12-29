@@ -6,8 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Receptionist extends User{
-    @OneToMany
+public class Receptionist{
+
+    @Id @GeneratedValue
+    private Long id;
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Message> messageList = new ArrayList<>();
 
     //TODO Per Ale-> Inserire l'attributo receptionistPermission come final nel class diagram in quanto l'istanza receptionist
@@ -16,7 +19,7 @@ public class Receptionist extends User{
     public Receptionist(List<Message> messageList,
                         String name, String surname, String password, String fiscalCode, String birthPlace, LocalDate birthDay) {
 
-        super(name,surname,password,fiscalCode,birthPlace,birthDay);
+        //super(name,surname,password,fiscalCode,birthPlace,birthDay);
 
         if(messageList == null)
             throw  new IllegalArgumentException();

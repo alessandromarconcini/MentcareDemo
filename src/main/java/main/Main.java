@@ -6,12 +6,12 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication(scanBasePackages = "java.*")
-@EnableJpaRepositories("model.repository")
-@EntityScan("model")
-public class Main extends SpringBootServletInitializer{
+@SpringBootApplication
+//@EnableJpaRepositories("model.repository")
+//@EntityScan("model")
+public class Main {
 
-    public static void main(String... args) {
+    public static void main(String[] args) {
         SpringApplication.run(Main.class,args);
     }
 }

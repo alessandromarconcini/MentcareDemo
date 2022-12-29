@@ -8,26 +8,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Doctor extends User{
-    @OneToMany
+public class Doctor{
+
+    @Id @GeneratedValue
+    private Long id;
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Appointment> appointmentList = new ArrayList<>();
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Patient> patientList = new ArrayList<>();
     private String phoneNumber;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Message> messageList = new ArrayList<>();
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Prescription> prescriptionList = new ArrayList<>();
     private String specialization;
 
 
     public Doctor(List<Appointment> appointmentList, List<Patient> patientList, List<Message> messageList,
-                  String phoneNumber, List<Prescription> prescriptionList, String specialization,
-                  String name, String surname, String password, String fiscalCode, String birthPlace, LocalDate birthDay) {
+                  String phoneNumber, List<Prescription> prescriptionList, String specialization
+                  ) {
         //TODO Per Ale-> Inserire l'attributo doctorPermission come final nel class diagram in quanto l'istanza doctor
         // presuppone l'attributo impostato a TRUE
 
-        super(name,surname,password,fiscalCode,birthPlace,birthDay);
+        //super(name,surname,password,fiscalCode,birthPlace,birthDay);
 
         if (appointmentList == null)
             throw new IllegalDoctorException();

@@ -1,20 +1,25 @@
 package controllerTest;
 
 import io.restassured.RestAssured;
+import main.Main;
 import org.hamcrest.Matchers;
-import org.junit.Test;
+//import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.runner.RunWith;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.DirtiesContext;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
 
 import java.time.LocalDate;
 
 import static io.restassured.RestAssured.given;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
+@SpringBootTest(classes = Main.class,webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class ManagerControllerTest {
 
     @BeforeAll
@@ -35,6 +40,7 @@ public class ManagerControllerTest {
         final LocalDate now = LocalDate.now();
 
         given()
+                .contentType("application/json")
                 .queryParam("name",name)
                 .queryParam("surname",surname)
                 .queryParam("password",password)
@@ -42,9 +48,9 @@ public class ManagerControllerTest {
                 .queryParam("birthplace",birthplace)
                 .queryParam("birthday",now)
                 .when()
-                .post("/mentcareDemo/createUser")
+                .post("~/createUser")
                 .then()
-                .statusCode(200)
+                .statusCode(201)
                 .body("id", Matchers.greaterThan(0))
                 .body("name",Matchers.is(name))
                 .body("surname",Matchers.is(surname))

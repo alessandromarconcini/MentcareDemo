@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Upgrading vaadin">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/Checker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/DoctorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ManagerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/NurseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/PatientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/ReceptionistController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/LoadDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/controllerTest/ManagerControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_14_12_2022_12_58_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_14_12_2022_12_58__Changes_.xml" beforeDir="false" />
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Main + Controller Classes creation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ManagerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/LoadDatabase.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Appointment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Clinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Clinic.java" afterDir="false" />
@@ -32,7 +24,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Patient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Prescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Prescription.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Receptionist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Receptionist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Report.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/AppointmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/repository/AppointmentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/ClinicRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/repository/ClinicRepository.java" afterDir="false" />
@@ -49,6 +40,13 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/ReportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/repository/ReportRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/controllerTest/ManagerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/controllerTest/ManagerControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/DoctorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/DoctorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/ManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/ManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/NurseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/NurseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/PatientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/PatientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/PrescriptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/PrescriptionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/ReceptionistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/ReceptionistTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +85,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="modelCreation" />
+        <entry key="$PROJECT_DIR$" value="controllerProblems" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -124,7 +122,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.sourceCode",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "spring.configuration.checksum": "19b265faf42aa219cc160c6bc4ff0a06",
     "vue.rearranger.settings.migration": "true"
   }
@@ -140,7 +138,7 @@
       <recent name="model" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ManagerControllerTest">
+  <component name="RunManager" selected="Spring Boot.Main">
     <configuration name="ManagerControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -248,11 +246,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ManagerControllerTest" />
         <item itemvalue="Spring Boot.Main" />
-        <item itemvalue="Gradle.ManagerControllerTest.createUserTest" />
-        <item itemvalue="Gradle.MangerControllerTest" />
         <item itemvalue="Gradle.Tests in 'modelTest'" />
+        <item itemvalue="Gradle.MangerControllerTest" />
+        <item itemvalue="Gradle.ManagerControllerTest.createUserTest" />
+        <item itemvalue="Gradle.ManagerControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +290,9 @@
       <workItem from="1671632101490" duration="610000" />
       <workItem from="1672160877612" duration="195000" />
       <workItem from="1672161088458" duration="50000" />
-      <workItem from="1672223020941" duration="2032000" />
+      <workItem from="1672223020941" duration="2366000" />
+      <workItem from="1672235472905" duration="11000" />
+      <workItem from="1672298374227" duration="11225000" />
     </task>
     <task id="LOCAL-00001" summary="MentcareDemo is born!">
       <created>1667495005722</created>
@@ -623,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671615241018</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Main + Controller Classes creation">
+      <created>1672225334792</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1672225334792</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +648,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modifica alla sezione 4.2.8 con &quot;Diagramma delle sotto-attività di controllo&quot; con aggiunta del rispettivo diagramma di attività" />
     <MESSAGE value="Aggiunta sezione 4.2.9 relativa all'espansione esplicita dei blocchi di sotto-attività dei sottoparagrafi 4.2.2-4.2.7" />
     <MESSAGE value="Aggiunto Activity Diagram Infermiere" />
     <MESSAGE value="Aggiunte attività del Check Campi occupati" />
@@ -666,7 +672,12 @@
     <MESSAGE value="Repositories Creation" />
     <MESSAGE value="Model testing final pt + @Repository annotations added to the repoes" />
     <MESSAGE value="Upgrading vaadin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upgrading vaadin" />
+    <MESSAGE value="Main + Controller Classes creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main + Controller Classes creation" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MentcareDemo$ReportTest.ic" NAME="ReportTest Coverage Results" MODIFIED="1671523965009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

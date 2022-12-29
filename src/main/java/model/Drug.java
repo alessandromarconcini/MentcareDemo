@@ -16,7 +16,8 @@ public class Drug {
     private Float assignedDose;
     private String frequency;
     private DrugCost cost;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn
     private Prescription prescription;
 
     public Drug(){}

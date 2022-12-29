@@ -14,11 +14,11 @@ public class Clinic{
     private Long id;
     private String name;
     private String phoneNumber;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Patient> patientList = new ArrayList<>();
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Doctor> doctorList = new ArrayList<>();
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Nurse> nurseList = new ArrayList<>();
 
     public Long getId() {

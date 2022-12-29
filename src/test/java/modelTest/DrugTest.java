@@ -1,12 +1,9 @@
 package modelTest;
 
-import model.*;
-import model.enumeration.DrugCost;
+import it.univr.mentcareDemo.model.Drug;
+import it.univr.mentcareDemo.model.enumeration.DrugCost;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 

@@ -1,6 +1,7 @@
 package modelTest;
 
-import model.*;
+import it.univr.mentcareDemo.model.Hospital;
+import it.univr.mentcareDemo.model.Patient;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

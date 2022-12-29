@@ -1,18 +1,15 @@
 package controllerTest;
 
 import io.restassured.RestAssured;
-import main.Main;
+import it.univr.mentcareDemo.main.Main;
 import org.hamcrest.Matchers;
 //import org.junit.Test;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.runner.RunWith;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.DirtiesContext;
-import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.test.context.web.WebAppConfiguration;
 
 import java.time.LocalDate;
 
@@ -48,15 +45,15 @@ public class ManagerControllerTest {
                 .queryParam("birthplace",birthplace)
                 .queryParam("birthday",now)
                 .when()
-                .post("~/createUser")
+                .post("createUser")
                 .then()
-                .statusCode(201)
+                .statusCode(200)
                 .body("id", Matchers.greaterThan(0))
                 .body("name",Matchers.is(name))
                 .body("surname",Matchers.is(surname))
                 .body("password",Matchers.is(password))
                 .body("fiscalCode",Matchers.is(fiscalCode))
                 .body("birthplace",Matchers.is(birthplace))
-                .body("birthday",Matchers.is(now));
+                .body("birthday",Matchers.is(now.toString()));
     }
 }

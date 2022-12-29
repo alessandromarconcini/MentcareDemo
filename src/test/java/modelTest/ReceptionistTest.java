@@ -1,7 +1,7 @@
 package modelTest;
 
-import model.*;
-import net.bytebuddy.asm.Advice;
+import it.univr.mentcareDemo.model.Message;
+import it.univr.mentcareDemo.model.Receptionist;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

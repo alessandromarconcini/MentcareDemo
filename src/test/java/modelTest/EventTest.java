@@ -1,14 +1,13 @@
 package modelTest;
 
-import model.*;
-import model.enumeration.Action;
-import model.enumeration.DrugCost;
+import it.univr.mentcareDemo.model.Event;
+import it.univr.mentcareDemo.model.User;
+
+import it.univr.mentcareDemo.model.enumeration.Action;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 

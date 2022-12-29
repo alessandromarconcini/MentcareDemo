@@ -1,6 +1,6 @@
 package modelTest;
 
-import model.User;
+import it.univr.mentcareDemo.model.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

@@ -42,24 +42,24 @@ public class ManagerControllerTest {
         final String birthDate = "31/10/2000";
 
         given()
-                .contentType("application/json")
-                .queryParam("name",name)
-                .queryParam("surname",surname)
-                .queryParam("password",password)
-                .queryParam("fiscalCode",fiscalCode)
-                .queryParam("birthplace",birthplace)
-                .queryParam("birthDate",birthDate)
-                .when()
-                .post("createUser")
-                .then()
-                .statusCode(200)
-                .body("id", Matchers.greaterThan(0))
-                .body("name",Matchers.is(name))
-                .body("surname",Matchers.is(surname))
-                .body("password",Matchers.is(password))
-                .body("fiscalCode",Matchers.is(fiscalCode))
-                .body("birthplace",Matchers.is(birthplace))
-                .body("birthDate",Matchers.is(birthDate));
+            .contentType("application/json")
+            .queryParam("name",name)
+            .queryParam("surname",surname)
+            .queryParam("password",password)
+            .queryParam("fiscalCode",fiscalCode)
+            .queryParam("birthplace",birthplace)
+            .queryParam("birthDate",birthDate)
+        .when()
+            .post("createUser")
+        .then()
+            .statusCode(200)
+            .body("id", Matchers.greaterThan(0))
+            .body("name",Matchers.is(name))
+            .body("surname",Matchers.is(surname))
+            .body("password",Matchers.is(password))
+            .body("fiscalCode",Matchers.is(fiscalCode))
+            .body("birthplace",Matchers.is(birthplace))
+            .body("birthDate",Matchers.is(birthDate));
     }
 
     @Test
@@ -76,28 +76,95 @@ public class ManagerControllerTest {
         final List<Patient> dailyPatientList = new ArrayList<>();
 
         given()
-                .contentType("application/json")
-                .queryParam("name",name)
-                .queryParam("surname",surname)
-                .queryParam("password",password)
-                .queryParam("fiscalCode",fiscalCode)
-                .queryParam("birthplace",birthplace)
-                .queryParam("birthDate",birthDate)
-                .queryParam("appointmentList",appointmentList)
-                .queryParam("dailyPatientList",dailyPatientList)
-                .when()
+            .contentType("application/json")
+            .queryParam("name",name)
+            .queryParam("surname",surname)
+            .queryParam("password",password)
+            .queryParam("fiscalCode",fiscalCode)
+            .queryParam("birthplace",birthplace)
+            .queryParam("birthDate",birthDate)
+            .queryParam("appointmentList",appointmentList)
+            .queryParam("dailyPatientList",dailyPatientList)
+        .when()
                 .post("createNurse")
-                .then()
-                .statusCode(200)
-                .body("id", Matchers.greaterThan(0))
-                .body("name",Matchers.is(name))
-                .body("surname",Matchers.is(surname))
-                .body("password",Matchers.is(password))
-                .body("fiscalCode",Matchers.is(fiscalCode))
-                .body("birthplace",Matchers.is(birthplace))
-                .body("birthDate",Matchers.is(birthDate));
-                //.body(jsonBody,Matchers.is(appointmentList))
-                //.body(,Matchers.is(dailyPatientList));
+        .then()
+            .statusCode(200)
+            .body("id", Matchers.greaterThan(0))
+            .body("name",Matchers.is(name))
+            .body("surname",Matchers.is(surname))
+            .body("password",Matchers.is(password))
+            .body("fiscalCode",Matchers.is(fiscalCode))
+            .body("birthplace",Matchers.is(birthplace))
+            .body("birthDate",Matchers.is(birthDate));
+            //.body(jsonBody,Matchers.is(appointmentList))
+            //.body(,Matchers.is(dailyPatientList));
+
+    }
+
+    @Test
+    @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
+    public void createDoctorTest(){
+
+        final String name = "Alessandro";
+        final String surname = "Marconcini";
+        final String password = "PsW";
+        final String fiscalCode = "FFFFFF00O67G777F";
+        final String birthplace = "Legnago";
+        final String birthDate = "111";
+        final List<Appointment> appointmentList = new ArrayList<>();
+        final List<Patient> patientList = new ArrayList<>();
+        final List<Message> messageList = new ArrayList<>();
+        final String phoneNumber = "3299191800";
+        final List<Prescription>  prescriptionList = new ArrayList<>();
+        final String specialization = "Psichiatra";
+
+        given()
+            .contentType("application/json")
+            .queryParam("name", name)
+            .queryParam("surname", surname)
+            .queryParam("password", password)
+            .queryParam("fiscalCode", fiscalCode)
+            .queryParam("birthplace", birthplace)
+            .queryParam("birthDate", birthDate)
+            .queryParam("appointmentList", appointmentList)
+            .queryParam("patientList", patientList)
+            .queryParam("messageList", messageList)
+            .queryParam("prescriptionList", prescriptionList)
+            .queryParam("specialization", specialization)
+            .queryParam("phoneNumber", phoneNumber)
+        .when()
+            .post("createDoctor")
+        .then()
+            .statusCode(200)
+            .body("id", Matchers.greaterThan(0))
+            .body("name",Matchers.is(name))
+            .body("surname",Matchers.is(surname))
+            .body("password",Matchers.is(password))
+            .body("fiscalCode",Matchers.is(fiscalCode))
+            .body("birthplace",Matchers.is(birthplace))
+            .body("birthDate",Matchers.is(birthDate))
+            .body("appointmentList", Matchers.is(appointmentList)) //TODO Risolvere problema ArrayList
+            .body("patientList", Matchers.is(patientList)) //TODO Risolvere problema ArrayList
+            .body("messageList", Matchers.is(messageList)) //TODO Risolvere problema ArrayList
+            .body("prescriptionList", Matchers.is(prescriptionList)) //TODO Risolvere problema ArrayList
+            .body("specialization", Matchers.is(specialization))
+            .body("phoneNumber", Matchers.is(phoneNumber));
+    }
+
+    @Test
+    @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
+    public void getManagerAllReportTest(){
+
+        final List<Report> reportList = new ArrayList<>();
+
+        given()
+            .contentType("application/json")
+            .queryParam("reportList", reportList)
+        .when()
+            .post("getManagerAllReports")
+        .then()
+            .statusCode(200)
+            .body("reportList", Matchers.is(reportList)); //TODO Risolvere problema ArrayList
 
     }
 }

@@ -6,7 +6,6 @@ import it.univr.mentcareDemo.model.Patient;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,12 +40,12 @@ public class NurseTest {
         String name = "name";
         String surname = "surname";
         String fiscalCode = "CNNLSN56G98F566Y";
-        LocalDate birthday = LocalDate.now();
+        String birthDate = "1/1/2001";
         String password = "pw";
         String birthplace = "UniVr";
 
         Nurse test0 = new Nurse(appointmentList, dailyPatientList, name, surname,
-                password, fiscalCode, birthplace, birthday);
+                password, fiscalCode, birthplace, birthDate);
 
         Assertions.assertEquals(appointmentList, test0.getAppointmentList());
         Assertions.assertEquals(dailyPatientList, test0.getDailyPatientList());

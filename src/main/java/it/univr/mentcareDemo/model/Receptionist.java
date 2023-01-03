@@ -1,12 +1,11 @@
 package it.univr.mentcareDemo.model;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Receptionist{
+public class Receptionist extends User{
 
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -17,9 +16,9 @@ public class Receptionist{
     // presuppone l'attributo impostato a TRUE
 
     public Receptionist(List<Message> messageList,
-                        String name, String surname, String password, String fiscalCode, String birthPlace, LocalDate birthDay) {
+                        String name, String surname, String password, String fiscalCode, String birthPlace, String birthDay) {
 
-        //super(name,surname,password,fiscalCode,birthPlace,birthDay);
+        super(name,surname,password,fiscalCode,birthPlace,birthDay);
 
         if(messageList == null)
             throw  new IllegalArgumentException();

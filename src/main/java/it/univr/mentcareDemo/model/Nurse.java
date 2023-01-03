@@ -3,7 +3,6 @@ package it.univr.mentcareDemo.model;
 import it.univr.mentcareDemo.model.exception.IllegalNurseException;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,7 +17,7 @@ public class Nurse  extends User{
     private List<Patient> dailyPatientList = new ArrayList<>();
 
     public Nurse(List<Appointment> appointmentList, List<Patient> dailyPatientList,
-                 String name, String surname, String password, String fiscalCode, String birthPlace, LocalDate birthDay) {
+                 String name, String surname, String password, String fiscalCode, String birthPlace, String birthDay) {
 
         super(name,surname,password,fiscalCode,birthPlace,birthDay);
 

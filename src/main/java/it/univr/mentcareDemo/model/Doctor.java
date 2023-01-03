@@ -24,7 +24,7 @@ public class Doctor extends User{
 
     public Doctor(List<Appointment> appointmentList, List<Patient> patientList, List<Message> messageList,
                   String phoneNumber, List<Prescription> prescriptionList, String specialization,
-                  String name, String surname, String password, String fiscalCode, String birthPlace, LocalDate birthDay) {
+                  String name, String surname, String password, String fiscalCode, String birthPlace,String birthDay) {
         //TODO Per Ale-> Inserire l'attributo doctorPermission come final nel class diagram in quanto l'istanza doctor
         // presuppone l'attributo impostato a TRUE
 
@@ -101,5 +101,8 @@ public class Doctor extends User{
 
     public void setSpecialization(String specialization) {
         this.specialization = specialization;
+    }
+
+    public static class Date {
     }
 }

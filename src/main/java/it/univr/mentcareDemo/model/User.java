@@ -3,7 +3,6 @@ package it.univr.mentcareDemo.model;
 import it.univr.mentcareDemo.model.exception.IllegalUserException;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 
 
 /**
@@ -24,12 +23,12 @@ public class User {
     private String password;
     private String fiscalCode;
     private String birthplace;
-    private LocalDate birthday;
+    private String birthday;
 
     //NOTE Nel costruttore effettuo i controlli per assicurarmi che quando creo un oggetto di tipo User, ottengo un oggetto i cui campi sono validi
 
     public User(String name, String surname, String password, String fiscalCode, String birthplace,
-                LocalDate birthday) {
+                String birthday) {
 
         //NOTE è buona prassi mettere i controlli prima delle righe this.name=...
         if(name == null || name.length() == 0)
@@ -54,8 +53,7 @@ public class User {
     }
 
     // é necessario realizzare anche un costruttore vuoto per ogni classe model se si vuole utilizzare nel database
-    public User() {
-    }
+    public User() {}
 
     public void setName(String name) {
         this.name = name;
@@ -97,11 +95,11 @@ public class User {
         return fiscalCode;
     }
 
-    public void setBirthday(LocalDate birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 
-    public LocalDate getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 

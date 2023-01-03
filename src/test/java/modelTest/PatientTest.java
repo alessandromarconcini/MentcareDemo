@@ -1,8 +1,6 @@
 package modelTest;
 
-import it.univr.mentcareDemo.model.Appointment;
-import it.univr.mentcareDemo.model.Patient;
-import it.univr.mentcareDemo.model.Prescription;
+import it.univr.mentcareDemo.model.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -42,13 +40,14 @@ public class PatientTest {
         String surname = "surname";
         Prescription presc = new Prescription();
         String fiscalCode = "CNNLSN56G98F566Y";
-        LocalDate birthday = LocalDate.now();
+        String birthday = "1/12/2000";
         String phoneNumber = "3456949888";
         String password = "pw";
         String birthplace = "UniVr";
         String pathology = "pat";
+        Hospital hospital = new Hospital();
 
-        Patient test0 = new Patient(al,presc,pathology,false,phoneNumber,name,surname,password,fiscalCode,birthplace,birthday);
+        Patient test0 = new Patient(al,presc,pathology,false,phoneNumber,hospital,name,surname,password,fiscalCode,birthplace,birthday);
 
         Assertions.assertTrue(test0.isAPatient());
         Assertions.assertEquals(false, test0.isDangerous()); //TODO

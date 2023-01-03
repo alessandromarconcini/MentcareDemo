@@ -5,74 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="A lot of problems">
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ManagerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/enumeration/DrugCost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Checker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/Checker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/DoctorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ManagerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/NurseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/NurseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ReceptionistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ReceptionistController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Appointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Clinic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Clinic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Drug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Drug.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Hospital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Hospital.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Nurse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Nurse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Prescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Prescription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Receptionist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Receptionist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Report.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enumeration/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/enumeration/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/enumeration/DrugCost.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalAppointmentException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/exception/IllegalAppointmentException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalClinicException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/exception/IllegalClinicException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalDoctorException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/exception/IllegalDoctorException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalDrugException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/exception/IllegalDrugException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalEventException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/exception/IllegalEventException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalHospitalException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/exception/IllegalHospitalException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalNurseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/exception/IllegalNurseException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalPrescriptionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/exception/IllegalPrescriptionException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalReceptionistException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/exception/IllegalReceptionistException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalReportException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/exception/IllegalReportException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/exception/IllegalUserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/exception/IllegalUserException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/AppointmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/AppointmentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/ClinicRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/ClinicRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/DoctorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/DoctorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/DrugRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/DrugRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/EventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/EventRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/HospitalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/HospitalRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/ManagerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/ManagerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/MessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/MessageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/NurseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/NurseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/PatientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/PrescriptionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/PrescriptionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/ReceptionistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/ReceptionistRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/ReportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/ReportRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ManagerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Nurse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Nurse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Receptionist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Receptionist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/controllerTest/ManagerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/controllerTest/ManagerControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/AppointmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/AppointmentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/ClinicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/ClinicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/DoctorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/DoctorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/DrugTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/DrugTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/EventTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/EventTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/HospitalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/HospitalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/ManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/ManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/MessageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/MessageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/NurseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/NurseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/PatientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/PatientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/PrescriptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/PrescriptionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/ReceptionistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/ReceptionistTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/ReportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/ReportTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,8 +50,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -190,6 +136,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="ManagerControllerTest.createNurseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;controllerTest.ManagerControllerTest.createNurseTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="ManagerControllerTest.createUserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -236,19 +205,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Main (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="MentcareDemo.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="it.univr.mentcareDemo.controller.main.Main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.univr.mentcareDemo.controller.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="MentcareDemo.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="it.univr.mentcareDemo.main.Main" />
@@ -265,10 +221,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Main (2)" />
-        <item itemvalue="Gradle.Tests in 'modelTest'" />
-        <item itemvalue="Gradle.ManagerControllerTest" />
         <item itemvalue="Gradle.ManagerControllerTest.createUserTest" />
-        <item itemvalue="Spring Boot.Main (1)" />
+        <item itemvalue="Gradle.ManagerControllerTest.createNurseTest" />
+        <item itemvalue="Gradle.ManagerControllerTest" />
+        <item itemvalue="Gradle.Tests in 'modelTest'" />
       </list>
     </recent_temporary>
   </component>

@@ -4,8 +4,6 @@ import it.univr.mentcareDemo.model.User;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDate;
-
 import static org.junit.Assert.assertEquals;
 
 
@@ -30,14 +28,14 @@ public class UserTest {
     @Test
     public void basicUserInitializationTest(){
 
-        LocalDate now = LocalDate.now();
-        User  test0 = new User("name","surname","1234","ADFSML51T48L676N","Borgo Roma",now);
+        String birthDate = "12/3/1999";
+        User  test0 = new User("name","surname","1234","ADFSML51T48L676N","Borgo Roma",birthDate);
 
         Assertions.assertEquals("name", test0.getName());
         Assertions.assertEquals("surname", test0.getSurname());
         Assertions.assertEquals("1234", test0.getPassword());
         Assertions.assertEquals("ADFSML51T48L676N", test0.getFiscalCode());
         Assertions.assertEquals("Borgo Roma", test0.getBirthplace());
-        Assertions.assertEquals(now, test0.getBirthday());
+        Assertions.assertEquals(birthDate, test0.getBirthday());
     }
 }

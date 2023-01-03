@@ -1,7 +1,6 @@
 package it.univr.mentcareDemo.model;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,8 +24,8 @@ public class Patient extends User {
     private Nurse nurse;
 
     public Patient(List<Appointment> appointmentList, Prescription prescription,
-                   String pathology, Boolean dangerous, String phoneNumber,
-                   String name, String surname, String password, String fiscalCode, String birthPlace, LocalDate birthDay) {
+                   String pathology, Boolean dangerous, String phoneNumber,Hospital hospital,
+                   String name, String surname, String password, String fiscalCode, String birthPlace, String birthDay) {
 
         super(name,surname,password,fiscalCode,birthPlace,birthDay);
 
@@ -39,12 +38,15 @@ public class Patient extends User {
 
         if (phoneNumber == null || phoneNumber.length() > 13)
             throw new IllegalArgumentException();
+        if(hospital == null)
+            throw new IllegalArgumentException();
 
         this.appointmentList = appointmentList;
         this.dangerous = dangerous;
         this.pathology = pathology;
         this.phoneNumber = phoneNumber;
         this.prescription = prescription;
+        this.hospital = hospital;
     }
 
     public Patient() {}

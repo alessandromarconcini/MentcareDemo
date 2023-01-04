@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="A lot of problems">
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="ManagerController completed and testing with problems">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ManagerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/PatientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Doctor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Nurse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Nurse.java" afterDir="false" />
@@ -112,7 +112,7 @@
       <recent name="model" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Main (2)">
+  <component name="RunManager" selected="Gradle.ManagerControllerTest">
     <configuration name="ManagerControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -220,10 +220,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ManagerControllerTest" />
         <item itemvalue="Spring Boot.Main (2)" />
         <item itemvalue="Gradle.ManagerControllerTest.createUserTest" />
         <item itemvalue="Gradle.ManagerControllerTest.createNurseTest" />
-        <item itemvalue="Gradle.ManagerControllerTest" />
         <item itemvalue="Gradle.Tests in 'modelTest'" />
       </list>
     </recent_temporary>
@@ -268,13 +268,7 @@
       <workItem from="1672235472905" duration="11000" />
       <workItem from="1672298374227" duration="11705000" />
       <workItem from="1672320493587" duration="4922000" />
-    </task>
-    <task id="LOCAL-00001" summary="MentcareDemo is born!">
-      <created>1667495005722</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1667495005722</updated>
+      <workItem from="1672818786622" duration="7286000" />
     </task>
     <task id="LOCAL-00002" summary="Aggiunta nuova stringa di stampa in output &quot;New String&quot; in main">
       <created>1668003128420</created>
@@ -612,7 +606,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672310050434</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="ManagerController completed and testing with problems">
+      <created>1672764090415</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1672764090416</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -630,7 +631,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Aggiunto Activity Diagram Infermiere" />
     <MESSAGE value="Aggiunte attività del Check Campi occupati" />
     <MESSAGE value="Modifica Diagramma infermiere" />
     <MESSAGE value="Aggiunta dello scenario S5 (Ricerca paziente) fra le attività opzionali dell'utente membro dello staff medico ai diagrammi del medico e dell'infermiere, riportando l'attività effettiva tra le sotto-attività" />
@@ -655,7 +655,8 @@
     <MESSAGE value="Upgrading vaadin" />
     <MESSAGE value="Main + Controller Classes creation" />
     <MESSAGE value="A lot of problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="A lot of problems" />
+    <MESSAGE value="ManagerController completed and testing with problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="ManagerController completed and testing with problems" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

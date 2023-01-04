@@ -6,6 +6,7 @@ import it.univr.mentcareDemo.model.Patient;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,7 +41,7 @@ public class NurseTest {
         String name = "name";
         String surname = "surname";
         String fiscalCode = "CNNLSN56G98F566Y";
-        String birthDate = "1/1/2001";
+        String birthDate = "31/08/1998";
         String password = "pw";
         String birthplace = "UniVr";
 

@@ -1,6 +1,7 @@
 package it.univr.mentcareDemo.model;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,9 +26,9 @@ public class Patient extends User {
 
     public Patient(List<Appointment> appointmentList, Prescription prescription,
                    String pathology, Boolean dangerous, String phoneNumber,Hospital hospital,
-                   String name, String surname, String password, String fiscalCode, String birthPlace, String birthDay) {
+                   String name, String surname, String password, String fiscalCode, String birthPlace, String birth) {
 
-        super(name,surname,password,fiscalCode,birthPlace,birthDay);
+        super(name,surname,password,fiscalCode,birthPlace,birth);
 
         if (appointmentList == null)
             throw new IllegalArgumentException();

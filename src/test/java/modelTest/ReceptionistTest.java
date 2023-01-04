@@ -5,6 +5,7 @@ import it.univr.mentcareDemo.model.Receptionist;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,7 +36,7 @@ public class ReceptionistTest {
     public void basicReceptionistInitializationTest(){
 
         List<Message> ml = new ArrayList<>();
-        String birthDate = "31/12/2000";
+        String birthDate = "31/08/1998";
 
         Receptionist test0 = new Receptionist(ml,"name","surname","password","CNNLSN56G98F566Y","Univr",birthDate);
 

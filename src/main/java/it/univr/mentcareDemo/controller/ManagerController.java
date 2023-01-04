@@ -24,10 +24,9 @@ public class ManagerController {
                            @RequestParam("password") String password,
                            @RequestParam("fiscalCode") String fiscalCode,
                            @RequestParam("birthplace") String birthplace,
-                           @RequestParam("birthDate")String birthDate){
+                           @RequestParam("birth")String birth){
 
-
-        User user = new User(name,surname,password,fiscalCode,birthplace,birthDate);
+        User user = new User(name,surname,password,fiscalCode,birthplace,birth);
         userRepository.save(user);
         return user;
     }
@@ -40,7 +39,7 @@ public class ManagerController {
                             @RequestParam("birthplace") String birthplace,
                             @RequestParam("appointmentList") List<Appointment> appointmentList,
                             @RequestParam("dailyPatientList")List<Patient> dailyPatientList,
-                             @RequestParam("birthDate") String birthDate){
+                             @RequestParam("birth") String birthDate){
 
         Nurse nurse = new Nurse(appointmentList,dailyPatientList,name,surname,password,fiscalCode,birthplace,birthDate);
         userRepository.save(nurse);
@@ -59,7 +58,7 @@ public class ManagerController {
                              @RequestParam("prescriptionList")List<Prescription> prescriptionList,
                              @RequestParam("specialization")String specialization,
                              @RequestParam("phoneNumber")String phoneNumber,
-                               @RequestParam("birthDate")String birthDate){
+                               @RequestParam("birth")String birthDate){
 
         Doctor doctor = new Doctor(appointmentList,patientList,messageList,phoneNumber,prescriptionList,specialization,name,surname,password,fiscalCode,birthplace,birthDate);
         userRepository.save(doctor);
@@ -79,7 +78,7 @@ public class ManagerController {
                               @RequestParam("prescription")Prescription prescription,
                               @RequestParam("pathology")String pathology,
                               @RequestParam("hospital")Hospital hospital,
-                                 @RequestParam("birthDate")String birthDate){
+                                 @RequestParam("birth")String birthDate){
 
         Patient patient = new Patient(appointmentList,prescription,pathology,dangerous,phoneNumber,hospital,name,surname,password,fiscalCode,birthplace,birthDate);
         userRepository.save(patient);
@@ -93,7 +92,7 @@ public class ManagerController {
                             @RequestParam("fiscalCode") String fiscalCode,
                             @RequestParam("birthplace") String birthplace,
                                    @RequestParam("messageList")List<Message> messageList,
-                                           @RequestParam("birthDate")String birthDate){
+                                           @RequestParam("birth")String birthDate){
 
         Receptionist receptionist = new Receptionist(messageList,name,surname,password,fiscalCode,birthplace,birthDate);
         userRepository.save(receptionist);

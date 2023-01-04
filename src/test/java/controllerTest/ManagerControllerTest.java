@@ -39,7 +39,8 @@ public class ManagerControllerTest {
         final String password = "PsW";
         final String fiscalCode = "FFFFFF00O67G777F";
         final String birthplace = "Legnago";
-        final String birthDate = "31/10/2000";
+        final String birth = "31-08-1998";
+
 
         given()
                 .contentType("application/json")
@@ -48,7 +49,7 @@ public class ManagerControllerTest {
                 .queryParam("password",password)
                 .queryParam("fiscalCode",fiscalCode)
                 .queryParam("birthplace",birthplace)
-                .queryParam("birthDate",birthDate)
+                .queryParam("birth",birth)
                 .when()
                 .post("createUser")
                 .then()
@@ -59,7 +60,7 @@ public class ManagerControllerTest {
                 .body("password",Matchers.is(password))
                 .body("fiscalCode",Matchers.is(fiscalCode))
                 .body("birthplace",Matchers.is(birthplace))
-                .body("birthDate",Matchers.is(birthDate));
+                .body("birthday",Matchers.is(birth));
     }
 
     @Test
@@ -71,7 +72,7 @@ public class ManagerControllerTest {
         final String password = "PsW";
         final String fiscalCode = "FFFFFF00O67G777F";
         final String birthplace = "Legnago";
-        final String birthDate = "111";
+        final String birth = "111";
         final List<Appointment> appointmentList = new ArrayList<>();
         final List<Patient> dailyPatientList = new ArrayList<>();
 
@@ -82,7 +83,7 @@ public class ManagerControllerTest {
                 .queryParam("password",password)
                 .queryParam("fiscalCode",fiscalCode)
                 .queryParam("birthplace",birthplace)
-                .queryParam("birthDate",birthDate)
+                .queryParam("birth",birth)
                 .queryParam("appointmentList",appointmentList)
                 .queryParam("dailyPatientList",dailyPatientList)
                 .when()
@@ -95,9 +96,75 @@ public class ManagerControllerTest {
                 .body("password",Matchers.is(password))
                 .body("fiscalCode",Matchers.is(fiscalCode))
                 .body("birthplace",Matchers.is(birthplace))
-                .body("birthDate",Matchers.is(birthDate));
-                //.body(jsonBody,Matchers.is(appointmentList))
-                //.body(,Matchers.is(dailyPatientList));
+                .body("birthday",Matchers.is(birth));
+        //.body(jsonBody,Matchers.is(appointmentList))
+        //.body(,Matchers.is(dailyPatientList));
 
+    }
+
+    @Test
+    @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
+    public void createDoctorTest(){
+
+        final String name = "Alessandro";
+        final String surname = "Marconcini";
+        final String password = "PsW";
+        final String fiscalCode = "FFFFFF00O67G777F";
+        final String birthplace = "Legnago";
+        final String birth = "111";
+        final List<Appointment> appointmentList = new ArrayList<>();
+        final List<Patient> patientList = new ArrayList<>();
+        final List<Message> messageList = new ArrayList<>();
+        final String phoneNumber = "3299191800";
+        final List<Prescription>  prescriptionList = new ArrayList<>();
+        final String specialization = "Psichiatra";
+
+        given()
+                .contentType("application/json")
+                .queryParam("name", name)
+                .queryParam("surname", surname)
+                .queryParam("password", password)
+                .queryParam("fiscalCode", fiscalCode)
+                .queryParam("birthplace", birthplace)
+                .queryParam("birth", birth)
+                .queryParam("appointmentList", appointmentList)
+                .queryParam("patientList", patientList)
+                .queryParam("messageList", messageList)
+                .queryParam("prescriptionList", prescriptionList)
+                .queryParam("specialization", specialization)
+                .queryParam("phoneNumber", phoneNumber)
+                .when()
+                .post("createDoctor")
+                .then()
+                .statusCode(200)
+                .body("id", Matchers.greaterThan(0))
+                .body("name",Matchers.is(name))
+                .body("surname",Matchers.is(surname))
+                .body("password",Matchers.is(password))
+                .body("fiscalCode",Matchers.is(fiscalCode))
+                .body("birthplace",Matchers.is(birthplace))
+                .body("birthday",Matchers.is(birth))
+                .body("appointmentList", Matchers.is(appointmentList))
+                .body("patientList", Matchers.is(patientList))
+                .body("messageList", Matchers.is(messageList))
+                .body("prescriptionList", Matchers.is(prescriptionList))
+                .body("specialization", Matchers.is(specialization))
+                .body("phoneNumber", Matchers.is(phoneNumber));
+    }
+
+    @Test
+    @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
+    public void getManagerAllReportTest() {
+
+        final List<Report> reportList = new ArrayList<>();
+
+        given()
+                .contentType("application/json")
+                .queryParam("reportList", reportList)
+                .when()
+                .get("getManagerAllReports")
+                .then()
+                .statusCode(200)
+                .body("reportList", Matchers.is(reportList)); //TODO Risolvere problema ArrayList
     }
 }

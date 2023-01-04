@@ -40,14 +40,14 @@ public class PatientTest {
         String surname = "surname";
         Prescription presc = new Prescription();
         String fiscalCode = "CNNLSN56G98F566Y";
-        String birthday = "1/12/2000";
+        String birthDate = "31/08/1998";
         String phoneNumber = "3456949888";
         String password = "pw";
         String birthplace = "UniVr";
         String pathology = "pat";
         Hospital hospital = new Hospital();
 
-        Patient test0 = new Patient(al,presc,pathology,false,phoneNumber,hospital,name,surname,password,fiscalCode,birthplace,birthday);
+        Patient test0 = new Patient(al,presc,pathology,false,phoneNumber,hospital,name,surname,password,fiscalCode,birthplace,birthDate);
 
         Assertions.assertTrue(test0.isAPatient());
         Assertions.assertEquals(false, test0.isDangerous()); //TODO
@@ -60,7 +60,7 @@ public class PatientTest {
         Assertions.assertEquals(password, test0.getPassword());
         Assertions.assertEquals(fiscalCode, test0.getFiscalCode());
         Assertions.assertEquals(birthplace, test0.getBirthplace());
-        Assertions.assertEquals(birthday, test0.getBirthday());
+        Assertions.assertEquals(birthDate, test0.getBirthday());
 
 
     }

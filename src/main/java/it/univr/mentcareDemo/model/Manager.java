@@ -1,13 +1,14 @@
 package it.univr.mentcareDemo.model;
 
 import javax.persistence.Entity;
+import java.time.LocalDate;
 
 @Entity
 public class Manager extends User{
 
-    public Manager(String name, String surname, String password, String fiscalCode, String birthPlace, String birthDay) {
+    public Manager(String name, String surname, String password, String fiscalCode, String birthPlace, String birth) {
 
-        super(name,surname,password,fiscalCode,birthPlace,birthDay);
+        super(name,surname,password,fiscalCode,birthPlace,birth);
     }
 
     public Manager() {}

@@ -24,11 +24,11 @@ public class Doctor extends User{
 
     public Doctor(List<Appointment> appointmentList, List<Patient> patientList, List<Message> messageList,
                   String phoneNumber, List<Prescription> prescriptionList, String specialization,
-                  String name, String surname, String password, String fiscalCode, String birthPlace,String birthDay) {
+                  String name, String surname, String password, String fiscalCode, String birthPlace,String birth) {
         //TODO Per Ale-> Inserire l'attributo doctorPermission come final nel class diagram in quanto l'istanza doctor
         // presuppone l'attributo impostato a TRUE
 
-        super(name,surname,password,fiscalCode,birthPlace,birthDay);
+        super(name,surname,password,fiscalCode,birthPlace,birth);
 
         if (appointmentList == null)
             throw new IllegalDoctorException();

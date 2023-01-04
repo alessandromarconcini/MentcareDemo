@@ -68,4 +68,5 @@ public class Patient extends User {
 
     public String getPathology() { return pathology; }
 
+    public void setPrescription(Prescription p){ this.prescription = p;}
 }

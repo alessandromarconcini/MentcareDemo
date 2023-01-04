@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="Resolving first rest assured test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/controllerTest/PatientControllerTest.java" afterDir="false" />
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="PatientControllerTest implementato con il PatientController modificato">
+      <change afterPath="$PROJECT_DIR$/src/test/java/controllerTest/NurseControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/controllerTest/ManagerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/controllerTest/ManagerControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/Checker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/Checker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/NurseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/NurseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Prescription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Prescription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/NurseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/NurseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/PatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/PrescriptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/PrescriptionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +130,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PatientControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="NurseControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -138,7 +143,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;controllerTest.PatientControllerTest&quot;" />
+            <option value="&quot;controllerTest.NurseControllerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -148,7 +153,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PatientControllerTest.getPatientAllAppointmentsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="NurseControllerTest.getNurseHospitalListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -161,7 +166,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;controllerTest.PatientControllerTest.getPatientAllAppointmentsTest&quot;" />
+            <option value="&quot;controllerTest.NurseControllerTest.getNurseHospitalListTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -194,36 +199,26 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'modelTest'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;modelTest.*&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="MentcareDemo.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="it.univr.mentcareDemo.main.Main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.univr.mentcareDemo.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Tests in 'controllerTest'" />
+        <item itemvalue="Gradle.NurseControllerTest" />
+        <item itemvalue="Spring Boot.Main" />
+        <item itemvalue="Gradle.NurseControllerTest.getNurseHospitalListTest" />
         <item itemvalue="Gradle.ManagerControllerTest" />
-        <item itemvalue="Gradle.PatientControllerTest.getPatientAllAppointmentsTest" />
-        <item itemvalue="Gradle.PatientControllerTest" />
-        <item itemvalue="Gradle.Tests in 'modelTest'" />
       </list>
     </recent_temporary>
   </component>
@@ -268,14 +263,8 @@
       <workItem from="1672298374227" duration="11705000" />
       <workItem from="1672320493587" duration="4922000" />
       <workItem from="1672818786622" duration="11255000" />
-      <workItem from="1672833055160" duration="357000" />
-    </task>
-    <task id="LOCAL-00003" summary="Ripristino demo is born">
-      <created>1668003451281</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1668003451282</updated>
+      <workItem from="1672833055160" duration="866000" />
+      <workItem from="1672838965640" duration="6709000" />
     </task>
     <task id="LOCAL-00004" summary="Inserimento di file README in formato Markdown con primissime indicazioni sul documento finale che verrà modificato">
       <created>1668082522536</created>
@@ -613,7 +602,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672826190744</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="PatientControllerTest implementato con il PatientController modificato">
+      <created>1672833444979</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1672833444979</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -631,7 +627,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modifica Diagramma infermiere" />
     <MESSAGE value="Aggiunta dello scenario S5 (Ricerca paziente) fra le attività opzionali dell'utente membro dello staff medico ai diagrammi del medico e dell'infermiere, riportando l'attività effettiva tra le sotto-attività" />
     <MESSAGE value="Aggiunto Diagramma del paziente" />
     <MESSAGE value="Arricchito Activity Diagram S7 e aggiunti nuovi controlli relativi a S7" />
@@ -656,7 +651,8 @@
     <MESSAGE value="A lot of problems" />
     <MESSAGE value="ManagerController completed and testing with problems" />
     <MESSAGE value="Resolving first rest assured test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resolving first rest assured test" />
+    <MESSAGE value="PatientControllerTest implementato con il PatientController modificato" />
+    <option name="LAST_COMMIT_MESSAGE" value="PatientControllerTest implementato con il PatientController modificato" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

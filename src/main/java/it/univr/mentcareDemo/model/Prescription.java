@@ -5,6 +5,7 @@ import it.univr.mentcareDemo.model.exception.IllegalPrescriptionException;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -16,11 +17,11 @@ public class Prescription {
     private String textReport;
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Drug> drugList = new ArrayList<>();
-    private LocalDate lastModify;
+    private Date lastModify;
 
     public Prescription(){}
 
-    public Prescription(String textReport, List<Drug> drugList, LocalDate lastModify) {
+    public Prescription(String textReport, List<Drug> drugList, Date lastModify) {
 
         if(textReport == null || textReport.isEmpty() || drugList == null || lastModify == null)
             throw new IllegalPrescriptionException();
@@ -54,11 +55,11 @@ public class Prescription {
         this.drugList = drugList;
     }
 
-    public LocalDate getLastModify() {
+    public Date getLastModify() {
         return lastModify;
     }
 
-    public void setLastModify(LocalDate lastModify) {
+    public void setLastModify(Date lastModify) {
         this.lastModify = lastModify;
     }
 }

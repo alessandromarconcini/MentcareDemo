@@ -167,4 +167,18 @@ public class ManagerControllerTest {
                 .statusCode(200)
                 .body("reportList", Matchers.is(reportList)); //TODO Risolvere problema ArrayList
     }
+
+    @Test
+    @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
+    public void getManagerReportTest() {
+
+        //NOTE Il test passa solo se il mio database è popolato
+
+        given()
+                .contentType("application/json")
+                .when()
+                .get("getManagerReport/1")
+                .then()
+                .statusCode(200);
+    }
 }

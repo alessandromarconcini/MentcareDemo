@@ -17,11 +17,11 @@ public class Prescription {
     private String textReport;
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Drug> drugList = new ArrayList<>();
-    private Date lastModify;
+    private LocalDate lastModify;
 
     public Prescription(){}
 
-    public Prescription(String textReport, List<Drug> drugList, Date lastModify) {
+    public Prescription(String textReport, List<Drug> drugList, LocalDate lastModify) {
 
         if(textReport == null || textReport.isEmpty() || drugList == null || lastModify == null)
             throw new IllegalPrescriptionException();
@@ -55,11 +55,11 @@ public class Prescription {
         this.drugList = drugList;
     }
 
-    public Date getLastModify() {
+    public LocalDate getLastModify() {
         return lastModify;
     }
 
-    public void setLastModify(Date lastModify) {
+    public void setLastModify(LocalDate lastModify) {
         this.lastModify = lastModify;
     }
 }

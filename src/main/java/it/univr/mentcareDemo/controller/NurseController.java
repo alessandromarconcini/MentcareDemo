@@ -90,7 +90,7 @@ public class NurseController {
             if(n.isANurse())
                 for(Appointment a: appointmentRepository.findAll())
                     if(a.getNurse().equals(n))
-                        appointmentList.add(a);
+                        appointmentList.add(a); //TODO soluzione diversa trovata in DoctorController per recuperare la lista degli appuntamenti senza crearne una nuova e ripopolarla. Usa il metodo "getNurseAppointmentList" richiamato su "n"
         }
 
         return appointmentList;

@@ -30,9 +30,9 @@ public class PrescriptionTest {
 
         List<Drug> drugList = new ArrayList<>();
         String textReport = "abc";
-        Date lastModify = new Date(13,10,1000);
+        LocalDate lastModify = LocalDate.of(2022,10,10);
 
-        Prescription test0 = new Prescription(textReport,drugList,lastModify);
+        Prescription test0 = new Prescription(textReport,drugList, lastModify);
 
         Assertions.assertEquals(drugList,test0.getDrugList());
         Assertions.assertEquals(textReport,test0.getTextReport());

@@ -66,6 +66,7 @@ public class NurseController {
         Optional<Patient> op = patientRepository.findById(patientId);
         Optional<Prescription> opres = prescriptionRepository.findById(prescriptionId);
 
+        //TODO Prescription non è un request param? E aggiungere la dose (è una get)
 
         if(on.isPresent() && op.isPresent() && opres.isPresent()){
             Nurse n = on.get();

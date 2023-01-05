@@ -52,7 +52,7 @@ public class NurseController {
         if(on.isPresent()){
             Nurse n = on.get();
             if(n.isANurse())
-                return patientRepository.findByName(name);
+                return patientRepository.findByName(name).get();
         }
 
         return null;

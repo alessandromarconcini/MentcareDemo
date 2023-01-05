@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="DoctorController complete. Pay attention to TODO in DoctorController + Different solution to implement GetMapping where the value of return is a list.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/controllerTest/ReceptionistControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/Checker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/Checker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ManagerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/NurseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/NurseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ReceptionistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ReceptionistController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/DoctorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/DoctorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/PatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/ReceptionistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/ReceptionistRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/controllerTest/ManagerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/controllerTest/ManagerControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,6 +106,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.ManagerControllerTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.univr.mentcareDemo.main.Main" />
+      <module name="MentcareDemo.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.univr.mentcareDemo.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DoctorControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -194,23 +209,10 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="MentcareDemo.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="it.univr.mentcareDemo.main.Main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.univr.mentcareDemo.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ManagerControllerTest" />
-        <item itemvalue="Spring Boot.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.Tests in 'MentcareDemo.test'" />
         <item itemvalue="Gradle.DoctorControllerTest" />
         <item itemvalue="Gradle.DoctorControllerTest.getDoctorPatientListTest" />
@@ -654,9 +656,9 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MentcareDemo$ReportTest.ic" NAME="ReportTest Coverage Results" MODIFIED="1671523965009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/MentcareDemo$Tests_in__modelTest_.ic" NAME="Tests in 'modelTest' Coverage Results" MODIFIED="1671612942607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/MentcareDemo$ReceptionistTest.ic" NAME="ReceptionistTest Coverage Results" MODIFIED="1671522917462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/MentcareDemo$Tests_in__controllerTest_.ic" NAME="Tests in 'controllerTest' Coverage Results" MODIFIED="1672827369190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/MentcareDemo$ReportTest.ic" NAME="ReportTest Coverage Results" MODIFIED="1671523965009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/MentcareDemo$ReceptionistTest.ic" NAME="ReceptionistTest Coverage Results" MODIFIED="1671522917462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/MentcareDemo$Tests_in__modelTest_.ic" NAME="Tests in 'modelTest' Coverage Results" MODIFIED="1671612942607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

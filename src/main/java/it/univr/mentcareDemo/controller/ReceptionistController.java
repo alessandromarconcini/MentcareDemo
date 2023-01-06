@@ -5,6 +5,7 @@ import it.univr.mentcareDemo.model.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.print.Doc;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
@@ -27,15 +28,23 @@ public class ReceptionistController {
     public void createAppointment(@PathVariable("receptionistId") Long receptionistId,
                                   @PathVariable("doctorId") Long doctorId,
                                   @PathVariable("patientId") Long patientId,
-                                  @RequestParam("appointment") Appointment appointment){
+                                  @PathVariable("nurse") Nurse nurse,
+                                  @PathVariable("patient") Patient patient,
+                                  @PathVariable("doctor") Doctor doctor) {
 
-        Optional<Doctor> doctor = doctorRepository.findById(doctorId);
-        Optional<Patient> patient = patientRepository.findById(patientId);
+        LocalDate date = LocalDate.now();
+
+        Optional<Doctor> od = doctorRepository.findById(doctorId);
+        Optional<Patient> op = patientRepository.findById(patientId);
         Optional<Receptionist> receptionist = receptionistRepository.findById(receptionistId);
 
-        if (doctor.isPresent() && patient.isPresent() && receptionist.isPresent() && receptionist.get().isAReceptionist())
+        if (od.isPresent() && op.isPresent() && receptionist.isPresent() && receptionist.get().isAReceptionist()) {
+            Appointment appointment = new Appointment(nurse, date, patient, doctor);
             appointmentRepository.save(appointment);
+        }
     }
+
+
     // update appointment
     @PutMapping("updateAppointment/{receptionistId}/{appointmentId}")
     public void updateAppointment(@PathVariable("appointmentId") Long oldAppointmentId,

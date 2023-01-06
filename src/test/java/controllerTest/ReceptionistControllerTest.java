@@ -12,6 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.print.Doc;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -84,48 +85,67 @@ public class ReceptionistControllerTest {
     @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
     public void getReceptionistAppointmentListTest(){
 
+        final List<Appointment> appointment = new ArrayList<>();
+
         given()
                 .contentType("application/json")
+                .pathParam("appointmentId", appointment)
                 .when()
-                .get("getReceptionistAppointmentList/1")
+                .get("getReceptionistAppointmentList/{recptionistId}")
                 .then()
-                .statusCode(200);
+                .statusCode(200)
+                .body("appointment", Matchers.is(appointment));
     }
 
     @Test
     @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
     public void deleteAppointmentTest(){
 
+        final List<Appointment> appointment = new ArrayList<>();
+
         given()
                 .contentType("application/json")
+                .queryParam("appointment", appointment)
                 .when()
                 .put("deleteAppointment/1/1/1/1")
                 .then()
-                .statusCode(200);
+                .statusCode(200)
+                .body("appointment", Matchers.is(appointment));
     }
 
     @Test
     @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
     public void searchPatientTest(){
 
+        final Patient patient = new Patient();
+        final Appointment appointment = new Appointment();
+
         given()
                 .contentType("application/json")
+                .queryParam("patient", patient)
+                .pathParam("appointment", appointment)
                 .when()
                 .get("searchPatient/1/1/1")
                 .then()
-                .statusCode(200);
+                .statusCode(200)
+                .body("patient", Matchers.is(patient))
+                .body("appointment", Matchers.is(appointment));
     }
 
     @Test
     @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
     public void searchDoctorTest(){
 
+        final Doctor doctor = new Doctor();
+
         given()
                 .contentType("application/json")
+                .queryParam("doctor", doctor)
                 .when()
                 .get("searchDoctor/1/1/1")
                 .then()
-                .statusCode(200);
+                .statusCode(200)
+                .body("doctor", Matchers.is(doctor));
     }
 
 }

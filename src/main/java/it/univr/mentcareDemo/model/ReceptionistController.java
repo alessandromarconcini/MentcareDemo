@@ -1,4 +1,4 @@
-package it.univr.mentcareDemo.controller;
+package it.univr.mentcareDemo.model;
 
 import it.univr.mentcareDemo.model.*;
 import it.univr.mentcareDemo.model.repository.*;

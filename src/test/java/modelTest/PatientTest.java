@@ -20,7 +20,7 @@ public class PatientTest {
         Assertions.assertNull(testVoid.getPathology());
         Assertions.assertNull(testVoid.getPrescription());
         Assertions.assertEquals(0,testVoid.getAppointmentList().size());
-        Assertions.assertEquals(false, testVoid.isDangerous()); //TODO
+        Assertions.assertEquals(false, testVoid.isDangerous());
         Assertions.assertNull(testVoid.getPhoneNumber());
         Assertions.assertNull(testVoid.getName());
         Assertions.assertNull(testVoid.getSurname());
@@ -50,7 +50,7 @@ public class PatientTest {
         Patient test0 = new Patient(al,presc,pathology,false,phoneNumber,hospital,name,surname,password,fiscalCode,birthplace,birthDate);
 
         Assertions.assertTrue(test0.isAPatient());
-        Assertions.assertEquals(false, test0.isDangerous()); //TODO
+        Assertions.assertEquals(false, test0.isDangerous());
         Assertions.assertEquals(al,test0.getAppointmentList());
         Assertions.assertEquals(phoneNumber,test0.getPhoneNumber());
         Assertions.assertEquals(presc,test0.getPrescription());

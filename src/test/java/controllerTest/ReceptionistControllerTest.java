@@ -50,7 +50,7 @@ public class ReceptionistControllerTest {
                 .queryParam("date", date)
 
                 .when()
-                .post("/createAppointment/1/1/1")
+                .post("/createAppointment/120/117/119")
 
                 .then()
                 .statusCode(200)

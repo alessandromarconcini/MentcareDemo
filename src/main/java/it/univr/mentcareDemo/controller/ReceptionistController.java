@@ -28,9 +28,9 @@ public class ReceptionistController {
     public void createAppointment(@PathVariable("receptionistId") Long receptionistId,
                                   @PathVariable("doctorId") Long doctorId,
                                   @PathVariable("patientId") Long patientId,
-                                  @PathVariable("nurse") Nurse nurse,
-                                  @PathVariable("patient") Patient patient,
-                                  @PathVariable("doctor") Doctor doctor) {
+                                  @RequestParam("nurse") Nurse nurse,
+                                  @RequestParam("patient") Patient patient,
+                                  @RequestParam("doctor") Doctor doctor) {
 
         LocalDate date = LocalDate.now();
 

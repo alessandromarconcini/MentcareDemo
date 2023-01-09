@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.swing.text.html.Option;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -109,8 +110,14 @@ public class ManagerController {
 
         Optional<Manager> om = managerRepository.findById(managerId);
 
-        if(om.isPresent() && om.get().isManager())
-            patientRepository.save(new Patient(appointmentList,prescription,pathology,dangerous,phoneNumber,hospital,name,surname,password,fiscalCode,birthplace,birthDate));
+        if(om.isPresent() && om.get().isManager()) {
+            patientRepository.save(new Patient(appointmentList, prescription, pathology, dangerous, phoneNumber, hospital, name, surname, password, fiscalCode, birthplace, birthDate));
+
+            if (LocalDate.now().getDayOfMonth() == LocalDate.now().getMonth().maxLength() && LocalTime.now().equals(LocalTime.of(17, 0))) {
+                ReportController reportController = new ReportController();
+                reportController.createReport();
+            }
+        }
     }
 
     @PostMapping("/createReceptionist/{managerId}")

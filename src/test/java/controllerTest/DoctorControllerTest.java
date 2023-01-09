@@ -40,7 +40,7 @@ public class DoctorControllerTest {
             .queryParam("drugList", drugList)
             .queryParam("textReport", textReport)
         .when()
-            .post("createPrescription/1/1")
+            .post("createPrescription/117/119")
         .then()
             .statusCode(200)
             .body("drugList", Matchers.is(drugList))

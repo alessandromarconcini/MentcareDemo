@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="ReceptionistControllerTest in progress">
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/DrugDepositController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ReportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/DrugDeposit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/DrugDepositRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/controllerTest/ReceptionistControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/DoctorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ManagerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ManagerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ReceptionistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ReceptionistController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Report.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/ReportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/repository/ReportRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/controllerTest/DoctorControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/controllerTest/DoctorControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/controllerTest/ReceptionistControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/controllerTest/ReceptionistControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/modelTest/PatientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelTest/PatientTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,8 +112,8 @@
       <recent name="model" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ReceptionistControllerTest.createAppointmentTest">
-    <configuration name="DoctorControllerTest.createPrescriptionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Spring Boot.Main">
+    <configuration name="DoctorControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -113,7 +126,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;controllerTest.DoctorControllerTest.createPrescriptionTest&quot;" />
+            <option value="&quot;controllerTest.DoctorControllerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -123,7 +136,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="DoctorControllerTest.updatePrescriptionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ReceptionistControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -136,7 +149,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;controllerTest.DoctorControllerTest.updatePrescriptionTest&quot;" />
+            <option value="&quot;controllerTest.ReceptionistControllerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -146,7 +159,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ReceptionistControllerTest.createAppointmentTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'MentcareDemo.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -158,8 +171,6 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;controllerTest.ReceptionistControllerTest.createAppointmentTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -169,7 +180,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ReceptionistControllerTest.getReceptionistAppointmentListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'controllerTest'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -182,7 +193,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;controllerTest.ReceptionistControllerTest.getReceptionistAppointmentListTest&quot;" />
+            <option value="&quot;controllerTest.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -192,7 +203,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ReceptionistControllerTest.updateAppointmentTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'modelTest'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -205,7 +216,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;controllerTest.ReceptionistControllerTest.updateAppointmentTest&quot;" />
+            <option value="&quot;modelTest.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -214,14 +225,21 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
+    </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="MentcareDemo.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="it.univr.mentcareDemo.main.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ReceptionistControllerTest.createAppointmentTest" />
-        <item itemvalue="Gradle.ReceptionistControllerTest.updateAppointmentTest" />
-        <item itemvalue="Gradle.DoctorControllerTest.updatePrescriptionTest" />
-        <item itemvalue="Gradle.ReceptionistControllerTest.getReceptionistAppointmentListTest" />
-        <item itemvalue="Gradle.DoctorControllerTest.createPrescriptionTest" />
+        <item itemvalue="Gradle.ReceptionistControllerTest" />
+        <item itemvalue="Gradle.Tests in 'modelTest'" />
+        <item itemvalue="Gradle.DoctorControllerTest" />
+        <item itemvalue="Gradle.Tests in 'controllerTest'" />
+        <item itemvalue="Gradle.Tests in 'MentcareDemo.test'" />
       </list>
     </recent_temporary>
   </component>
@@ -268,6 +286,8 @@
       <workItem from="1672818786622" duration="11255000" />
       <workItem from="1672833055160" duration="866000" />
       <workItem from="1672838965640" duration="6709000" />
+      <workItem from="1673107818762" duration="89000" />
+      <workItem from="1673266668118" duration="16059000" />
     </task>
     <task id="LOCAL-00009" summary="Spostata sezione Scenari e Stories e rinominata in Scenari e popolata con i 9 scenari maggiormente dettagliati">
       <created>1668691487400</created>
@@ -662,9 +682,9 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MentcareDemo$Tests_in__controllerTest_.ic" NAME="Tests in 'controllerTest' Coverage Results" MODIFIED="1672827369190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/MentcareDemo$ReportTest.ic" NAME="ReportTest Coverage Results" MODIFIED="1671523965009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/MentcareDemo$ReceptionistTest.ic" NAME="ReceptionistTest Coverage Results" MODIFIED="1671522917462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/MentcareDemo$Tests_in__modelTest_.ic" NAME="Tests in 'modelTest' Coverage Results" MODIFIED="1671612942607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/MentcareDemo$ReceptionistTest.ic" NAME="ReceptionistTest Coverage Results" MODIFIED="1671522917462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/MentcareDemo$Tests_in__controllerTest_.ic" NAME="Tests in 'controllerTest' Coverage Results" MODIFIED="1672827369190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -16,6 +16,8 @@ public class Patient extends User {
     private Prescription prescription;
     private String pathology;
 
+    private LocalDate bornInTheSystem;
+
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn
     private Hospital hospital;
@@ -48,6 +50,7 @@ public class Patient extends User {
         this.phoneNumber = phoneNumber;
         this.prescription = prescription;
         this.hospital = hospital;
+        this.bornInTheSystem = LocalDate.now();
     }
 
     public Patient() {}
@@ -69,4 +72,8 @@ public class Patient extends User {
     public String getPathology() { return pathology; }
 
     public void setPrescription(Prescription p){ this.prescription = p;}
+
+    public LocalDate getBornInTheSystem() {
+        return bornInTheSystem;
+    }
 }

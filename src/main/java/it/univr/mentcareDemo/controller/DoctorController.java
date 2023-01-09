@@ -23,7 +23,7 @@ public class DoctorController {
     private DoctorRepository doctorRepository;
 
     @PostMapping("/createPrescription/{doctorId}/{patientId}")
-    public void createPrescription(@PathVariable("doctorId") Long doctorId,
+    public Prescription createPrescription(@PathVariable("doctorId") Long doctorId,
                                            @PathVariable("patientId") Long patientId,
                                            @RequestParam("drugList") List<Drug> drugList, // TODO Errore nel class diagram: nel metodo createPrescription scriviamo come parametro di ingresso il nome farmaco come string, ma per creare poi la prescrizione è necessaria una lista di farmaci, modificare don List<Drug>
                                            @RequestParam("textReport") String textReport // TODO Errore nel class diagram: per creare una prescription è necessario un testo come report del dottore
@@ -34,17 +34,22 @@ public class DoctorController {
 
         LocalDate lastModify = LocalDate.now();
 
-
         Optional<Doctor> doctor = doctorRepository.findById(doctorId);
         Optional<Patient> patient = patientRepository.findById(patientId);
 
-        if (doctor.isPresent() && patient.isPresent()){ //se il paziente è presente allora creo la sua prescrizione
+        if (doctor.isPresent() && patient.isPresent() && doctor.get().isDoctor()){ //se il paziente è presente allora creo la sua prescrizione
+
             Prescription prescription = new Prescription(textReport, drugList, lastModify);
             prescriptionRepository.save(prescription);
 
             Patient patient1 = patient.get();
             patient1.setPrescription(prescription);
+            patientRepository.save(patient1);
+
+            return prescription;
         }
+
+        return null;
     }
 
     @PutMapping("updatePrescription/{doctorId}/{patientId}/{prescriptionId}")

@@ -12,13 +12,17 @@ public class Report {
     private Long id;
     private LocalDate date;
     private String name;
+
+    @Column(length = 65536)
     private String text;
+
+    private Boolean ready = false;
 
     public Report(){}
 
     public Report(LocalDate date, String name, String text) {
 
-        if(date == null || name == null || text == null)
+        if(date == null || name == null || text == null || ready == null)
             throw new IllegalReportException();
 
         this.date = date;
@@ -57,4 +61,8 @@ public class Report {
     public void setText(String text) {
         this.text = text;
     }
+
+    public void setReady(Boolean ready) {this.ready = ready;}
+
+    public String toString(){return this.text;}
 }

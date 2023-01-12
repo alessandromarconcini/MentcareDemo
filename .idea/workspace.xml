@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="ReportController created but not tested">
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/main/mainView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2023_20_37_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2023_20_37__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_01_2023_19_15_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_01_2023_19_15__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_01_2023_20_33_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_01_2023_20_33__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="working vaadin" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -300,14 +289,7 @@
       <workItem from="1673266668118" duration="16382000" />
       <workItem from="1673283348387" duration="93000" />
       <workItem from="1673354439381" duration="33000" />
-      <workItem from="1673508908199" duration="5482000" />
-    </task>
-    <task id="LOCAL-00010" summary="Rimpiazzo dello scenario numero 2">
-      <created>1668700940840</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1668700940840</updated>
+      <workItem from="1673508908199" duration="6145000" />
     </task>
     <task id="LOCAL-00011" summary="Creazione sezione 3.4.1 - Casi d'uso del Medico con relativa prima bozza di Use Case Diagram">
       <created>1669122854425</created>
@@ -645,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673283192907</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="working vaadin">
+      <created>1673514925282</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1673514925282</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,7 +652,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Aggiunto ultimo Activity Diagram che rappresenta S8 ed S9." />
     <MESSAGE value="Aggiunti gli use case rimanenti" />
     <MESSAGE value="INSERIMENTO SEQUENCE DIAGRAM SCENARIO S8 &quot;ScenarioS8.png&quot;" />
     <MESSAGE value="Modifiche requisiti, class diagram" />
@@ -688,7 +676,8 @@
     <MESSAGE value="ReceptionistController complete" />
     <MESSAGE value="ReceptionistControllerTest in progress" />
     <MESSAGE value="ReportController created but not tested" />
-    <option name="LAST_COMMIT_MESSAGE" value="ReportController created but not tested" />
+    <MESSAGE value="working vaadin" />
+    <option name="LAST_COMMIT_MESSAGE" value="working vaadin" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Appuntamenti Paziente</title>
+    <title>Prescrizioni Farmaci Paziente</title>
     <style>
       /* Stile per la tabella */
       table {
@@ -35,26 +35,27 @@
     </style>
 </head>
 <body>
-<h1>Appuntamenti Paziente</h1>
+<h1>Prescrizioni Farmaci Paziente</h1>
 <table>
     <thead>
     <tr>
-        <th>Id appuntamento</th>
-        <th>Paziente</th>
-        <th>Medico</th>
-        <th>Infermiere</th>
-        <th>Data appuntamento</th>
-        <th>Ora appuntamento</th>
+        <th>Nome Farmaco</th>
+        <th>Dose Minima</th>
+        <th>Dose Massima</th>
+        <th>Dose Assegnata</th>
+        <th>Frequenza</th>
+        <th>Costo</th>
     </tr>
     </thead>
     <tbody>
-    <tr :each="appointment: ${appointmentList}">
-        <td th:text="${appointment.id}"> <b>10 </b></td>
-        <td th:text="${appointment.patient}"> <b>20 </b></td>
-        <td th:text="${appointment.doctor}"> <b>Mario Rossi </b></td>
-        <td th:text="${appointment.nurse}"> <b>Anna Maria </b></td>
-        <td th:text="${appointment.date}"> <b>15/01/2023 </b></td>
-        <td th:text="${appointment.hour}"> <b>8.30 </b></td>
+    <tr>
+    <tr :each="drug: ${appointmentList}">
+        <td th:text="${drug.name}"> <b>Paracetamol </b></td>
+        <td th:text="${drug.minimumDose}"> <b>5 mg </b></td>
+        <td th:text="${drug.maximumDose}"> <b>50 mg </b></td>
+        <td th:text="${drug.assignedDose}"> <b>20 mg </b></td>
+        <td th:text="${drug.frequency}"> <b>2 volte al giorno dopo i pasti </b></td>
+        <td th:text="${drug.cost}"> <b>20$ </b></td>
     </tr>
     </tbody>
 </table>

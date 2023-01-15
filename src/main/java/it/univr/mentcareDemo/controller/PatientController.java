@@ -21,7 +21,7 @@ public class PatientController {
     @Autowired
     private PrescriptionRepository prescriptionRepository;
 
-    @GetMapping("/getPatientAllAppointments")
+    @RequestMapping("/getPatientAllAppointments")
     public String getPatientAllAppointments(@RequestParam(name="id", required=true) Long patientId,
                                                        Model model){
 
@@ -35,7 +35,7 @@ public class PatientController {
                 if (a.getPatient().equals(p))
                     appointmentList.add(a);
         }
-        model.addAttribute(appointmentList);
+        model.addAttribute("appointmentList", appointmentList);
         return "getPatientAllAppointments";
     }
 
@@ -56,10 +56,10 @@ public class PatientController {
 
                 if(od.isPresent()){ //Check presenza nel database
 
-                    Doctor d = od.get();
+                    Doctor doctor = od.get();
 
-                   if(d.getPatientList().contains(p)) //Check che il dottore sia di patient
-                       model.addAttribute(od);
+                   if(doctor.getPatientList().contains(p)) //Check che il dottore sia di patient
+                       model.addAttribute("doctor", doctor);
                    return "getPatientDoctor";
                 }
             }
@@ -81,7 +81,7 @@ public class PatientController {
             if(p.isAPatient()){ //Permessi del paziente
                 for(Prescription pres:prescriptionRepository.findAll())
                     if(p.getPrescription().equals(pres)) // Verifico se stiamo parlando della stessa pres
-                        model.addAttribute(drugList);
+                        model.addAttribute("drugList", drugList);
                 return "getPatientAllDrugs";
             }
 

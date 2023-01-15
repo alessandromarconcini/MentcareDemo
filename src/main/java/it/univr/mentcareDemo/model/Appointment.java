@@ -22,11 +22,14 @@ public class Appointment {
     private Patient patient;
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private String hour;
+
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Doctor doctor;
 
     public Appointment() {}
 
-    public Appointment(Nurse nurse, LocalDate date, Patient patient, Doctor doctor) {
+    public Appointment(Nurse nurse, LocalDate date, Patient patient, Doctor doctor, String hour) {
 
         if(nurse == null || date == null || patient == null || doctor == null)
             throw new IllegalAppointmentException();
@@ -35,6 +38,7 @@ public class Appointment {
         this.date = date;
         this.patient = patient;
         this.doctor = doctor;
+        this.hour = hour;
     }
 
     public Long getId() {
@@ -75,5 +79,13 @@ public class Appointment {
 
     public void setDoctor(Doctor doctor) {
         this.doctor = doctor;
+    }
+
+    public String getHour(){
+        return this.hour;
+    }
+
+    public  void setHour(){
+        this.hour = hour;
     }
 }

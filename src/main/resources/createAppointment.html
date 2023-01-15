@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inserimento Appuntamenti</title>
+    <style>
+      /* Stile per la form */
+      form {
+        width: 80%;
+        margin: 0 auto;
+        padding: 30px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f2f2f2;
+      }
+      /* Stile per gli input */
+      input[type="text"], input[type="date"], select {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      /* Stile per i tasti */
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      /* Stile per il tasto indietro */
+      .back-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+      }
+      .back-button:hover {
+        background-color: #45a049;
+      }
+    </style>
+</head>
+<body>
+<h1>Inserimento Appuntamenti</h1>
+<form action="/inserimento-appuntamenti" method="post">
+    <label for="paziente">Paziente:</label>
+    <input type="text" id="paziente" name="paziente">
+
+    <label for="medico">Medico:</label>
+    <select id="medico" name="medico">
+        <option value="dott. Rossi">Dott. Mario Rossi</option>
+        <option value="dott.ssa Bianchi">Dott.ssa Anna Bianchi</option>
+        <option value="dott. Gialli">Dott. Giovanni Gialli</option>
+    </select>
+
+    <label for="data">Data:</label>
+    <input type="date" id="data" name="data">
+
+    <label for="ora">Ora:</label>
+    <input type="text" id="ora" name="ora">
+
+    <input type="submit" value="Registra Nuovo Appuntamento">
+    <button class="back-button" onclick="location.href='/pagina-precedente';">Indietro</button>
+</form>
+</body>
+</html>

@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="HTML start">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/UpdateAppointment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/createAppointment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/getPatientAllDrugs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/getPatientDoctor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/getReceptionistAppointmentList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ReceptionistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ReceptionistController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/getPatientAllAppointments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/getPatientAllAppointments.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,13 +285,6 @@
       <workItem from="1672838965640" duration="6709000" />
       <workItem from="1673107818762" duration="89000" />
       <workItem from="1673266668118" duration="16059000" />
-    </task>
-    <task id="LOCAL-00010" summary="Rimpiazzo dello scenario numero 2">
-      <created>1668700940840</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1668700940840</updated>
     </task>
     <task id="LOCAL-00011" summary="Creazione sezione 3.4.1 - Casi d'uso del Medico con relativa prima bozza di Use Case Diagram">
       <created>1669122854425</created>
@@ -621,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673799079958</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="HTML start">
+      <created>1673799932060</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1673799932060</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

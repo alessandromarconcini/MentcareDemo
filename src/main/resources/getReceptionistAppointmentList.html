@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Appuntamenti Paziente</title>
-    <style>
+  <title>Appuntamenti Della Clinica</title>
+  <style>
       /* Stile per la tabella */
       table {
         width: 80%;
@@ -37,26 +37,27 @@
 <body>
 <h1>Appuntamenti Paziente</h1>
 <table>
-    <thead>
-    <tr>
-        <th>Id appuntamento</th>
-        <th>Paziente</th>
-        <th>Medico</th>
-        <th>Infermiere</th>
-        <th>Data appuntamento</th>
-        <th>Ora appuntamento</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr :each="appointment: ${appointmentList}">
-        <td th:text="${appointment.id}"> <b>10 </b></td>
-        <td th:text="${appointment.patient}"> <b>20 </b></td>
-        <td th:text="${appointment.doctor}"> <b>Mario Rossi </b></td>
-        <td th:text="${appointment.nurse}"> <b>Anna Maria </b></td>
-        <td th:text="${appointment.date}"> <b>15/01/2023 </b></td>
-        <td th:text="${appointment.hour}"> <b>8.30 </b></td>
-    </tr>
-    </tbody>
+  <thead>
+  <tr>
+    <th>Id appuntamento</th>
+    <th>Paziente</th>
+    <th>Medico</th>
+    <th>Infermiere</th>
+    <th>Data appuntamento</th>
+    <th>Ora appuntamento</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr :each="appointment: ${appointmentList}">
+    <td th:text="${appointment.id}"> <b>10 </b></td>
+    <td th:text="${appointment.patient}"> <b>20 </b></td>
+    <td th:text="${appointment.doctor}"> <b>Mario Rossi </b></td>
+    <td th:text="${appointment.nurse}"> <b>Anna Maria </b></td>
+    <td th:text="${appointment.date}"> <b>15/01/2023 </b></td>
+    <td th:text="${appointment.hour}"> <b>08.00 </b></td>
+    <td> <a href="Cancella">Cancella </a></td>
+  </tr>
+  </tbody>
 </table>
 <a href="javascript:history.back()" class="back-button">Indietro</a>
 </body>

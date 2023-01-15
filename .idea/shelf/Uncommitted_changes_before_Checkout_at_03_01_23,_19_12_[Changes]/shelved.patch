@@ -1,0 +1,60 @@
+Index: src/test/java/controllerTest/ManagerControllerTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/controllerTest/ManagerControllerTest.java b/src/test/java/controllerTest/ManagerControllerTest.java
+--- a/src/test/java/controllerTest/ManagerControllerTest.java	
++++ b/src/test/java/controllerTest/ManagerControllerTest.java	
+@@ -39,7 +39,7 @@
+         final String password = "PsW";
+         final String fiscalCode = "FFFFFF00O67G777F";
+         final String birthplace = "Legnago";
+-        final String birthDate = "31/10/2000";
++        final LocalDate birthday =  LocalDate.of(2023, 1, 3);
+ 
+         given()
+                 .contentType("application/json")
+@@ -48,7 +48,7 @@
+                 .queryParam("password",password)
+                 .queryParam("fiscalCode",fiscalCode)
+                 .queryParam("birthplace",birthplace)
+-                .queryParam("birthDate",birthDate)
++                .queryParam("birthday",birthday)
+                 .when()
+                 .post("createUser")
+                 .then()
+@@ -59,7 +59,7 @@
+                 .body("password",Matchers.is(password))
+                 .body("fiscalCode",Matchers.is(fiscalCode))
+                 .body("birthplace",Matchers.is(birthplace))
+-                .body("birthDate",Matchers.is(birthDate));
++                .body("birthday",Matchers.is(birthday.toString()));
+     }
+ 
+     @Test
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -112,7 +112,7 @@
+       <recent name="model" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Spring Boot.Main (2)">
++  <component name="RunManager" selected="Gradle.ManagerControllerTest">
+     <configuration name="ManagerControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+       <ExternalSystemSettings>
+         <option name="executionName" />
+@@ -220,7 +220,6 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Spring Boot.Main (2)" />
+         <item itemvalue="Gradle.ManagerControllerTest.createUserTest" />
+         <item itemvalue="Gradle.ManagerControllerTest.createNurseTest" />
+         <item itemvalue="Gradle.ManagerControllerTest" />

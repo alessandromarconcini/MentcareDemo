@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="ReceptionistControllerTest in progress">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/getPatientAllAppointments.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/notfound.html" afterDir="false" />
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="HTML start">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ReceptionistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ReceptionistController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,13 +277,6 @@
       <workItem from="1672838965640" duration="6709000" />
       <workItem from="1673107818762" duration="89000" />
       <workItem from="1673266668118" duration="16059000" />
-    </task>
-    <task id="LOCAL-00009" summary="Spostata sezione Scenari e Stories e rinominata in Scenari e popolata con i 9 scenari maggiormente dettagliati">
-      <created>1668691487400</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1668691487400</updated>
     </task>
     <task id="LOCAL-00010" summary="Rimpiazzo dello scenario numero 2">
       <created>1668700940840</created>
@@ -624,7 +614,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673036221329</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="HTML start">
+      <created>1673799079958</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1673799079958</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -642,7 +639,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Modifiche un po' dappertutto" />
     <MESSAGE value="Aggiunto ultimo Activity Diagram che rappresenta S8 ed S9." />
     <MESSAGE value="Aggiunti gli use case rimanenti" />
     <MESSAGE value="INSERIMENTO SEQUENCE DIAGRAM SCENARIO S8 &quot;ScenarioS8.png&quot;" />
@@ -667,7 +663,8 @@
     <MESSAGE value="DoctorController complete. Pay attention to TODO in DoctorController + Different solution to implement GetMapping where the value of return is a list." />
     <MESSAGE value="ReceptionistController complete" />
     <MESSAGE value="ReceptionistControllerTest in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="ReceptionistControllerTest in progress" />
+    <MESSAGE value="HTML start" />
+    <option name="LAST_COMMIT_MESSAGE" value="HTML start" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

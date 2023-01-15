@@ -109,7 +109,6 @@ public class ReceptionistController {
         Optional<Receptionist> or= receptionistRepository.findById(receptionistId);
 
         if(oa.isPresent() && od.isPresent() && or.isPresent() && oa.get().getDoctor().equals(od.get()) && or.get().isAReceptionist()){
-
             return od.get();
         }
 

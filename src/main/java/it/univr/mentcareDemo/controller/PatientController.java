@@ -3,10 +3,8 @@ package it.univr.mentcareDemo.controller;
 import it.univr.mentcareDemo.model.*;
 import it.univr.mentcareDemo.model.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,8 +21,9 @@ public class PatientController {
     @Autowired
     private PrescriptionRepository prescriptionRepository;
 
-    @GetMapping("/getPatientAllAppointments/{patientId}")
-    public List<Appointment> getPatientAllAppointments(@PathVariable Long patientId){
+    @GetMapping("/getPatientAllAppointments")
+    public String getPatientAllAppointments(@RequestParam(name="id", required=true) Long patientId,
+                                                       Model model){
 
         List<Appointment> appointmentList = new ArrayList<>();
 
@@ -36,12 +35,14 @@ public class PatientController {
                 if (a.getPatient().equals(p))
                     appointmentList.add(a);
         }
-
-        return appointmentList;
+        model.addAttribute(appointmentList);
+        return "getPatientAllAppointments";
     }
 
-    @GetMapping("/getPatientDoctor/{patientId}/{doctorId}")
-    public Doctor getPatientDoctor(@PathVariable Long patientId,@PathVariable Long doctorId){
+    @RequestMapping("/getPatientDoctor/{patientId}/{doctorId}")
+    public String getPatientDoctor(@RequestParam(name="id", required=true) Long patientId,
+                                   @RequestParam(name="id", required=true) Long doctorId,
+                                   Model model){
 
         Optional<Patient> op = patientRepository.findById(patientId);
 
@@ -58,17 +59,19 @@ public class PatientController {
                     Doctor d = od.get();
 
                    if(d.getPatientList().contains(p)) //Check che il dottore sia di patient
-                       return d;
+                       model.addAttribute(od);
+                   return "getPatientDoctor";
                 }
             }
         }
 
         //Altrimenti ritorna null
-        return null;
+        return "notfound";
     }
 
-    @GetMapping("/getPatientAllDrugs/{patientId}")
-    public List<Drug> getPatientAllDrugs(@PathVariable Long patientId){
+    @RequestMapping("/getPatientAllDrugs")
+    public String getPatientAllDrugs(@RequestParam(name="id", required=true) Long patientId,
+                                     Model model){
 
         List<Drug> drugList = new ArrayList<>();
         Optional<Patient> op = patientRepository.findById(patientId);
@@ -78,11 +81,12 @@ public class PatientController {
             if(p.isAPatient()){ //Permessi del paziente
                 for(Prescription pres:prescriptionRepository.findAll())
                     if(p.getPrescription().equals(pres)) // Verifico se stiamo parlando della stessa pres
-                        return pres.getDrugList();
+                        model.addAttribute(drugList);
+                return "getPatientAllDrugs";
             }
 
         }
 
-        return null;
+        return "notfound";
     }
 }

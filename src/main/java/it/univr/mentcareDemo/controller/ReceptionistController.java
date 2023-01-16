@@ -24,9 +24,13 @@ public class ReceptionistController {
     @Autowired
     private DoctorRepository doctorRepository; // for select and search doctor
 
+    @RequestMapping("/")
+    public String index() {
+        return "login.html";
+    }
+
     // new appointment
     @RequestMapping("/createAppointment/{receptionistId}/{doctorId}/{patientId}")
-
     public String createAppointment(@RequestParam(name="doctorId", required=true) Long doctorId,
                                   @RequestParam(name="patientId", required=true) Long patientId,
                                   @RequestParam(name="receptionistId", required=true) Long receptionistId,
@@ -43,6 +47,7 @@ public class ReceptionistController {
 
         if (od.isPresent() && op.isPresent() && receptionist.isPresent() && receptionist.get().isAReceptionist()) {
             Appointment appointment = new Appointment(nurse, date, patient, doctor, hour);
+            op.get().setSetAppointment(appointment);
             appointmentRepository.save(appointment);
             return "redirect:/getReceptionistAppointmentList";
         }
@@ -53,17 +58,25 @@ public class ReceptionistController {
     // update appointment
     @RequestMapping("updateAppointment/{receptionistId}/{appointmentId}")
     public String updateAppointment(@RequestParam(name = "appointmentId", required = true) Long oldAppointmentId,
+                                    @RequestParam(name = "patientId", required = true) Long patientId,
                                   @RequestParam(name = "receptionistId", required = true) Long receptionistId,
                                   @RequestParam(name = "appointment", required = true) Appointment newAppointment,
                                   Model model){
 
         Optional<Appointment> oldAppointment = appointmentRepository.findById(oldAppointmentId);
         Optional<Receptionist> receptionist = receptionistRepository.findById(receptionistId);
+        Optional<Patient> patient = patientRepository.findById(patientId);
 
-        if (receptionist.isPresent() && receptionist.get().isAReceptionist() && oldAppointment.isPresent()) { // modifico l'appuntamento vecchio
+        if (receptionist.isPresent() && receptionist.get().isAReceptionist() && oldAppointment.isPresent()
+        && patient.isPresent()) { // modifico l'appuntamento vecchio
 
             appointmentRepository.deleteById(oldAppointmentId); //è possibile cancellare un appuntamento preso
             appointmentRepository.save(newAppointment);
+            patientRepository.delete(patient.get());
+
+            patient.get().setSetAppointment(newAppointment);
+
+            patientRepository.save(patient.get());
             model.addAttribute("newAppointment", newAppointment);
             return "redirect:/getReceptionistAppointmentList";
         }else

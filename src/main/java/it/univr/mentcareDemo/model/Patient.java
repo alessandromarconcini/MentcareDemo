@@ -61,6 +61,10 @@ public class Patient extends User {
 
     public List<Appointment> getAppointmentList() {return appointmentList; }
 
+    public void setSetAppointment(Appointment Appointment) {
+        this.appointmentList.add(Appointment);
+    }
+
     public void setPhoneNumber(String phoneNumber) {this.phoneNumber = phoneNumber; }
 
     public String getPhoneNumber() { return phoneNumber; }

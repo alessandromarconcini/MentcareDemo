@@ -235,25 +235,20 @@ Stato di completamento:
 Il membro dello staff di amministrazione ha effettuato la registrazione del nuovo utente e il codice ID a otto cifre
 associati all'utente e la password generati automaticamente e salvate sul sistema.
 
-#### S9 - Un membro dello staff di amministrazione visualizza un report mensile
+#### S9 - Un dottore visualizza il report medico di un paziente
 
-Assunzione iniziale: Un membro dello staff di amministrazione effettua il login inserendo il codice identificativo a
+Assunzione iniziale: Un dottore effettua il login inserendo il codice identificativo a
 otto cifre e la propria password e viene visualizzata la schermata principale.
 
-Normale: Un membro dello staff di amministrazione clicca sul pulsante "Report mensile" e tramite una nuova schermata visualizza
-l'elenco dei report della clinica. Ogni report contiene:
-- il numero dei pazienti inseriti e cancellati nel sistema;
-- numero farmaci per nome
-- costo complessivo farmaci
+Normale: Un dottore visualizza l'elenco dei pazienti e clicca sul pulsante "Visualizza Report Medico" affianco al nome del paziente
+di cui intende visualizzare le informazioni e tramite una nuova schermata visualizza
+il report del paziente. Ogni report contiene una descrizione testuale dello status clinico del paziente.
 
-Altre attività:
-- Il membro dello staff di amministrazione una volta visualizzato il report clicca sul pulsante "Dettagli pazienti" e visualizza
-  l'elenco dei pazienti
-- Il membro dello staff di amministrazione una volta visualizzato il report clicca sul pulsante "Dettagli costo farmaci"
-  e visualizza il costo dei singoli farmaci
+Cosa può andare storto:
+- Il paziente non ha un report medico, viene allora visualizzata una schermata di errore
 
 Stato di completamento:
-Il membro dello staff di amministrazione ha visualizzato il report mensile.
+Il dottore ha visualizzato il report medico del proprio paziente.
 
 ## 3.1.2 - Stakeholder
 

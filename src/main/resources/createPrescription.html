@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nuova Prescrizione Medica</title>
+  <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        margin-top: 50px;
+      }
+      form {
+        margin: 0 auto;
+        width: 50%;
+        text-align: left;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px #ccc;
+      }
+      label {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: none;
+      }
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 20px;
+        width: 100%;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      button {
+        background-color: #f44336;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 20px;
+        width: 100%;
+      }
+      button:hover {
+        background-color: #da190b;
+      }
+    </style>
+</head>
+<body>
+<h1>Nuova Prescrizione Medica</h1>
+<form>
+  <label for="patientName">Nome Paziente:</label>
+  <input type="text" id="patientName" name="patientName"><br><br>
+  <label for="medication">Farmaci:</label>
+  <select id="medication" name="medication">
+    <option value="Aspirina">Aspirina</option>
+    <option value="Ibuprofene">Ibuprofene</option>
+    <option value="Acetaminophen">Acetaminophen</option>
+    <option value="Amoxicillina">Amoxicillin</option>
+  </select><br><br>
+  <label for="dosage">Dosaggio:</label>
+  <input type="text" id="dosage" name="dosage"><br><br>
+  <label for="instructions">Report Medico:</label>
+  <textarea id="instructions" name="instructions"></textarea><br><br>
+  <input type="submit" value="Salva Prescrizione">
+  <button onclick="window.history.back()">Indietro</button>
+</form>
+</body>
+</html>

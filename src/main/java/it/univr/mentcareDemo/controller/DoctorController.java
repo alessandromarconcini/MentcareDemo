@@ -110,6 +110,7 @@ public class DoctorController {
         return null;
     }
 
+    //TODO togliere
     @GetMapping("getDoctorMessageList/{doctorId}")
     public List<Message> getDoctorMessageList(@PathVariable("doctorId") Long doctorId){
         Optional<Doctor> doctor = doctorRepository.findById(doctorId);
@@ -132,6 +133,7 @@ public class DoctorController {
         return null;
     }
 
+    //TODO togliere
     @GetMapping("getDoctorPhoneNumber/{doctorId}")
     public String getDoctorPhoneNumber(@PathVariable("doctorId") Long doctorId){
         Optional<Doctor> doctor = doctorRepository.findById(doctorId);

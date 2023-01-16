@@ -4,17 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="HTML start">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/UpdateAppointment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/createAppointment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/getPatientAllDrugs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/getPatientDoctor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/getReceptionistAppointmentList.html" afterDir="false" />
+    <list default="true" id="dba4039a-c46c-4d7a-b0ac-ff57344a878d" name="Changes" comment="First implementation of html page. Error to start main and verify html correctness.">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/createPrescription.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/getDoctorPatientList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/searchPatient.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_01_2023_18_55_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_01_2023_18_55_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_01_2023_18_55__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_01_2023_18_55__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_01_2023_19_01_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_01_2023_19_01__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_01_2023_19_12_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_01_2023_19_12__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2023_20_37_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2023_20_37__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_01_2023_19_15_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_01_2023_19_15__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_01_2023_20_33_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_01_2023_20_33__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_01_2023_13_20_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_01_2023_13_20__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_01_2023_16_26_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_01_2023_16_26__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ReceptionistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/ReceptionistController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/model/Appointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/getPatientAllAppointments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/getPatientAllAppointments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/univr/mentcareDemo/controller/DoctorController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,29 +88,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/alessandro/IdeaProjects/MentcareDemo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "spring.configuration.checksum": "19b265faf42aa219cc160c6bc4ff0a06",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alessandro/IdeaProjects/MentcareDemo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;19b265faf42aa219cc160c6bc4ff0a06&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -109,7 +123,7 @@
       <recent name="model" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.DoctorControllerTest">
     <configuration name="DoctorControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -285,13 +299,6 @@
       <workItem from="1672838965640" duration="6709000" />
       <workItem from="1673107818762" duration="89000" />
       <workItem from="1673266668118" duration="16059000" />
-    </task>
-    <task id="LOCAL-00011" summary="Creazione sezione 3.4.1 - Casi d'uso del Medico con relativa prima bozza di Use Case Diagram">
-      <created>1669122854425</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1669122854425</updated>
     </task>
     <task id="LOCAL-00012" summary="Creazione sezione 3.4.1 - Casi d'uso del Medico con relativa prima bozza di Use Case Diagram">
       <created>1669122906312</created>
@@ -629,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673799932060</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="First implementation of html page. Error to start main and verify html correctness.">
+      <created>1673809684354</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1673809684354</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -647,7 +661,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Aggiunto ultimo Activity Diagram che rappresenta S8 ed S9." />
     <MESSAGE value="Aggiunti gli use case rimanenti" />
     <MESSAGE value="INSERIMENTO SEQUENCE DIAGRAM SCENARIO S8 &quot;ScenarioS8.png&quot;" />
     <MESSAGE value="Modifiche requisiti, class diagram" />
@@ -672,7 +685,8 @@
     <MESSAGE value="ReceptionistController complete" />
     <MESSAGE value="ReceptionistControllerTest in progress" />
     <MESSAGE value="HTML start" />
-    <option name="LAST_COMMIT_MESSAGE" value="HTML start" />
+    <MESSAGE value="First implementation of html page. Error to start main and verify html correctness." />
+    <option name="LAST_COMMIT_MESSAGE" value="First implementation of html page. Error to start main and verify html correctness." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
